@@ -1,9 +1,73 @@
-// Falke 2023 v.1.0.0
+/* ****************************************************** */
+/*                        FALKE 2023                      */
+/*                      ALEXANDER RUDI                    */
+/*            http://www.mycromars-operations.com         */
+/* ****************************************************** */
 #include <stdio.h>
 #include <stdlib.h>
 
-int menu = 0;
-int timer = 0;
+// Calculation
+void calculation();
+
+// Timer
+void timerA(double tx);
+
+// Input
+void inputChar();
+
+
+int main()
+{
+    int menu = 0;
+    int timer = 0;
+
+    printf("\n");
+    printf("######## FALKE 2023 ########\n");
+    printf("****************************\n");
+
+    /* ****************************************************** */
+    /* ********************** MAIN MENU ********************* */
+    /* ###################################################### */
+    mainMenu:
+
+    printf("********* MAIN MENU *********\n");
+    printf("(1) CALCULATION | (2) TIMER | (3) INPUT | (4) EXIT\n");
+    printf("Your Input: ");
+    scanf("%d", &menu);
+
+    switch (menu)
+    {
+    case 1:
+        // Calculation
+        printf("*** CALCULATION ***\n");
+        calculation();
+        //goto mainMenu;
+        break;
+    case 2:
+        // Timer
+        printf("*** TIMER ***\n");
+        printf("Input a number: ");
+        scanf("%d", &timer);
+        // Timer Funktion
+        timerA(timer);
+        //goto mainMenu;
+        break;
+    case 3:
+        // Input Character
+        printf("*** INPUT ***\n");
+        inputChar();
+        //goto mainMenu;
+        break;
+    case 4:
+        printf("\n%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
+        printf("*****************************");
+        exit(EXIT_FAILURE);
+
+    default: break;
+    }
+    goto mainMenu;
+    return 0;
+}
 
 // Calculation
 void calculation(void)
@@ -26,25 +90,27 @@ void calculation(void)
 // Timer
 void timerA(double tx)
 {
+    int menuB = 0;
     double i = 1;
-    double step = 1000;  // Reading step
+    double step = 100000;  // Reading step
     int st = 1;       // Counter
     int multi = 1000000; // Multiplikator 1 Mil.
 
     // Print Timer size
-    printf("Timer size (tx): %f\n", tx);
+    printf("Timer size: %f\n", tx);
     printf("Timer Multiplikator: %d\n", multi);
 
     // Timer ^UP
     tx *= multi;
 
-    printf("Timer new size (tx): %f\n", tx);
+    printf("Timer new size: %f\n", tx);
 
     // Menu
     printf("Press: (1) START | (2) EXIT\n");
-    scanf("%d", &menu);
+    printf("Your Input: ");
+    scanf("%d", &menuB);
 
-    if (menu == 1)
+    if (menuB == 1)
     {
         printf("*** TIMER START ***\n");
         // Timer
@@ -66,23 +132,27 @@ void timerA(double tx)
         }
         printf("\n");
     }
-    else if (menu == 2)
+    else if (menuB == 2)
     {
         printf("### Exit Timer ###\n\n");
+    }
+    else
+    {
+        printf("### Exit ###\n\n");
     }
 }
 
 // Input
 void inputChar(void)
 {
-    char buchstabe, id;
+    char b, id;
     // getchar()
     printf("INPUT with getchar().\n");
     printf("Input a character: ");
-    buchstabe = getchar();
-    buchstabe = getchar();
+    b = getchar();
+    b = getchar();
 
-    printf("Your Input: %c\n\n", buchstabe);
+    printf("Your Input: %c\n\n", b);
 
     // scanf()
     printf("INPUT with scanf().\n");
@@ -102,50 +172,4 @@ void inputChar(void)
     {
         printf("### ID not correct! ###\n\n");
     }
-}
-
-int main()
-{
-    printf("\n");
-    printf("###### MMO Falke 2023 ######\n");
-    printf("*****************************\n");
-
-// ********************** MENU ************************
-mainMenu:
-    printf("********* MAIN MENU *********\n");
-    printf("(1) CALCULATION | (2) TIMER | (3) INPUT | (4) EXIT\n");
-    scanf("%d", &menu);
-
-    switch (menu)
-    {
-    case 1:
-        // Calculation
-        printf("*** CALCULATION ***\n");
-        calculation();
-        goto mainMenu;
-        // break;
-    case 2:
-        // Timer
-        printf("*** TIMER ***\n");
-        printf("Input a number: ");
-        scanf("%d", &timer);
-        // Timer Funktion
-        timerA(timer);
-        goto mainMenu;
-        // break;
-    case 3:
-        // Input Character
-        printf("*** INPUT ***\n");
-        inputChar();
-        goto mainMenu;
-        // break;
-    case 4:
-        printf("\n%%%%%%%%%%%%%% Programm END! %%%%%%%%%%%%%%\n");
-        printf("*****************************");
-        exit(EXIT_FAILURE);
-
-    default: break;
-    }
-
-    return 0;
 }
