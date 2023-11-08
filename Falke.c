@@ -147,20 +147,20 @@ void inputChar(void)
 {
     char b, id;
     // getchar()
+    
     printf("INPUT with getchar().\n");
     printf("Input a character: ");
+    getchar();
     b = getchar();
-    b = getchar();
-
     printf("Your Input: %c\n\n", b);
-
+    
     // scanf()
     printf("INPUT with scanf().\n");
     printf("Press 'a' for continue: ");
-    scanf("%c", &id);
+    getchar();
     scanf("%c", &id);
 
-    printf("Your Input: %c\n", id);
+    printf("Your Input: %c\n\n", id);
     printf(id == 'a' ? "You have access!\n" : "You don't have access!\n");
 
     // Exit or continue
@@ -172,4 +172,6 @@ void inputChar(void)
     {
         printf("### ID not correct! ###\n\n");
     }
+    
+   return (0);
 }
