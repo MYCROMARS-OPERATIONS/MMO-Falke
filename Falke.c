@@ -95,9 +95,9 @@ void timerA(double tx)
 {
     int menuB = 0;
     double i = 1;
-    double step = 100000;  // Reading step
+    double step = 100;  // Reading step
     int st = 1;       // Counter
-    int multi = 1000000; // Multiplikator 1 Mil.
+    int multi = 10000; // Multiplikator 1 Mil.
 
     // Print Timer size
     printf("Timer size: %f\n", tx);
@@ -176,5 +176,4 @@ void inputChar(void)
         printf("### ID not correct! ###\n\n");
     }
     
-   return (0);
 }
