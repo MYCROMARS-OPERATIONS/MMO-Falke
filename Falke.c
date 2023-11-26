@@ -2,7 +2,7 @@
 /*                  MYCROMARS OPERATIONS                  */
 /*                        FALKE 2023                      */
 /*                      ALEXANDER RUDI                    */
-/*            http://www.mycromars-operations.com         */
+/*             https://mycromars-operations.com           */
 /* ****************************************************** */
 #include <stdio.h>
 #include <stdlib.h>
@@ -46,6 +46,7 @@ int main()
         calculation();
         //goto mainMenu;
         break;
+
     case 2:
         // Timer
         printf("*** TIMER ***\n");
@@ -55,21 +56,28 @@ int main()
         timerA(timer);
         //goto mainMenu;
         break;
+
     case 3:
         // Input Character
         printf("*** INPUT ***\n");
         inputChar();
         //goto mainMenu;
         break;
+
     case 4:
         printf("\n%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
         printf("*****************************");
-        exit(EXIT_FAILURE);
+        //exit(EXIT_FAILURE);
+        //exit(EXIT_SUCCESS);
+        //exit(1);
+        //return EXIT_FAILURE;
+        return EXIT_SUCCESS;
 
     default: break;
     }
-    goto mainMenu;
-    return 0;
+
+goto mainMenu;
+return 0;
 }
 
 // Calculation
@@ -121,7 +129,7 @@ void timerA(double tx)
         {
             i++;
             
-            // Step every 1000
+            // Step every 100
             if (i > st * step)
             {
                 st++;
