@@ -33,47 +33,47 @@ int main()
 
     switch (menu)
     {
-    case 1:
-        // Calculation
-        printf("*** CALCULATION ***\n");
-        calculation();
-        //goto mainMenu;
-        break;
+        case 1:
+            // Calculation
+            printf("*** CALCULATION ***\n");
+            calculation();
+            //goto mainMenu;
+            break;
 
-    case 2:
-        // Timer
-        printf("*** TIMER ***\n");
-        printf("Input a number: ");
-        scanf("%d", &timer);
-        // Timer Funktion
-        timerA(timer);
-        //goto mainMenu;
-        break;
+        case 2:
+            // Timer
+            printf("*** TIMER ***\n");
+            printf("Input a number: ");
+            scanf("%d", &timer);
+            // Timer Funktion
+            timerA(timer);
+            //goto mainMenu;
+            break;
 
-    case 3:
-        // Input Character
-        printf("*** INPUT ***\n");
-        inputChar();
-        //goto mainMenu;
-        break;
+        case 3:
+            // Input Character
+            printf("*** INPUT ***\n");
+            inputChar();
+            //goto mainMenu;
+            break;
 
-    case 4:
-        // Output Hello World
-        printf("*** OUTPUT ***\n");
-        hello();
-        //goto mainMenu;
-        break;    
+        case 4:
+            // Output Hello World
+            printf("*** OUTPUT ***\n");
+            hello();
+            //goto mainMenu;
+            break;    
 
-    case 5:
-        printf("\n%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
-        printf("*****************************");
-        //exit(EXIT_FAILURE);
-        //exit(EXIT_SUCCESS);
-        //exit(1);
-        //return EXIT_FAILURE;
-        return EXIT_SUCCESS;
+        case 5:
+            printf("\n%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
+            printf("*****************************");
+            //exit(EXIT_FAILURE);
+            //exit(EXIT_SUCCESS);
+            //exit(1);
+            //return EXIT_FAILURE;
+            return EXIT_SUCCESS;
 
-    default: break;
+        default: break;
     }
 
 goto mainMenu;
