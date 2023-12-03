@@ -1,5 +1,5 @@
-//#ifndef HELLO_H
-//#define HELLO_H
+#ifndef FUNCTION_
+#define FUNCTION_
 
 // Calculation
 void calculation();
@@ -11,5 +11,6 @@ void timerA(double tx);
 void inputChar();
 
 void hello();
+void pointA();
 
-//#endif 
+#endif

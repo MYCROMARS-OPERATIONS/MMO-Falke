@@ -2,40 +2,44 @@
 /*                  MYCROMARS OPERATIONS                  */
 /*                        FALKE 2023                      */
 /*                      ALEXANDER RUDI                    */
-/*             https://mycromars-operations.com           */
 /* ****************************************************** */
 #include <stdio.h>
-#include <stdlib.h>
+//#include <stdlib.h>
 
+// My header file
 #include "header.h"
 
 
 int main()
 {
-    int menu = 0;
-    int timer = 0;
-
     printf("\n");
-    printf("######## FALKE 2023 ########\n");
-    printf("****************************\n");
+    printf("######## MMO FALKE 2023 ########\n");
+    printf("********************************\n");
 
     /* ****************************************************** */
     /* ********************** MAIN MENU ********************* */
     /* ###################################################### */
 
-    // Go here
+    int menu = 0;
+    int timer = 0;
+
+    // Go here <<<----------------------------
     mainMenu:
 
     printf("********* MAIN MENU *********\n");
-    printf("(1) CALCULATION | (2) TIMER | (3) INPUT | (4) OUTPUT | (5) EXIT\n");
+    printf("(1) CALCULATION | (2) TIMER | (3) INPUT | (4) OUTPUT | (5) POINTER\n");
+    //printf("(6) ARRAY | (7) STRUCTURE | (8) FILE\n");
+    printf("(0) EXIT\n");
     printf("Your Input: ");
     scanf("%d", &menu);
+    printf("\n");
 
     switch (menu)
     {
         case 1:
             // Calculation
             printf("*** CALCULATION ***\n");
+            printf("a + b\n");
             calculation();
             //goto mainMenu;
             break;
@@ -62,16 +66,22 @@ int main()
             printf("*** OUTPUT ***\n");
             hello();
             //goto mainMenu;
-            break;    
+            break; 
 
         case 5:
-            printf("\n%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
+            // Pointer
+            pointA();   
+            break;
+
+        case 0:
+            printf("%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
             printf("*****************************");
+            exit(1);
+
             //exit(EXIT_FAILURE);
             //exit(EXIT_SUCCESS);
-            //exit(1);
             //return EXIT_FAILURE;
-            return EXIT_SUCCESS;
+            //return EXIT_SUCCESS;
 
         default: break;
     }
