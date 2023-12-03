@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "header/pointer.h"
+#include "header/pointer_a.h"
 
 // POINTER
-void pointA() {
+void pointerA() {
     int alpha;
     alpha = 100;
     printf("Variable:\n");

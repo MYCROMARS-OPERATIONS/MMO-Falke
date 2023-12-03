@@ -19,8 +19,8 @@ void delayA(double tx)
 
     printf("Delay new size: %f\n", tx);
 
-    // Menu
-    printf("Press: (1) START | (2) EXIT\n");
+    // *------------- Menu B-------------*
+    printf("Press: (1) START | (0) EXIT\n");
     printf("Your Input: ");
     scanf("%d", &menuB);
 
@@ -46,12 +46,12 @@ void delayA(double tx)
         }
         printf("\n");
     }
-    else if (menuB == 2)
+    else if (menuB == 0)
     {
         printf("### Exit Delay ###\n\n");
     }
     else
     {
-        printf("### Exit ###\n\n");
+        printf("### End Delay ###\n\n");
     }
 }

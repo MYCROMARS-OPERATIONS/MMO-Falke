@@ -1,7 +1,7 @@
 #ifndef POINTER_
 #define POINTER_
 
-// Input
-void pointA();
+// Pointer A
+void pointerA();
 
 #endif

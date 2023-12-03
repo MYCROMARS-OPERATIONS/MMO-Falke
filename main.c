@@ -21,15 +21,15 @@ int main()
     /* ###################################################### */
 
     int menu = 0;
+    int menuB = 0;
     int timer = 0;
 
-    // Go here <<<----------------------------
+    // Go here <<<---
     mainMenu:
-
-    printf("********* MAIN MENU *********\n");
-    printf("(1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER\n");
-    //printf("(6) ARRAY | (7) STRUCTURE | (8) FILE\n");
-    printf("(0) EXIT\n");
+    
+    printf("********** MAIN MENU ***********\n");
+    printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER | (6) ARRAY | (0) EXIT\n");
+    //printf("(7) STRUCTURE | (8) FILE\n");
     printf("Your Input: ");
     scanf("%d", &menu);
     printf("\n");
@@ -69,8 +69,63 @@ int main()
             break; 
 
         case 5:
-            // Pointer
-            pointA();   
+        // *------------- Pointer Menu -------------*
+            printf("*** POINTER MENU ***\n");
+            printf("Press: (1) POINTER A | (2) POINTER B | (0) EXIT\n");
+            printf("Your Input: ");
+            scanf("%d", &menuB);
+            printf("\n");
+
+            if (menuB == 1)
+            {
+                // Pointer
+                pointerA();   
+                break;
+            }
+            else if (menuB == 2)
+            {
+                // Pointer
+                pointerB();   
+                break;
+            }
+            else if (menuB == 0)
+            {
+                printf("### Exit Pointer ###\n\n");
+            }
+            else
+            {
+                printf("### End Pointer ###\n\n");
+            }
+            break;
+
+        case 6:
+        // *------------- Array Menu -------------*
+            printf("*** ARRAY MENU ***\n");
+            printf("Press: (1) ARRAY A | (2) ARRAY B | (0) EXIT\n");
+            printf("Your Input: ");
+            scanf("%d", &menuB);
+            printf("\n");
+
+            if (menuB == 1)
+            {
+                // Array A
+                arrayA();   
+                break;
+            }
+            else if (menuB == 2)
+            {
+                // Array B
+                arrayB();
+                break;
+            }
+            else if (menuB == 0)
+            {
+                printf("### Exit Array ###\n\n");
+            }
+            else
+            {
+                printf("### End Array ###\n\n");
+            }
             break;
 
         case 0:
