@@ -4,7 +4,7 @@
 /*                      ALEXANDER RUDI                    */
 /* ****************************************************** */
 #include <stdio.h>
-//#include <stdlib.h>
+#include <stdlib.h>
 
 // My header file
 #include "header.h"
@@ -27,7 +27,7 @@ int main()
     mainMenu:
 
     printf("********* MAIN MENU *********\n");
-    printf("(1) CALCULATION | (2) TIMER | (3) INPUT | (4) OUTPUT | (5) POINTER\n");
+    printf("(1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER\n");
     //printf("(6) ARRAY | (7) STRUCTURE | (8) FILE\n");
     printf("(0) EXIT\n");
     printf("Your Input: ");
@@ -45,12 +45,12 @@ int main()
             break;
 
         case 2:
-            // Timer
-            printf("*** TIMER ***\n");
+            // Delay
+            printf("*** DELAY ***\n");
             printf("Input a number: ");
             scanf("%d", &timer);
-            // Timer Funktion
-            timerA(timer);
+            // Function
+            delayA(timer);
             //goto mainMenu;
             break;
 
@@ -64,7 +64,7 @@ int main()
         case 4:
             // Output Hello World
             printf("*** OUTPUT ***\n");
-            hello();
+            outputString();
             //goto mainMenu;
             break; 
 
@@ -76,10 +76,9 @@ int main()
         case 0:
             printf("%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
             printf("*****************************");
-            exit(1);
-
+            //exit(1);
             //exit(EXIT_FAILURE);
-            //exit(EXIT_SUCCESS);
+            exit(EXIT_SUCCESS);
             //return EXIT_FAILURE;
             //return EXIT_SUCCESS;
 
