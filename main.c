@@ -28,7 +28,8 @@ int main()
     mainMenu:
     
     printf("********** MAIN MENU ***********\n");
-    printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER | (6) ARRAY | (0) EXIT\n");
+    printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER \
+| (6) ARRAY | (0) EXIT\n");
     //printf("(7) STRUCTURE | (8) FILE\n");
     printf("Your Input: ");
     scanf("%d", &menu);
@@ -106,7 +107,8 @@ int main()
         case 6:
         // *------------- Array Menu -------------*
             printf("*** ARRAY MENU ***\n");
-            printf("Press: (1) ARRAY-A | (2) ARRAY-B | (3) ARRAY-C | (4) ARRAY-D | (5) ARRAY-E | (6) ARRAY-F | (0) EXIT\n");
+            printf("Press: (1) ARRAY-A | (2) ARRAY-B | (3) ARRAY-C | (4) ARRAY-D | (5) ARRAY-E \
+| (6) ARRAY-F | (0) EXIT\n");
             printf("Your Input: ");
             scanf("%d", &menuB);
             printf("\n");
