@@ -16,6 +16,4 @@ void arrayC(void)
     for(x=0; x<5; x++)
         printf("#%d %.2f\n", x+1, highscore[x]);
         printf("\n");
-
-    return(0);
 }

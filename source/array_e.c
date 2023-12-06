@@ -17,6 +17,4 @@ void arrayE(void)
         printf("Element#%d %3d == %3d\n", x, original[x], dublicate[x]);
 
     printf("\n");
-
-    return(0);
 }
