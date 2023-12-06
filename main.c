@@ -1,6 +1,6 @@
 /* ****************************************************** */
 /*                  MYCROMARS OPERATIONS                  */
-/*                    FALKE 2023 v0.0.1                   */
+/*                    FALKE 2023 v0.0.2                   */
 /*                      ALEXANDER RUDI                    */
 /* ****************************************************** */
 #include <stdio.h>
@@ -74,7 +74,7 @@ int main()
         case 5:
         // *------------- Pointer Menu -------------*
             printf("*** POINTER MENU ***\n");
-            printf("Press: (1) POINTER A | (2) POINTER B | (0) EXIT\n");
+            printf("Press: (1) POINTER-A | (2) POINTER-B | (0) EXIT\n");
             printf("Your Input: ");
             scanf("%d", &menuB);
             printf("\n");
@@ -106,7 +106,7 @@ int main()
         case 6:
         // *------------- Array Menu -------------*
             printf("*** ARRAY MENU ***\n");
-            printf("Press: (1) ARRAY A | (2) ARRAY B | (0) EXIT\n");
+            printf("Press: (1) ARRAY-A | (2) ARRAY-B | (3) ARRAY-C | (4) ARRAY-D | (5) ARRAY-E | (6) ARRAY-F | (0) EXIT\n");
             printf("Your Input: ");
             scanf("%d", &menuB);
             printf("\n");
@@ -121,6 +121,30 @@ int main()
             {
                 // Array B
                 arrayB();
+                break;
+            }
+            else if (menuB == 3)
+            {
+                // Array C
+                arrayC();
+                break;
+            }
+            else if (menuB == 4)
+            {
+                // Array C
+                arrayD();
+                break;
+            }
+            else if (menuB == 5)
+            {
+                // Array E
+                arrayE();
+                break;
+            }
+            else if (menuB == 6)
+            {
+                // Array F
+                arrayF();
                 break;
             }
             else if (menuB == 0)
