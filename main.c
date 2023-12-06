@@ -1,6 +1,6 @@
 /* ****************************************************** */
 /*                  MYCROMARS OPERATIONS                  */
-/*                        FALKE 2023                      */
+/*                    FALKE 2023 v0.0.1                   */
 /*                      ALEXANDER RUDI                    */
 /* ****************************************************** */
 #include <stdio.h>
@@ -49,9 +49,12 @@ int main()
             printf("*** DELAY ***\n");
             printf("Input a number: ");
             scanf("%d", &timer);
+
             // Function
             delayA(timer);
+
             //goto mainMenu;
+            timer = 0;
             break;
 
         case 3:
@@ -90,10 +93,12 @@ int main()
             }
             else if (menuB == 0)
             {
+                menuB = 0;
                 printf("### Exit Pointer ###\n\n");
             }
             else
             {
+                menuB = 0;
                 printf("### End Pointer ###\n\n");
             }
             break;
@@ -120,10 +125,12 @@ int main()
             }
             else if (menuB == 0)
             {
+                menuB = 0;
                 printf("### Exit Array ###\n\n");
             }
             else
             {
+                menuB = 0;
                 printf("### End Array ###\n\n");
             }
             break;
@@ -140,8 +147,10 @@ int main()
         default: break;
     }
 
+// reset variable
+menu = 0;
+
 goto mainMenu;
-return 0;
 }
 
 

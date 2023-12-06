@@ -20,7 +20,7 @@ void pointerA() {
 
     // Change Pointer
     *ptr = 150;
-    printf("Variable (change in pointer *ptr):\n");
+    printf("Variable (change in pointer *ptr=150):\n");
     printf("value: %d\n\n", alpha);
 
 }
