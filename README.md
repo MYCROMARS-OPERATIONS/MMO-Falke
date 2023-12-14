@@ -6,6 +6,7 @@
 4. Output
 5. Pointer
 6. Array
+7. Loop
 
 0. Exit
 

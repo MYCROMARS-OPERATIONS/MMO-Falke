@@ -16,6 +16,13 @@
 #include "source/header/array_e.h"
 #include "source/header/array_f.h"
 
+#include "source/header/loop_a.h"
+#include "source/header/loop_b.h"
+#include "source/header/loop_c.h"
+#include "source/header/loop_d.h"
+#include "source/header/loop_e.h"
+#include "source/header/loop_f.h"
+
 
 // ****************** Include files: .c ******************
 #include "source/calculation.c"
@@ -31,5 +38,12 @@
 #include "source/array_d.c"
 #include "source/array_e.c"
 #include "source/array_f.c"
+
+#include "source/loop_a.c"
+#include "source/loop_b.c"
+#include "source/loop_c.c"
+#include "source/loop_d.c"
+#include "source/loop_e.c"
+#include "source/loop_f.c"
 
 #endif

@@ -28,7 +28,8 @@ int main()
     mainMenu:
     
     printf("********** MAIN MENU ***********\n");
-    printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER | (6) ARRAY | (0) EXIT\n");
+    printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER\n");
+    printf("Press: (6) ARRAY       | (7) LOOP  | (0) EXIT\n");
     //printf("(7) STRUCTURE | (8) FILE\n");
     printf("Your Input: ");
     scanf("%d", &menu);
@@ -81,13 +82,13 @@ int main()
 
             if (menuB == 1)
             {
-                // Pointer
+                // Pointer A
                 pointerA();   
                 break;
             }
             else if (menuB == 2)
             {
-                // Pointer
+                // Pointer B
                 pointerB();   
                 break;
             }
@@ -159,6 +160,66 @@ int main()
             }
             break;
 
+        case 7:
+            // *------------- Loop Menu -------------*
+            printf("*** LOOP MENU ***\n");
+            printf("Press: (1) LOOP-A | (2) LOOP-B | (3) LOOP-C | (4) LOOP-D | (5) LOOP-E\n");
+            printf("Press: (6) LOOP-F | (0) EXIT\n");
+            printf("Your Input: ");
+            scanf("%d", &menuB);
+            printf("\n");
+
+            if (menuB == 1)
+            {
+                // Loop A
+                loopA();   
+                break;
+            }
+            else if (menuB == 2)
+            {
+                // Loop B
+                loopB();   
+                break;
+            }
+            else if (menuB == 3)
+            {
+                // Loop C
+                loopC();   
+                break;
+            }
+            else if (menuB == 4)
+            {
+                // Loop D
+                loopD();   
+                break;
+            }
+            else if (menuB == 5)
+            {
+                // Loop E
+                loopE();   
+                break;
+            }
+            else if (menuB == 6)
+            {
+                // Loop F
+                loopF();   
+                break;
+            }
+            else if (menuB == 0)
+            {
+                menuB = 0;
+                printf("### Exit Loop ###\n\n");
+            }
+            else
+            {
+                menuB = 0;
+                printf("### End Loop ###\n\n");
+            }
+            break;
+
+
+
+
         case 0:
             printf("%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
             printf("*****************************");
@@ -167,7 +228,7 @@ int main()
             exit(EXIT_SUCCESS);
             //return EXIT_FAILURE;
             //return EXIT_SUCCESS;
-
+            
         default: break;
     }
 
