@@ -22,6 +22,4 @@ void arrayD(void)
         printf("%d\n", numbers[x]);
 
     printf("\n");
-
-    return(0);
 }

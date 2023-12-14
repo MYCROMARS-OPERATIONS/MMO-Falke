@@ -32,9 +32,7 @@ void arrayF(void)
     for (x = 0; x < 26; x++)
         printf("%c = %c\n", textABC[x], textABC[x]+1); 
            
-    printf("\n\n");
-
-    return (0);  
+    printf("\n\n"); 
 }
 
 

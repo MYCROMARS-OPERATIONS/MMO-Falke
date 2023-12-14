@@ -1,6 +1,6 @@
 /* ****************************************************** */
 /*                  MYCROMARS OPERATIONS                  */
-/*                    FALKE 2023 v0.0.2                   */
+/*                    FALKE 2023 v0.0.3                   */
 /*                      ALEXANDER RUDI                    */
 /* ****************************************************** */
 #include <stdio.h>
@@ -107,7 +107,8 @@ int main()
         case 6:
         // *------------- Array Menu -------------*
             printf("*** ARRAY MENU ***\n");
-            printf("Press: (1) ARRAY-A | (2) ARRAY-B | (3) ARRAY-C | (4) ARRAY-D | (5) ARRAY-E | (6) ARRAY-F | (0) EXIT\n");
+            printf("Press: (1) ARRAY-A | (2) ARRAY-B | (3) ARRAY-C | (4) ARRAY-D | (5) ARRAY-E\n");
+            printf("Press: (6) ARRAY-F | (0) EXIT\n");
             printf("Your Input: ");
             scanf("%d", &menuB);
             printf("\n");
