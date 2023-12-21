@@ -23,6 +23,10 @@
 #include "source/header/loop_e.h"
 #include "source/header/loop_f.h"
 
+#include "source/header/structure_a.h"
+#include "source/header/structure_b.h"
+#include "source/header/structure_c.h"
+
 
 // ****************** Include files: .c ******************
 #include "source/calculation.c"
@@ -45,5 +49,9 @@
 #include "source/loop_d.c"
 #include "source/loop_e.c"
 #include "source/loop_f.c"
+
+#include "source/structure_a.c"
+#include "source/structure_b.c"
+#include "source/structure_c.c"
 
 #endif

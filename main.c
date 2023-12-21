@@ -1,6 +1,6 @@
 /* ****************************************************** */
 /*                  MYCROMARS OPERATIONS                  */
-/*                    FALKE 2023 v0.0.3                   */
+/*                    FALKE 2023 v0.0.4                   */
 /*                      ALEXANDER RUDI                    */
 /* ****************************************************** */
 #include <stdio.h>
@@ -29,7 +29,7 @@ int main()
     
     printf("********** MAIN MENU ***********\n");
     printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER\n");
-    printf("Press: (6) ARRAY       | (7) LOOP  | (0) EXIT\n");
+    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE          | (0) EXIT\n");
     //printf("(7) STRUCTURE | (8) FILE\n");
     printf("Your Input: ");
     scanf("%d", &menu);
@@ -37,6 +37,15 @@ int main()
 
     switch (menu)
     {
+        case 0:
+            printf("%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
+            printf("*****************************");
+            //exit(1);
+            //exit(EXIT_FAILURE);
+            exit(EXIT_SUCCESS);
+            //return EXIT_FAILURE;
+            //return EXIT_SUCCESS;
+
         case 1:
             // Calculation
             printf("*** CALCULATION ***\n");
@@ -95,12 +104,12 @@ int main()
             else if (menuB == 0)
             {
                 menuB = 0;
-                printf("### Exit Pointer ###\n\n");
+                printf("### EXIT Pointer ###\n\n");
             }
             else
             {
                 menuB = 0;
-                printf("### End Pointer ###\n\n");
+                printf("### END Pointer ###\n\n");
             }
             break;
 
@@ -152,12 +161,12 @@ int main()
             else if (menuB == 0)
             {
                 menuB = 0;
-                printf("### Exit Array ###\n\n");
+                printf("### EXIT Array ###\n\n");
             }
             else
             {
                 menuB = 0;
-                printf("### End Array ###\n\n");
+                printf("### END Array ###\n\n");
             }
             break;
 
@@ -209,27 +218,56 @@ int main()
             else if (menuB == 0)
             {
                 menuB = 0;
-                printf("### Exit Loop ###\n\n");
+                printf("### EXIT Loop ###\n\n");
             }
             else
             {
                 menuB = 0;
-                printf("### End Loop ###\n\n");
+                printf("### END Loop ###\n\n");
             }
             break;
 
-
-
-
-        case 0:
-            printf("%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
-            printf("*****************************");
-            //exit(1);
-            //exit(EXIT_FAILURE);
-            exit(EXIT_SUCCESS);
-            //return EXIT_FAILURE;
-            //return EXIT_SUCCESS;
+        case 8:
+            // *------------- Structure Menu -------------*
+            printf("*** STRUCTURE MENU ***\n");
+            printf("Press: (1) STRUCTURE-A | (2) STRUCTURE-B | (3) STRUCTURE-C | (0) EXIT\n");
             
+            printf("Your Input: ");
+            scanf("%d", &menuB);
+            printf("\n");
+
+            if (menuB == 1)
+            {
+                // Structure A
+                structure_a();  
+                break;
+            }
+            else if (menuB == 2)
+            {
+                // Structure B
+                structure_b(); 
+                break;
+            }
+            else if (menuB == 3)
+            {
+                // Structure C
+                structure_c(); 
+                break;
+            }
+            else if (menuB == 0)
+            {
+                menuB = 0;
+                printf("### EXIT STRUCTURE ###\n\n");
+            }
+            else
+            {
+                menuB = 0;
+                printf("### END STRUCTURE ###\n\n");
+            }
+
+            //goto mainMenu;
+            break;
+
         default: break;
     }
 

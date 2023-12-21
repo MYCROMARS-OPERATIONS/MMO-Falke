@@ -3,6 +3,7 @@
     "workbench.preferredDarkColorTheme": "Default Dark Modern",
     "files.associations": {
         "stdio.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "structures.h": "c"
     }
 }
