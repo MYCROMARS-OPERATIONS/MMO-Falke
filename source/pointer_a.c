@@ -3,24 +3,25 @@
 
 // POINTER
 void pointerA() {
+    printf("POINTER-A\n");
     int alpha;
     alpha = 100;
-    printf("Variable:\n");
-    printf("value: %d\n", alpha);
-    printf("Size of: %lu\n", sizeof(alpha));
-    printf("address: %p\n\n", &alpha);
+    printf("Variable alpha:\n");
+    printf("value alpha: %d\n", alpha);
+    printf("Size of alpha: %lu\n", sizeof(alpha));
+    printf("address &alpha: %p\n\n", &alpha);
 
     // Pointer
     int *ptr;
     ptr = &alpha;
-    printf("Pointer:\n");
-    printf("value: %d\n", *ptr);
-    printf("Size of: %lu\n", sizeof(*ptr));
-    printf("address: %p\n\n", ptr);
+    printf("Pointer ptr = &alpha:\n");
+    printf("value *ptr: %d\n", *ptr);
+    printf("Size of *ptr: %lu\n", sizeof(*ptr));
+    printf("address ptr: %p\n\n", ptr);
 
     // Change Pointer
     *ptr = 150;
-    printf("Variable (change in pointer *ptr=150):\n");
-    printf("value: %d\n\n", alpha);
+    printf("Variable (change pointer *ptr=150):\n");
+    printf("value alpha: %d\n\n", alpha);
 
 }

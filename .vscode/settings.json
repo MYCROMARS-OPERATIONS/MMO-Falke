@@ -4,6 +4,7 @@
     "files.associations": {
         "stdio.h": "c",
         "stdlib.h": "c",
-        "structures.h": "c"
+        "structures.h": "c",
+        "pointer_a.h": "c"
     }
 }

@@ -1,4 +1,4 @@
-#ifndef POINTER_B
+#ifndef POINTER_B 
 #define POINTER_B
 
 // Pointer B

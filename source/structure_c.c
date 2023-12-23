@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h> 
 #include "header/structure_c.h" 
 
 // Structure C

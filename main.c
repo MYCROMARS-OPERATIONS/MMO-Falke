@@ -1,7 +1,8 @@
 /* ****************************************************** */
 /*                  MYCROMARS OPERATIONS                  */
-/*                    FALKE 2023 v0.0.4                   */
+/*                       FALKE v0.0.4                     */
 /*                      ALEXANDER RUDI                    */
+/*                        23.12.2023                      */
 /* ****************************************************** */
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,9 +29,9 @@ int main()
     mainMenu:
     
     printf("********** MAIN MENU ***********\n");
-    printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT | (4) OUTPUT | (5) POINTER\n");
-    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE          | (0) EXIT\n");
-    //printf("(7) STRUCTURE | (8) FILE\n");
+    printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT     | (4) OUTPUT  | (5) POINTER\n");
+    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (0) EXIT\n");
+    //printf("| (8) FILE\n");
     printf("Your Input: ");
     scanf("%d", &menu);
     printf("\n");
@@ -84,7 +85,7 @@ int main()
         case 5:
         // *------------- Pointer Menu -------------*
             printf("*** POINTER MENU ***\n");
-            printf("Press: (1) POINTER-A | (2) POINTER-B | (0) EXIT\n");
+            printf("Press: (1) POINTER-A | (2) POINTER-B | (3) POINTER-C | (4) POINTER-C | (0) EXIT\n");
             printf("Your Input: ");
             scanf("%d", &menuB);
             printf("\n");
@@ -99,6 +100,18 @@ int main()
             {
                 // Pointer B
                 pointerB();   
+                break;
+            }
+            else if (menuB == 3)
+            {
+                // Pointer C
+                pointerC();   
+                break;
+            }
+            else if (menuB == 4)
+            {       
+                // Pointer D
+                //pointerD();   
                 break;
             }
             else if (menuB == 0)
@@ -267,6 +280,7 @@ int main()
 
             //goto mainMenu;
             break;
+    
 
         default: break;
     }
