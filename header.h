@@ -1,5 +1,5 @@
-#ifndef HEADER_
-#define HEADER_
+#ifndef HEADER
+#define HEADER
 
 // ****************** Include files: .h ******************
 #include "source/header/calculation.h"

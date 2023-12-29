@@ -8,6 +8,8 @@ void arrayE(void)
     int dublicate[5];
     int x;
 
+
+    // Dublicate
     for(x=0; x<5; x++)
         dublicate[x] = original[x];
 

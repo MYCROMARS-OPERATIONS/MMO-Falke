@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "header/array_f.h"
 
+// Array to function
 void incshow(char a)
  {
     a++;
