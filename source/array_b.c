@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/array_b.h"
 
-// Calculation
+// ARRAY B
 void arrayB(void)
 {
     printf("Array [3][3]: {{10, 20, 30},{100, 200, 300},{1000, 2000 3000}}\n\n");

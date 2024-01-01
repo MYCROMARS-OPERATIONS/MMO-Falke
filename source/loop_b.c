@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/loop_b.h"
 
-// Calculation
+// LOOP B
 void loopB(void)
 {
     printf("For loop 1...10:\n\n");

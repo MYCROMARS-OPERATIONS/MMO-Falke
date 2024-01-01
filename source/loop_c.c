@@ -2,7 +2,7 @@
 #include <time.h>
 #include "header/loop_c.h"
 
-// Calculation
+// LOOP C
 void loopC(void)
 {
     int m;

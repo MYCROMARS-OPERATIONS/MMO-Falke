@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/array_a.h"
 
-// Calculation
+// ARRAY A
 void arrayA(void)
 {
     printf("Array [3]: 100, 200, 300\n\n");
@@ -13,6 +13,7 @@ void arrayA(void)
 
     //wrong:
     array_a[3] *= 30;
+
 
     printf("Array 0*10: %d\n", array_a[0]);
     printf("Array 1*15: %d\n", array_a[1]);

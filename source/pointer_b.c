@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/pointer_b.h"
 
-// Calculation
+// POINTER B, of Array
 void pointerB(void)
 {
     printf("POINTER-B\n");

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/loop_e.h"
 
-// Calculation
+// LOOP E
 void loopE(void)
 {
     printf("Sort Score value 1...10:\n\n");

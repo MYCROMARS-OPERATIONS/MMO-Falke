@@ -2,8 +2,7 @@
 #include <string.h> 
 #include "header/structure_c.h" 
 
-// Structure C
-// Structure in Structure and Char String.
+// Structure C, in Structure and Char String.
 void structure_c(void)
 {
     struct kitchen {

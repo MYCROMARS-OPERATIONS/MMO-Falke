@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/array_c.h"
 
-// Calculation
+// ARRAY C
 void arrayC(void)
 {
     printf("Array [5] = ?\n");

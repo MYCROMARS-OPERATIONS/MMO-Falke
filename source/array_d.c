@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/array_d.h"
 
-// Calculation
+// ARRAY D
 void arrayD(void)
 {
     int numbers[] = {45, 50, 88, 100, 213};

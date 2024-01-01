@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/array_e.h"
 
-// Calculation
+// ARRAY E
 void arrayE(void)
 {
     int original[5] = {45, 50, 88, 100, 213};

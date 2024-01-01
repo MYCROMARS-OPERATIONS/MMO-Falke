@@ -1,7 +1,7 @@
 #include <stdio.h> 
 #include "header/loop_f.h" 
 
-// Calculation
+// LOOP F
 void loopF(void)
 {
     printf("Down & up:\n\n");

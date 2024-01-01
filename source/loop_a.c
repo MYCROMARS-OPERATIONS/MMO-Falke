@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header/loop_a.h"
 
-// Calculation
+// LOOP A
 void loopA(void)
 {
     printf("While loop 1...10:\n\n");

@@ -85,7 +85,8 @@ int main()
         case 5:
         // *------------- Pointer Menu -------------*
             printf("*** POINTER MENU ***\n");
-            printf("Press: (1) POINTER-A | (2) POINTER-B | (3) POINTER-C | (4) POINTER-C | (0) EXIT\n");
+            printf("Press: (1) POINTER-A | (2) POINTER-B | (3) POINTER-C | (4) POINTER-D | (5) POINTER-E\n");
+            printf("Press: (0) EXIT\n");
             printf("Your Input: ");
             scanf("%d", &menuB);
             printf("\n");
@@ -110,8 +111,18 @@ int main()
             }
             else if (menuB == 4)
             {       
-                // Pointer D
-                //pointerD();   
+                // Pointer D, Address to Function
+                int ival = 1234567;
+                pointerD(&ival); 
+                break;
+            }
+            else if (menuB == 5)
+            {       
+                // Pointer E, Pointer to Function
+                int ival = 20304050;
+                int *v;
+                v = &ival;
+                pointerE(v); 
                 break;
             }
             else if (menuB == 0)

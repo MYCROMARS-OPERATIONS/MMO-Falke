@@ -13,6 +13,8 @@
 #include "source/header/pointer_a.h"
 #include "source/header/pointer_b.h"
 #include "source/header/pointer_c.h"
+#include "source/header/pointer_d.h"
+#include "source/header/pointer_e.h"
 
 #include "source/header/array_a.h"
 #include "source/header/array_b.h"
@@ -45,6 +47,8 @@
 #include "source/pointer_a.c"
 #include "source/pointer_b.c"
 #include "source/pointer_c.c"
+#include "source/pointer_d.c"
+#include "source/pointer_e.c"
 
 #include "source/array_a.c"
 #include "source/array_b.c"
