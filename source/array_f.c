@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header/array_f.h"
+#include "../header/array_f.h"
 
 // ARRAY F, to Function
 void incshow(char a)

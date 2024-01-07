@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header/pointer_b.h"
+#include "../header/pointer_b.h"
 
 // POINTER B, of Array
 void pointerB(void)
@@ -10,7 +10,7 @@ void pointerB(void)
     
     pt = a;
 
-    printf("Array[5] value: 2, 4, 6, 8, 10\n");
+    printf("a Array[5] value: 2, 4, 6, 8, 10\n");
     printf("Pointer pt = a\n\n");
 
     printf("Pointer value *(pt+0): %d\n", *(pt+0));

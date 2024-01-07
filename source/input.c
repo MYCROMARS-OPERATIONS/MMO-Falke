@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header/input.h"
+#include "../header/input.h"
 
 // Input
 void inputChar(void)

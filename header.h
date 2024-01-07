@@ -2,37 +2,37 @@
 #define HEADER
 
 // ****************** Include files: .h ******************
-#include "source/header/calculation.h"
+#include "header/calculation.h"
 
-#include "source/header/delay.h"
+#include "header/delay.h"
 
-#include "source/header/input.h"
+#include "header/input.h"
 
-#include "source/header/output.h"
+#include "header/output.h"
 
-#include "source/header/pointer_a.h"
-#include "source/header/pointer_b.h"
-#include "source/header/pointer_c.h"
-#include "source/header/pointer_d.h"
-#include "source/header/pointer_e.h"
+#include "header/pointer_a.h"
+#include "header/pointer_b.h"
+#include "header/pointer_c.h"
+#include "header/pointer_d.h"
+#include "header/pointer_e.h"
 
-#include "source/header/array_a.h"
-#include "source/header/array_b.h"
-#include "source/header/array_c.h"
-#include "source/header/array_d.h"
-#include "source/header/array_e.h"
-#include "source/header/array_f.h"
+#include "header/array_a.h"
+#include "header/array_b.h"
+#include "header/array_c.h"
+#include "header/array_d.h"
+#include "header/array_e.h"
+#include "header/array_f.h"
 
-#include "source/header/loop_a.h"
-#include "source/header/loop_b.h"
-#include "source/header/loop_c.h"
-#include "source/header/loop_d.h"
-#include "source/header/loop_e.h"
-#include "source/header/loop_f.h"
+#include "header/loop_a.h"
+#include "header/loop_b.h"
+#include "header/loop_c.h"
+#include "header/loop_d.h"
+#include "header/loop_e.h"
+#include "header/loop_f.h"
 
-#include "source/header/structure_a.h"
-#include "source/header/structure_b.h"
-#include "source/header/structure_c.h"
+#include "header/structure_a.h"
+#include "header/structure_b.h"
+#include "header/structure_c.h"
 
 
 // ****************** Include files: .c ******************

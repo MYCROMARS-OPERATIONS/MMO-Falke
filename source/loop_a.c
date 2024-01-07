@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header/loop_a.h"
+#include "../header/loop_a.h"
 
 // LOOP A
 void loopA(void)

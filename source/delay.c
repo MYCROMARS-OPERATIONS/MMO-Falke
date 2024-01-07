@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header/delay.h"
+#include "../header/delay.h"
 
 // Delay
 void delayA(double tx)

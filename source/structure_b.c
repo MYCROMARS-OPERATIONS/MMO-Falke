@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header/structure_b.h" 
+#include "../header/structure_b.h" 
 
 // Structure B
 void structure_b(void)

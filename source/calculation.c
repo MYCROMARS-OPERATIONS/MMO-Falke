@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header/calculation.h"
+#include "../header/calculation.h"
 
 // Calculation
 void calculation(void)

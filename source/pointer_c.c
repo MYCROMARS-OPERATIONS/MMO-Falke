@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include "header/pointer_c.h"
+#include "../header/pointer_c.h"
 
 // POINTER C, of Array
 void pointerC(void)
 {
     printf("POINTER-C\n");
-    printf("Array[5] value: 11, 22, 33, 44, 55\n");
+    printf("a Array[5] value: 11, 22, 33, 44, 55\n");
     printf("Pointer p = a\n");
-    printf("For loop x=5:\n\n");
+    printf("For loop x < 5:\n\n");
 
     int a[5] = {11, 22, 33, 44, 55};
     int x,*p;
@@ -16,7 +16,7 @@ void pointerC(void)
 
     for (x=0; x<5; x++)
     {
-        printf("Pointer value (p++):%d\n",*p);
+        printf("Pointer value (p++): %d\n",*p);
         p++; 
     }
     printf("\n");
