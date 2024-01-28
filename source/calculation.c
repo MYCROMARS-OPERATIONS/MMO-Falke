@@ -15,6 +15,5 @@ void calculation(void)
     scanf("%d", &b);
 
     sum = (a + b);
-    printf("Summe: ");
-    printf("%d\n\n", sum);
+    printf("Summe: %d\n\n", sum);
 }

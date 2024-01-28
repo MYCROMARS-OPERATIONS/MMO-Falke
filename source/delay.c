@@ -32,15 +32,11 @@ void delayA(double tx)
         {
             i++;
             
-            // Step every 100
-            if (i > st * step)
-            {
-                st++;
-            }
-            // Print every Step
+            // Print every Step 100
             if (i == st * step)
             {
                 printf("Delay: %f\n", i);
+                st++;
             }
             
         }

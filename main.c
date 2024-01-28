@@ -72,6 +72,7 @@ int main()
             // Input Character
             printf("*** INPUT ***\n");
             inputChar();
+
             //goto mainMenu;
             break;
 

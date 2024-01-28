@@ -38,7 +38,7 @@ void inputChar(void)
 
         // getchar() loop
         printf("INPUT int with getchar() loop.\n"); 
-        printf("Exit with: (win:) ctrl + z, (mac:) control + z\n");
+        printf("Exit with: WIN: (ctrl + z) | MAC: (control + z)\n");
         printf("Input some characters: ");
         while(1)
         {
