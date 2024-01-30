@@ -10,5 +10,5 @@ void pointerD(int *val)
 
     // reset 
     *val = 0;
-    printf("Value reset: %d\n\n", *val);
+    printf("Pointer value reset: %d\n", *val);
 }

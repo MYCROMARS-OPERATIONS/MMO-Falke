@@ -115,15 +115,17 @@ int main()
                 // Pointer D, Address to Function
                 int ival = 1234567;
                 pointerD(&ival); 
+                printf("Int value: %d\n\n", ival); 
                 break;
             }
             else if (menuB == 5)
             {       
                 // Pointer E, Pointer to Function
                 int ival = 20304050;
-                int *v;
-                v = &ival;
+                //v = &ival;
+                int *v = &ival;
                 pointerE(v); 
+                printf("Int value: %d\n\n", ival);
                 break;
             }
             else if (menuB == 0)

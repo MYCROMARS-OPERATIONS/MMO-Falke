@@ -16,7 +16,7 @@ void arrayE(void)
     puts("Array values:");
 
     for(x=0; x<5; x++)
-        printf("Element#%d %3d == %3d\n", x, original[x], dublicate[x]);
+        printf("Element#%d %d == %d\n", x, original[x], dublicate[x]);
 
     printf("\n");
 }

@@ -5,7 +5,7 @@
 void arrayB(void)
 {
     printf("Array [3][3]: {{10, 20, 30},{100, 200, 300},{1000, 2000 3000}}\n\n");
-    int array_a[SIZE][SIZE] = {{10, 20, 30},{10, 20, 30},{10, 20, 30}};
+    int array_a[SIZE][SIZE] = {{10, 20, 30},{100, 200, 300},{1000, 2000, 3000}};
     array_a[0][0] *= 2;
     array_a[0][1] *= 2;
     array_a[0][2] *= 2;
@@ -13,4 +13,12 @@ void arrayB(void)
     printf("Array [0][0]*2: %d\n", array_a[0][0]);
     printf("Array [0][1]*2: %d\n", array_a[0][1]);
     printf("Array [0][2]*2: %d\n\n", array_a[0][2]);
+
+    printf("Array [1][0]: %d\n", array_a[1][0]);
+    printf("Array [1][1]: %d\n", array_a[1][1]);
+    printf("Array [1][2]: %d\n\n", array_a[1][2]);
+
+    printf("Array [2][0]: %d\n", array_a[2][0]);
+    printf("Array [2][1]: %d\n", array_a[2][1]);
+    printf("Array [2][2]: %d\n", array_a[2][2]);
 }

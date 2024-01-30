@@ -15,7 +15,7 @@ void arrayC(void)
         scanf("%f", &highscore[x]);
     }
     
-    puts("Here are the high scores:");
+    puts("\nHere are the high score's:");
 
     for(x=0; x<5; x++)
         printf("#%d %.2f\n", x+1, highscore[x]);

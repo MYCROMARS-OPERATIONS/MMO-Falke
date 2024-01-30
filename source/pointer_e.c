@@ -6,9 +6,9 @@ void pointerE(int *val)
 {
     printf("POINTER-E\n");
     printf("Pointer to Function\n");
-    printf("Value: %d\n", *val);
+    printf("Pointer value: %d\n", *val);
 
     // reset 
     *val = 0;
-    printf("Value reset: %d\n\n", *val);
+    printf("Pointer value reset: %d\n", *val);
 }

@@ -6,8 +6,7 @@ void loopA(void)
 {
     printf("While loop 1...10:\n\n");
 
-    int h;
-    h = 1;
+    int h = 1;
 
     while(h <= SIZE)
     {
