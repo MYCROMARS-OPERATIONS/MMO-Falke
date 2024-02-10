@@ -35,6 +35,9 @@
 #include "header/structure_b.h"
 #include "header/structure_c.h"
 
+#include "header/malloc_a.h"
+#include "header/malloc_b.h"   
+
 
 // ****************** Include files: .c ******************
 #include "source/calculation.c"
@@ -69,5 +72,8 @@
 #include "source/structure_a.c"
 #include "source/structure_b.c"
 #include "source/structure_c.c"
+
+#include "source/malloc_a.c"
+#include "source/malloc_b.c"
 
 #endif

@@ -1,8 +1,8 @@
 /* ****************************************************** */
 /*                  MYCROMARS OPERATIONS                  */
-/*                       FALKE v0.0.4                     */
+/*                       FALKE v0.0.5                     */
 /*                      ALEXANDER RUDI                    */
-/*                        23.12.2023                      */
+/*                        10.02.2024                      */
 /* ****************************************************** */
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,7 +29,7 @@ mainMenu:
 
     printf("********** MAIN MENU ***********\n");
     printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT     | (4) OUTPUT  | (5) POINTER\n");
-    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (0) EXIT\n");
+    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (0) EXIT\n");
     // printf("| (8) FILE\n");
     printf("Input: ");
     scanf("%d", &menu);
@@ -52,7 +52,6 @@ mainMenu:
         printf("*** CALCULATION ***\n");
         printf("a + b\n");
         calculation();
-        // goto mainMenu;
         break;
 
     case 2:
@@ -63,9 +62,8 @@ mainMenu:
 
         // Function
         delayA(timer);
-
-        // goto mainMenu;
         timer = 0;
+
         break;
 
     case 3:
@@ -95,15 +93,12 @@ mainMenu:
             menuB = 0;
             printf("### END Input ###\n\n");
         }
-
-        // goto mainMenu;
         break;
 
     case 4:
         // Output Hello World
         printf("*** OUTPUT ***\n");
         outputString();
-        // goto mainMenu;
         break;
 
     case 5:
@@ -314,8 +309,39 @@ mainMenu:
             menuB = 0;
             printf("### END STRUCTURE ###\n\n");
         }
+        break;
 
-        // goto mainMenu;
+    case 9:
+        // *------------- Maloc Menu -------------*
+        printf("*** MALLOC MENU ***\n");
+        printf("Press: (1) MALLOC-A | (2) MALLOC-B | (0) EXIT\n");
+
+        printf("Your Input: ");
+        scanf("%d", &menuB);
+        printf("\n");
+
+        if (menuB == 1)
+        {
+            // Malloc A
+            malloc_a();
+            break;
+        }
+        else if (menuB == 2)
+        {
+            // Malloc B
+            malloc_b();
+            break;
+        }
+        else if (menuB == 0)
+        {
+            menuB = 0;
+            printf("### EXIT MALLOC ###\n\n");
+        }
+        else
+        {
+            menuB = 0;
+            printf("### END MALLOC ###\n\n");
+        }
         break;
 
     default:
@@ -325,5 +351,6 @@ mainMenu:
     // reset variable
     menu = 0;
 
+    // goto mainMenu;
     goto mainMenu;
 }
