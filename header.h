@@ -7,6 +7,7 @@
 #include "header/delay.h"
 
 #include "header/input.h"
+#include "header/input_b.h"
 
 #include "header/output.h"
 
@@ -41,6 +42,7 @@
 #include "source/delay.c"
 
 #include "source/input.c"
+#include "source/input_b.c"
 
 #include "source/output.c"
 

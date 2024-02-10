@@ -5,7 +5,7 @@
 void arrayB(void)
 {
     printf("Array [3][3]: {{10, 20, 30},{100, 200, 300},{1000, 2000 3000}}\n\n");
-    int array_a[SIZE][SIZE] = {{10, 20, 30},{100, 200, 300},{1000, 2000, 3000}};
+    int array_a[SIZE_array_b][SIZE_array_b] = {{10, 20, 30},{100, 200, 300},{1000, 2000, 3000}};
     array_a[0][0] *= 2;
     array_a[0][1] *= 2;
     array_a[0][2] *= 2;

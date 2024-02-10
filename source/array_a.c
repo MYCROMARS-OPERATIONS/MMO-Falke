@@ -6,7 +6,7 @@ void arrayA(void)
 {
     printf("Array [3]: 100, 200, 300\n\n");
 
-    int array_a[SIZE] = {100, 200, 300};
+    int array_a[SIZE_array_b] = {100, 200, 300};
     array_a[0] *= 10;
     array_a[1] *= 15;
     array_a[2] *= 20;

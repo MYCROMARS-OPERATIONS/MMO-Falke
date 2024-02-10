@@ -2,7 +2,7 @@
 #define LOOP_B
 
 // Loop B
-#define SIZE 10
+#define SIZE_B 10
 void loopB();
 
 #endif

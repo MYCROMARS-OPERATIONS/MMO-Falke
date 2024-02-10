@@ -1,1 +1,1 @@
-int *v = &ival;
+menu = 0;

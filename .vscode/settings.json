@@ -6,6 +6,7 @@
         "stdlib.h": "c",
         "structures.h": "c",
         "pointer_a.h": "c",
-        "array_d.h": "c"
+        "array_d.h": "c",
+        "input_b.h": "c"
     }
 }

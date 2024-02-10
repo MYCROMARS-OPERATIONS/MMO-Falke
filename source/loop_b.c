@@ -7,7 +7,7 @@ void loopB(void)
     printf("For loop 1...10:\n\n");
 
     const int size = 10;
-    int score[SIZE] = {19, 42, 34, 1, 13, 18, 52, 12, 19, 45};
+    int score[SIZE_B] = {19, 42, 34, 1, 13, 18, 52, 12, 19, 45};
 
     int x;
     x = 0;
