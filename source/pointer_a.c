@@ -4,6 +4,7 @@
 // POINTER A, of Int
 void pointerA() {
     printf("POINTER-A\n");
+    // int
     int alpha;
     alpha = 100;
 
@@ -14,6 +15,8 @@ void pointerA() {
 
     // Pointer
     int *ptr;
+
+    // Address of int to Pointer
     ptr = &alpha;
 
     printf("Pointer ptr = &alpha:\n");
@@ -21,7 +24,7 @@ void pointerA() {
     printf("Size of *ptr: %lu\n", sizeof(*ptr));
     printf("address ptr: %p\n\n", ptr);
 
-    // Change Pointer
+    // Change Pointer value
     *ptr = 150;
 
     printf("Variable (change pointer *ptr=150):\n");

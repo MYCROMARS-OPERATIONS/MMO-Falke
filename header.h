@@ -16,6 +16,7 @@
 #include "header/pointer_c.h"
 #include "header/pointer_d.h"
 #include "header/pointer_e.h"
+#include "header/pointer_f.h"   
 
 #include "header/array_a.h"
 #include "header/array_b.h"
@@ -54,6 +55,7 @@
 #include "source/pointer_c.c"
 #include "source/pointer_d.c"
 #include "source/pointer_e.c"
+#include "source/pointer_f.c"
 
 #include "source/array_a.c"
 #include "source/array_b.c"

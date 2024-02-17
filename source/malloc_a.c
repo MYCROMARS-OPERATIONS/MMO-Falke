@@ -12,10 +12,8 @@ void malloc_a(void)
     iptr = malloc(100 * sizeof(int));
 
     printf("sizeof int: %d\n", sizeof(int));
+    printf("Size of *iptr: %lu\n", sizeof(*iptr));
     printf("100 * sizeof int: %d\n", 100 * sizeof(int));
-    printf("400 Bytes reserved!\n\n");
+    printf("%d Bytes reserved!\n\n", 100 * sizeof(int));
 
-    printf("Menmory allocation  iptr: %d\n", iptr);
-    printf("Menmory allocation *iptr: %d\n", *iptr);
-    printf("Menmory allocation &iptr: %d\n\n", &iptr);
 }

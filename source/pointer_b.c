@@ -5,9 +5,13 @@
 void pointerB(void)
 {
     printf("POINTER-B\n");
+    // Array
     int a[5] = {2, 4, 6, 8, 10};
+
+    // Pointer
     int *pt;
     
+    // Address of Array to Pointer
     pt = a;
 
     printf("a Array[5] value: 2, 4, 6, 8, 10\n");

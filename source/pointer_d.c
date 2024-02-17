@@ -5,10 +5,11 @@
 void pointerD(int *val)
 {
     printf("POINTER-D\n");
-    printf("Address to Function\n");
-    printf("Value: %d\n", *val);
+    printf("Address of int to Function\n");
+    printf("Pointer Value of *val: %d\n", *val);
 
-    // reset 
+    // Change Pointer value
     *val = 0;
+
     printf("Pointer value reset: %d\n", *val);
 }

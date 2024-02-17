@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "../header/pointer_e.h"
+#include "../header/pointer_f.h"
 
-// POINTER E, to Function
-void pointerE(int *val)
+// POINTER F, to Function
+void pointerF(int *val)
 {
-    printf("POINTER-E\n");
+    printf("POINTER-F\n");
     printf("Address of Pointer to Function\n");
     printf("Pointer value *val: %d\n", *val);
 

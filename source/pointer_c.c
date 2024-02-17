@@ -12,6 +12,7 @@ void pointerC(void)
     int a[5] = {11, 22, 33, 44, 55};
     int x,*p;
     
+    // Address of Array to Pointer
     p = a;
 
     for (x=0; x<5; x++)
