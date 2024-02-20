@@ -4,7 +4,7 @@
 // ARRAY C
 void arrayC(void)
 {
-    printf("Array [5] = ?\n");
+    printf("Input Score 1...5\n");
 
     float highscore[5];
     int x;
