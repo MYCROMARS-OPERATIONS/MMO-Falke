@@ -13,7 +13,7 @@ void loopD(void)
 
         for(a='A'; a<='J'; a++)
         {
-        printf("%d%c  ", x, a);
+            printf("%d%c  ", x, a);
         }
         putchar('\n');
     }

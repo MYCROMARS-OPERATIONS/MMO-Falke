@@ -7,6 +7,7 @@
 5. Pointer
 6. Array
 7. Loop
-
+8. Structure
+9. Malloc
 0. Exit
 
