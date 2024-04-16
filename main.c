@@ -29,7 +29,7 @@ mainMenu:
 
     printf("********** MAIN MENU ***********\n");
     printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT     | (4) OUTPUT  | (5) POINTER\n");
-    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (0) EXIT\n");
+    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (10) DATEI | (0) EXIT\n");
     // printf("| (8) FILE\n");
     printf("Input: ");
     scanf("%d", &menu);
@@ -63,7 +63,6 @@ mainMenu:
         // Function
         delayA(timer);
         timer = 0;
-
         break;
 
     case 3:
@@ -374,6 +373,31 @@ mainMenu:
         {
             menuB = 0;
             printf("### END MALLOC ###\n\n");
+        }
+        break;
+
+    case 10:
+        // *------------- Datei Menu -------------*
+        printf("*** DATEI MENU ***\n");
+        printf("Press: (1) DATEI-A | (0) EXIT\n");
+
+        printf("Your Input: ");
+        scanf("%d", &menuB);
+        printf("\n");
+
+        if (menuB == 1)
+        {
+            // Datei A
+            datei_a();
+            break;
+        }
+        else if (menuB == 2)
+        {
+        }
+        else
+        {
+            menuB = 0;
+            printf("### END DATEI ###\n\n");
         }
         break;
 
