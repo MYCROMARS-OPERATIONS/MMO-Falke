@@ -1,11 +1,12 @@
 /* ****************************************************** */
 /*                  MYCROMARS OPERATIONS                  */
-/*                       FALKE v0.0.5                     */
+/*                       FALKE v0.0.6                     */
 /*                      ALEXANDER RUDI                    */
-/*                        10.02.2024                      */
+/*                        16.04.2024                      */
 /* ****************************************************** */
 #include <stdio.h>
 #include <stdlib.h>
+//#include <string.h>
 
 // My header file
 #include "header.h"
@@ -13,7 +14,7 @@
 int main()
 {
     printf("\n");
-    printf("######## MMO FALKE 2023 ########\n");
+    printf("######## MMO FALKE 2024 ########\n");
     printf("********************************\n");
 
     /* ****************************************************** */
@@ -379,7 +380,8 @@ mainMenu:
     case 10:
         // *------------- Datei Menu -------------*
         printf("*** DATEI MENU ***\n");
-        printf("Press: (1) DATEI-A | (0) EXIT\n");
+        printf("Press: (1) DATEI-A | (2) DATEI-B | (3) DATEI-C | (4) DATEI-D | (5) DATEI-E\n");
+        printf("Press: (6) DATEI-F | (7) DATEI-G | (0) EXIT\n");
 
         printf("Your Input: ");
         scanf("%d", &menuB);
@@ -387,12 +389,52 @@ mainMenu:
 
         if (menuB == 1)
         {
-            // Datei A
+            // Datei A, 
+            // Datei erfolgreich geoeffnet/erstellt zum schreiben ans Dateiende.
             datei_a();
             break;
         }
         else if (menuB == 2)
         {
+            // Datei B
+            // Datei erfolgreich geoeffnet/erstellt zum schreiben/überschreiben.
+            datei_b();
+            break;
+        }
+        else if (menuB == 3)
+        {
+            // Datei C
+            // Datei erfolgreich geoeffnet zum lesen von integer.
+            datei_c();
+            break;
+        }
+        else if (menuB == 4)
+        {
+            // Datei D
+            // Datei erfolgreich geoeffnet zum lesen von string.
+            datei_d();
+            break;
+        }
+        else if (menuB == 5)
+        {
+            // Datei E
+            // Datei erfolgreich geoeffnet zum lesen von 2 strings.
+            datei_e();
+            break;
+        }
+        else if (menuB == 6)
+        {
+            // Datei F
+            // Datei erfolgreich geoeffnet zum lesen von int Array.
+            datei_f();
+            break;
+        }
+        else if (menuB == 7)
+        {
+            // Datei G
+            // Datei erfolgreich geoeffnet zum lesen von int Array.
+            datei_g();
+            break;
         }
         else
         {

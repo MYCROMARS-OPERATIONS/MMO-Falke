@@ -1,7 +1,7 @@
 #ifndef DATEI_A  
 #define DATEI_A
 
-// Input
+// Datei A
 void datei_a(); 
 
 #endif

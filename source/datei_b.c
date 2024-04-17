@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../header/datei_a.h"
+//#include <string.h>
+#include "../header/datei_b.h"
 
-// Datei öffnen/erstellen schreiben Nummer (a)
-void datei_a(void)
+// Datei schreiben/überschreiben Nummer (w)
+void datei_b(void)
 {
-    int a = 200;
-     
+    int a = 100;
+
     FILE *SampleFile;
-    SampleFile = fopen("example.dat", "a");
+    SampleFile = fopen("example.dat", "w");
 
     if(SampleFile == NULL) 
     {
@@ -17,7 +18,7 @@ void datei_a(void)
     }
     else
     {
-        puts("Datei erfolgreich geoeffnet/erstellt zum schreiben ans Dateiende.");
+        puts("Datei erfolgreich geoeffnet/erstellt zum schreiben/überschreiben.");
         fprintf(SampleFile, "%d", a);
         fclose(SampleFile);
         puts("Datei geschlossen.\n");

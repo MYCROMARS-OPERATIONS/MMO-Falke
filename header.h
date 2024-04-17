@@ -37,7 +37,15 @@
 #include "header/structure_c.h"
 
 #include "header/malloc_a.h"
-#include "header/malloc_b.h"   
+#include "header/malloc_b.h"  
+
+#include "header/datei_a.h" 
+#include "header/datei_b.h" 
+#include "header/datei_c.h" 
+#include "header/datei_d.h" 
+#include "header/datei_e.h" 
+#include "header/datei_f.h" 
+#include "header/datei_g.h" 
 
 
 // ****************** Include files: .c ******************
@@ -77,5 +85,13 @@
 
 #include "source/malloc_a.c"
 #include "source/malloc_b.c"
+
+#include "source/datei_a.c"
+#include "source/datei_b.c"
+#include "source/datei_c.c"
+#include "source/datei_d.c"
+#include "source/datei_e.c"
+#include "source/datei_f.c"
+#include "source/datei_g.c"
 
 #endif
