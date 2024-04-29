@@ -15,6 +15,7 @@ void arrayF(void)
 
     // 26 
     char textABC[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    
     int x;
 
     printf("%s, Array++:\n", text);

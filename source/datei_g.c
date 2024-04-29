@@ -5,7 +5,7 @@
 
 void datei_g(void)
 {
-    // Datei öffnen/erstellen schreiben 2 Nummern (a)
+    // Datei öffnen/erstellen schreiben 2 Nummern (w)
     int number_a[] = {10, 20};
     int number_b[] = {50, 100};
     

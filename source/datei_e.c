@@ -5,7 +5,7 @@
 
 void datei_e(void)
 {
-    // Datei öffnen/erstellen schreiben 2 Worte (a)
+    // Datei öffnen/erstellen schreiben 2 Worte (w)
     char vorname_a[] = "Alex";
     char name_a[] = "Rudi";
     FILE *SampleFile;
