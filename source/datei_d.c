@@ -39,7 +39,7 @@ void datei_d(void)
     else
     {
         puts("Datei erfolgreich geoeffnet zum lesen.");
-        while (fscanf(ReadFile, "%s", &name) !=EOF)
+        while (fscanf(ReadFile, "%s", &name[20]) !=EOF)
         {
             iNoRecords++;
         }

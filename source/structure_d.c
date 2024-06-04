@@ -6,11 +6,11 @@
 void structure_d(void)
 {
     struct ZLB {
-        long postleitzahl;
+        long int postleitzahl;
         
     } book;
 
     book.postleitzahl = 11111;
 
-    printf("Postleitzahl: %d.\n\n", book.postleitzahl);
+    printf("Postleitzahl: %ld.\n\n", book.postleitzahl);
 }

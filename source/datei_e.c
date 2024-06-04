@@ -41,7 +41,7 @@ void datei_e(void)
     else
     {
         puts("Datei erfolgreich geoeffnet zum lesen.");
-        while (fscanf(ReadFile, "%s\n %s", &vorname, &name) !=EOF)
+        while (fscanf(ReadFile, "%s\n %s", &vorname[20], &name[20]) !=EOF)
         {
             iNoRecords++;
         }
