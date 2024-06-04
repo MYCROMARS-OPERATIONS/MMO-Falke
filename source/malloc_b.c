@@ -11,7 +11,7 @@ int *iArray(unsigned int n) {
             iptr[i] = i*i;
         }
     }
-    printf("n * sizeof int: %d\n", n * sizeof(int));
+    //printf("n * sizeof int: %d\n", n * sizeof(int));
     return iptr;
 }
 

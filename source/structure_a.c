@@ -11,7 +11,11 @@ void structure_a(void)
         int door;
     };
     // Variable group name:
-    struct house apartment1, apartment2;
+    struct house apartment1;
+    struct house apartment2;
+
+    // andere schreibweise
+    //struct house apartment1, apartment2;
 
     // Werte zuweisen:
     apartment1.window = 1;
