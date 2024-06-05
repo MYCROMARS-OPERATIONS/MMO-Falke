@@ -308,7 +308,7 @@ mainMenu:
     case 8:
         // *------------- Structure Menu -------------*
         printf("*** STRUCTURE MENU ***\n");
-        printf("Press: (1) STRUCTURE-A | (2) STRUCTURE-B | (3) STRUCTURE-C | (4) STRUCTURE-D | (0) EXIT\n");
+        printf("Press: (1) STRUCTURE-A | (2) STRUCTURE-B | (3) STRUCTURE-C | (4) STRUCTURE-D | (5) STRUCTURE-E | (0) EXIT\n");
 
         printf("Your Input: ");
         scanf("%d", &menuB);
@@ -336,6 +336,12 @@ mainMenu:
         {
             // Structure D
             structure_d();
+            break;
+        }
+        else if (menuB == 5)
+        {
+            // Structure E
+            structure_e();
             break;
         }
         else if (menuB == 0)
