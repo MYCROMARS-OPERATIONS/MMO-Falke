@@ -25,7 +25,7 @@ void structure_c(void)
 
     // Structure in Structure
     struct house {
-        int garage;
+        short int garage;
         struct kitchen menu;
     } apartment;
 

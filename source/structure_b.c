@@ -6,8 +6,8 @@
 void structure_b(void)
 {
     struct house {
-        int window;
-        int door;
+        short int window;
+        short int door;
     // Sofort Werte zuweisen:
     } apartment1 = {4, 3}, apartment2 = {7, 4};
 

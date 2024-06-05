@@ -7,8 +7,8 @@ void structure_a(void)
     // Method 1 ***********************************************************************************
     // Struct Name: house
     struct house {
-        int window;
-        int door;
+        short int window;
+        short int door;
     };
     // Variable group name:
     struct house apartment1;
