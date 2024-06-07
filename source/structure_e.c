@@ -11,7 +11,7 @@ void structure_e(void)
     // Struct Variable name, Array:
     struct house house[3];
 
-    // Werte zuweisen:
+    // Input
     house[0].apartment_persons[0] = 1;
     house[0].apartment_persons[1] = 5;
     house[0].apartment_persons[2] = 2;
@@ -24,7 +24,7 @@ void structure_e(void)
     house[2].apartment_persons[1] = 4;
     house[2].apartment_persons[2] = 3;
 
-    // Ausgabe:
+    // Output
     printf("Output:\n");
     printf("In House 1, Apartment 1 are %d Persons.\n",  house[0].apartment_persons[0]);
     printf("In House 1, Apartment 2 are %d Persons.\n",  house[0].apartment_persons[1]);

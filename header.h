@@ -37,6 +37,7 @@
 #include "header/structure_c.h"
 #include "header/structure_d.h"
 #include "header/structure_e.h"
+#include "header/structure_f.h"
 
 #include "header/malloc_a.h"
 #include "header/malloc_b.h"  
@@ -86,6 +87,7 @@
 #include "source/structure_c.c"
 #include "source/structure_d.c"
 #include "source/structure_e.c"
+#include "source/structure_f.c"
 
 #include "source/malloc_a.c"
 #include "source/malloc_b.c"
