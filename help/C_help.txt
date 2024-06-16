@@ -1,0 +1,2074 @@
+// Alexander Rudi | 2024
+//---------------------------------------------
+//*********************************************
+// C Help
+//#############################################
+//*********************************************
+//Buch: c-buch.sommergut.de
+
+//-------------------------------------------------------------------------- IDE
+IDE: Visual Studio Code:
+Settings/Extesions/Run Code configuration: Run in Terminal
+
+Settings/Extesions/C/C++/IntelliSense/Compiler Phad: Edit in settings.json:
+	"C_Cpp.default.compilerPath": "C:\\MinGW\bin\\g++.exe",
+
+Settings/Extesions/C/C++/IntelliSense/Include Path: 
+	C:\\MinGW\bin\\g++.exe
+
+//---------------------------------------------------------------------------- config
+Shift+STRG+P (C/C++Edit Configuration)
+
+//---------------------------------------------------------------------------- MinGW
+IDE: Qt Creator 
+IDE: Code::Blocks
+
+MinGW
+nuwen.net
+bin/ g++ Phad einbinden
+
+//########## PC #####
+Systemsteuerung / in die suche: Umgebungsvariablen
+Path, bearbeiten, neu: Phad von g++: ...MinGW\bin
+
+Testen mit Eigabeaufforderung: cmd
+tippe: g++
+tippe: g++ --version
+
+//##################################################
+MAC
+Xcode
+Testen mit Terminal: clang++ --version
+
+//---------------------------------------------------------------------------- cmd
+cd..
+cd
+
+ls = Auflistung der Dateien im Ordner
+type myFile.txt
+.\programm.exe
+
+//----------------------------------------------------------------------------
+//****************************************************************************
+
+8 Bit
+1024 Bit
+
+1 Byte=256 Zahlen
+
+//--------------------------------------------------------------------- Datentypen
+Elementare Datentypen in C
+
+character		char    	1Bytes    -128 .. 127
+Unsigned character	unsigned char 	1Bytes     0 .. 255
+
+integer		int		2Bytes    -32768 .. 32767
+short integer	short		2Bytes    -32768 .. 32767
+long integer	long		4Bytes    -2147483648 .. 2147483648
+
+unsigned integer	unsigned int	2Bytes     0 .. 65535
+unsigned short integer. unsigned short	2Bytes     0 .. 65535
+unsigned long integer. unsigned long	4Bytes     0 .. 4294967295
+
+single-precision floating-pint (6-7 Stellen) : 
+float		4Bytes     1.17E-38 .. 3.4E38
+ 
+double-precision floating-pint (15-19 Stellen) : 
+double				8Bytes   2.2E-308 .. 1.8E308
+long		long long	8Bytes	-9.223.372.036.854.755.807
+					...+9.223.372.036.854.755.807
+
+double(19 Stellen)	long double	10Bytes   3.4E-4932 ... 1.1E+4932
+
+//------------------------------------------------------------------- ANSI-C
+Reservierte Worte in ANSI-C sind die folgenden:
+
+const		volatile	signed		auto
+break		case		char		continue
+default		do		double (17)	else
+enum		extern		float (8)	for
+goto		if		int (9)		long
+register	return		short		sizeof
+static		struct		switch		typedef
+union		unsigned	void		while
+
+//------------------------------------------------------------------- Datentyp
+Präfix	Datentyp
+
+c	char
+by	BYTE (unsigned char)
+uch	UCHAR (unsigned char)
+s	short integer
+n	ebenfalls für short int (steht in Konflikt mit s)
+us	unsigned short int
+i	integer
+ui	unsigned int
+w	WORD (unsigned integer)
+b	BOOL (usigned short)
+l	long
+ul	unsigned long int
+dw	DWORD (unsigned long int)
+x	normalerweise short int, für die x-Koordinate von Grafiken
+y	normalerweise short int, für die y-Koordinate von Grafiken
+h	HANDLE (WORD)
+fn	Funktion, im allgemeinen verwendet bei Pointern auf Funktionen
+s	Zeichenketten (nicht notwendigerweise NULL-terminiert)
+sz	Zeichenketten (NULL-terminiert)
+p	Pointer
+lp	long (oder far) pointer
+np	short (oder near) pointer
+
+
+
+//------------------------------------------------------------------- Hexdecimal:
+Hexdecimal:
+
+0x1 = 1 
+0x2 = 2 
+0x3 = 3 
+0x4 = 4 
+0x5 = 5 
+0x6 = 6 
+0x7 = 7 
+0x8 = 8 
+0x9 = 9 
+0xA = 10
+0xB = 11 
+0xC = 12 
+0xD = 13 
+0xE = 14 
+0xF = 15 
+0x10 = 16
+
+Oktal value:
+
+01 = 1   
+02 = 2   
+03 = 3   
+04 = 4
+05 = 5
+06 = 6
+07 = 7
+010 = 8
+
+----------------------------------------------------------------------------------
+********************************************************************************** Konstanten
+Symbolische Konstanten:
+
+#define SYMBOLISCHER_NAME Konstante
+#define HELLO "Hello world\n"
+
+-------------------------------------------------------
+Vordefinierte symbolische Konstanten:
+
+printf("Name der Quelldatei: %s\n", __FILE__);
+printf("Dieses printf() befindet sich in Zeile %d\n",__LINE__);
+printf("Compiliert am %s um %s\n",__DATE__, __TIME__);
+printf("Mein Compiler ist %sANSI-konform!\n",__STDC__ == 1? "": "nicht ");
+
+---------------------------------------------------------------------------------Header file
+#include <stdio.h>
+#include "includes/calculation.h"
+int add(int, int);
+
+----------------------------------------
+includes/calculation.c
+int add(int x, int y) {
+    return x + y;
+}
+
+----------------------------------------
+#include <stdio.h>
+#include "includes/calculation.h"
+
+int main() {
+    int a;
+    printf("x + y = %d\n", a = add(10, 20));
+
+return 0;
+}
+
+----------------------------------------
+gcc -o main.exe main.c includes/calculation.c
+
+--------------------------------------------------------------------------------- Makros:
+Makros:
+
+#define SYMBOLISCHER_NAME Anweisungen
+#define DRUCKE_HELLO printf("Hello world\n")
+#define DRUCKE(x) puts(x) 
+
+#include <stdio.h>
+
+#define ISLOWER(x) ((x >= 'a' && x <= 'z') ||\
+	x == 'ä' || x == 'ö' || x == 'ü' || x == 'ß')
+
+int main(void){
+
+ char cChar = 'ä';
+
+ /* Das Makro ISLOWER kann wie eine Funktion
+  * verwendet werden.
+  * Die if Anweisung wird expandiert zu
+  * if( ((x >= 'a' && x <= 'z') ||......))
+  */
+ if( ISLOWER(cChar))
+	printf("%c ist ein Kleinbuchstabe\n", cChar);
+
+ return 0;
+ }
+
+-----------------------------------------------------
+#define MAX_VAL 20 + 10
+
+/* Das Resultat unten ist nicht 10*30, also 300,
+ * sondern 10 * 20 + 10, mithin 210! */
+printf("Das Resultat ist: %d", 10 * MAX_VAL);
+/* besser wäre daher:
+ * #define MAX_VAL (20 + 10)
+ */
+
+------------------------------------------------------
+Symbolische Konstanten und Makros löschen:
+
+#define SIZE 127
+#undef SIZE
+#define SIZE 256
+
+//------------------------------------------------------------------ Datei rechte:
+r = read
+w = write, neu erzeugt wenn nicht vorhanden, Inhalt wird überschrieben
+a = append, neu erzeugt wenn nicht vorhanden, Inhalt ans Datei ende angehängt
+r+ = read & write
+w+ = read & write, neu erzeugt wenn nicht vorhanden, Inhalt wird überschrieben
+a+ = read & write, neu erzeugt wenn nicht vorhanden, Inhalt ans Datei ende angehängt
+
+----------------------------------------------------------------------------------------
+**************************************************************************************** Bedingte Kompilierung:
+#if 0
+	/* Keine der Anweisungen zwischen #if
+	 * und #endif würde vom Compiler übersetzt
+	 */
+	printf("Wert von iCount: %d", iCount);
+#endif
+
+------------------------------------------------------------------
+#define DEBUG
+
+#ifdef DEBUG
+	/* Da DEBUG definiert wurde, werden alle
+	 * Anweisungen zwischen #if und #endif
+	 * vom Compiler übersetzt
+	 */
+	printf("Wert von iCount: %d", iCount);
+#endif
+
+------------------------------------------------------------------
+#ifdef BORLAND
+	#include <conio.h>
+	#define CLEAR() clrscr()
+#elif defined MICROSOFT
+	#include <graph.h>
+	#define CLEAR() _clearscreen(0)
+#elif defined UNIX
+	#include <curses.h>
+	#define CLEAR() clear()
+#endif
+
+----------------------------------------------------------------------------------------- Konstante
+*****************************************************************************************
+Eine integer-Konstante: 34563, 4, 909, 56
+Oktale integer-Konstanten: 007, 01, 0043, 00
+Eine hexadezimale integer-Konstante: 0x12, 0x2ae4, 0Xff, 0X3e2
+
+long int
+
+Suffixe L, U oder UL
+Beispiele:
+0L	0x2aU	007ul	0X1A2l
+(0 long)	(0x2a unsigned)	(007 unsigned long)	(0x1a2 long)
+
+---------------------------------------------------------------------
+Fließkomma-Konstanten (Standart double) F, f = float,  L = long double
+Beispiele:
+3.14159	13.0(13.)	0.0(.0)	0.0021
+
+Exponentialschreibweise
+31415.9E-4	0.13E2	0e0	0.21E-2
+
+--------------------------------------------------
+Zeichenkonstanten (int)
+Einzelnes Zeichen "x"
+
+***********************************************************************************Escape-Sequenzen
+printf()
+Folgende Escape-Sequenzen sind definiert:
+Nicht bei scanf verwenden.
+
+Zeichen	Bedeutung
+
+\a	bell
+\b	backspace
+\f	form feed or clear screen
+\n	newline
+\r	carriage return
+\t	tab
+\v	vertical tab
+\\	backslash character
+\?	question mark
+\ '	single quote
+\"	double quote
+\0	null character
+
+--------------------------------------------------------- scanf()
+scanf()
+Umwandlungsangabe	Format
+
+%c	Einzelnes Zeichen lesen
+%d	Vorzeichenbehaftete dezimale Integerzahl lesen, (9 Stellen)
+%i	Vorzeichenbehaftete dezimale Integerzahl lesen
+%u	Vorzeichenlose dezimale Zahl lesen
+%x	Vorzeichenlose Hexadezimalzahl
+%o	Vorzeichenlose Oktalzahl
+%s	Zeichenkette
+%f	Dezimale Fließkommazahl, (8Stellen)
+%e	Dezimale Fließkommazahl
+%g	Dezimale Fließkommazahl
+%p	Pointer
+%n	Anzahl der bisher gelesenen Zeichen
+%[ ]	Nur Zeichen aus Auswahlliste einlesen
+
+scanf("%d %d %d", &iTag, &iMonat, &iJahr);
+scanf("%d/%d/%d", &iTag, &iMonat, &iJahr);
+scanf("%d%*c%d%*c%d", &iTag, &iMonat, &iJahr);
+scanf("%2d%2d%4d", &iTag, &iMonat, &iJahr);
+
+Nach der Verwendung von getchar() verbleibt ein Zeilenvorschub im Tastaturpuffer.
+getchar()
+
+Dieses überschüssige Zeichen sollte immer mit einem weiteren, 
+alleine verwendeten getchar() ausgelesen werden, 
+da es eventuell nachfolgende Eingabefunktionen auslösen würde, 
+bevor der Anwender zum Zuge kommt.
+
+-------------------------------------------------------
+iExtended = getch();
+
+--------------------------------------------------------
+Auswahlliste:
+
+printf("Soll das Programm beendet werden ?\n(J/N) ");
+	iResult = scanf("%[jnJN]", &cKeyPressed);
+
+	 printf("%d\n", iResult);
+
+Zeichen Ausschließen:
+iResult = scanf("%1[^yY]", &cKeyPressed);
+
+Bereich:
+iResult = scanf("%[A-Z]", &cKeyPressed);
+
+-------------------------------------------------------- printf()
+Zeichenketten-Konstanten "Hello world"
+
+#include <stdio.h>
+
+int main(void){
+
+printf("Hello \
+world\n");
+
+return 0;
+}
+
+--------------------------------------------------------Datentypen
+Vier elementaren Datentypen char, int, float und double
+
+Funktion:
+int 
+char
+void
+float
+const float
+
+//-------------------------------------------------------
+
+printf("Text %d.", v);
+%s = Text
+%d = Dezimalzahl (char in %d = ASCII-code)
+%p = Adresse als Hex pointer
+%c =Character
+%f = Zahl mit Komma
+
+scanf:
+"%[^\n]"
+"%d" = dezimalzahl
+"%lf" = float
+"%c" = character
+
+--------------------------------------------------------Datentypen
+Datentypen: short, long, signed, unsigned
+
+Schlüsselwort	Beschreibung
+
+long	Erweitert den Typ int auf 4 Byte und den Typ double um eine nicht einheitlich definierte Länge 
+(mindestens aber größer als double). 
+	Kann nicht zusammen mit short verwendet werden.
+
+short	Reduziert den Typ int auf 2 Byte. Kann nicht zusammen mit long verwendet werden.
+
+unsigned	Bewirkt, daß die Variable nur positive Werte aufnehmen kann. 
+	Erlaubt sind Kombinationen mit char, long int und short int.
+
+----------------------------------------------------------
+const unsigned char uchFalsch;
+uchFalsch = 'Y';
+
+-----------------------------------------------------------------------------------------Variablen
+*****************************************************************************************
+Definition von Variablen
+
+Datentyp Variable_1,Variable_2,..., Variable_x;
+
+int iDay, iMonth, iYear;
+float fIncome;
+
+int iDay;			/* Anzahl der Tage */
+int iMonth;			/* Anzahl der Monate */
+int iYear;			/* Kalenderjahre	*/
+float fIncome;		/* Einkommen in DM	*/
+
+Initialisierung: Variablen erhalten Anfangswerte
+
+int iCount=1;
+
+float fTimeUsed=0.0f ;
+
+/* cKeyPressed erhält gleich bei der Definition den
+ * numerischen Wert von 'A' (bei ASCII der Wert 65) */
+
+char cKeyPressed='A';
+
+Variblen:
+_123
+abc123
+
+-----------------------------------------------------------------------------------------
+*****************************************************************************************Ausgaben
+int a,b;
+
+printf("Goodbye, cruel world!\n");
+printf("I must do this %d times\n",b);
+
+puts("YOUR TEXT GOES HERE");
+
+putchar('\n');
+
+charout('H');
+
+------------------------------------------------------------- printf(), math
+#include <stdio.h>
+
+int main()
+{
+	int a;
+	int b = 5;
+	
+	printf("Input an integer: ");
+	scanf("%d",&a);
+	printf("%d + %d = %d\n",a,b,a+b);
+
+	return(0);
+}
+
+------------------------------------------------------------- printf(), math float
+#include <stdio.h>
+
+int main()
+{
+	float a;
+	float b = 5.0;
+	
+	printf("Input an integer: ");
+	scanf("%f",&a);
+	printf("%f + %f = %f\n",a,b,a+b);
+
+	return(0);
+}
+
+------------------------------------------------------------- printf(), math x++
+#include <stdio.h>
+
+int main()
+{
+	int x = 10;
+
+	printf("%d\n",x);
+	x++;
+	printf("%d\n",x);
+
+	return(0);
+}
+
+------------------------------------------------------------- printf(), math Wurzel
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float r;
+
+    r = sqrt(4.0);
+
+	printf("The square root of 2 is %f\n",r);
+
+	return(0);
+}
+
+---------------------------------------------------------- printf(), math X²
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	float p;
+
+	p = pow(2.0,8.0);
+
+	printf("2 to the 8th power is %f\n",p);
+
+	return(0);
+}
+
+--------------------------------------------------------- printf(), math Quiz
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a = 5.0;
+    float b = 2.0;
+
+    printf("%.1f + %.1f = %.1f\n",a,b,a+b);
+    printf("%.1f - %.1f = %.1f\n",a,b,a-b);
+    printf("%.1f * %.1f = %.1f\n",a,b,a*b);
+    printf("%.1f / %.1f = %.1f\n",a,b,a/b);
+
+    printf("%.1f hoch %.1f = %.1f\n",a,b,pow(a,b));
+    printf("Wurzel %.1f = %.1f\n",a,sqrt(a));
+    printf("Wurzel %.1f = %.1f\n",b,sqrt(b));
+    
+
+    return (0);
+}
+
+----------------------------------------------------------------------------------------------
+**********************************************************************************************Eingabe scanf()
+getchar();
+
+int a,b;
+scanf("%d",&b);
+
+------------------------------------------------------------------char name[ ]
+#include <stdio.h>
+
+int main()
+{
+	char name[15];    /* room for 14 characters*/
+	
+	printf("Your name? ");
+	scanf("%s",name);
+	printf("You are %s.\n",name);
+
+	return(0);
+}
+
+----------------------------------------------------------------fgets()
+#include <stdio.h>
+
+int main()
+{
+	char input[64];    /* room for 63 characters, plus null*/
+	
+	printf("Instructions: ");
+	fgets(input,64,stdin);
+	puts("Thank you! Here are your instructions:");
+	puts(input);
+
+	return(0);
+}
+
+
+//-----------------------------------------------------------------------------------------
+//***************************************************************************************** Hallo Welt, char
+#include<stdio.h>
+#include<stdlib.h>
+
+//Komentar
+/*
+Komentar Block
+*/
+
+int main() {
+	printf("Hallo Welt");
+
+	char zeichen = 'z';
+	char zeichenkette[ ] = "Test";
+
+	return 0;
+}
+
+//----------------------------------------------------
+int main(int arc, char *args[ ])
+ {
+	printf("%s\n%s\n%s", args[1], args[2], args[3]);
+	return 0;
+}
+
+//-------------------------------------------------------------------------------------------
+//******************************************************************************************* If Anweisung
+If Anweisung
+
+printf("Wert für wahr: %d\tWert für falsch: %d\n",2 < 3, 7 != 7);
+
+Operator	Bedeutung
+==	gleich
+!=	ungleich
+
+Vergleichsoperatoren:
+
+Operator	Bedeutung
+<=	kleiner oder gleich
+<	kleiner
+>	größer
+>=	größer oder gleich
+
+//-------------------------------------------- kleiner als
+int iCount = 5, iBegin = 0;
+unsigned short usEnd = 10;
+
+if( iBegin < iCount < usEnd ) 
+	printf("%d",iCount);
+
+//--------------------------------------------------------- else if
+if( Bedingung ) {Ausdruck;}
+else if( Bedingung ) {Ausdruck;}
+else {Ausdruck}
+
+//--------------------------------------------------------
+logische Operatoren:
+
+Operator	Bedeutung
+&&	und
+||	oder
+!	Negation
+
+//---------------------------------------------------------and
+if( (iBegin < iCount) && (iCount < usEnd) )
+	 printf("%d",iCount);
+
+//---------------------------------------------------------
+Der unäre Negationsoperator ! hat die höchste Priorität; 
+der Operator && genießt die zweithöchste Priorität vor dem schwächsten Operator ||.
+
+//--------------------------------------------------------
+if(!iCount)
+	printf("Das Ergebnis ist %d", ulSum);
+
+besser:
+
+if( iCount == 0 )
+	printf("Das Ergebnis ist %d", ulSum);
+
+//-------------------------------------------------------if, else if
+#include <stdio.h>
+
+int main()
+{
+	int a;
+
+	printf("Type an integer: ");
+	scanf("%d",&a);
+
+	if( a > 10 )
+   	 {
+        	printf("You typed %d.\n",a);
+		printf("%d is greater than 10.\n",a);
+    	}
+	else if( a < 10)
+	{
+        	printf("You typed %d.\n",a);
+		printf("%d is less than 10.\n",a);
+	}
+	else
+	{
+        	printf("You typed %d.\n",a);
+		printf("%d is 10.\n",a);
+	}
+
+	return(0);
+}
+
+//-------------------------------------------------------------if, else if, scanf()
+#include <stdio.h>
+
+int main()
+{
+    int a;
+
+    printf("Input a number (1), (2) or (3): ");
+    scanf("%d", &a);
+   if (a == 1){
+        printf("Red");
+   }
+   else if (a == 2){
+        printf("Green");
+    }
+    else if (a == 3){
+        printf("Blue");
+    }
+    else {
+        printf("Input not correct!");
+    }
+
+    return(0);
+}
+
+//------------------------------------------------------------ (a < b) ? a, b;
+Bedingung ? Ausdruck_wenn_wahr : Ausdruck_wenn_falsch;
+x = (a < b) ? a, b;
+x *= (a < b) ? a, b;
+
+printf("\t%d Datei%s kopiert",uFileCount, uFileCount != 1 ? "en":"");
+
+//------------------------------------------------------------
+iCount == iMaxCount && printf("Fertig...");
+(iCount == iMaxCount && printf("Fertig!")) || printf("Bitte warten...");
+
+//----------------------------------------------------------break
+if(a==9)
+break;
+
+//---------------------------------------------------------------------------------------------
+//********************************************************************************************** switch()
+// a = 1 / 2 / 3
+switch(a)
+{
+    case 1:
+ 	puts("This is the first item");
+	break;
+    case 2:
+ 	puts("This is the second item");
+	break;
+    case 3:
+ 	puts("This is the third item");
+	break;
+    default:
+	puts("Invalid choice");
+}
+
+//---------------------------------------------------------Buchstaben
+switch(a)
+{
+    case 'A':
+ 	puts("A");
+	break;
+    case 'B':
+ 	puts("B");
+	break;
+    case 'C':
+ 	puts("C");
+	break;
+    default:
+	puts("Invalid choice");
+}
+
+//---------------------------------------------------------groß/klein
+switch(a)
+{
+    case 'A':
+    case 'a'
+ 	puts("A");
+	break;
+    case 'B':
+    case 'b'
+ 	puts("B");
+	break;
+    case 'C':
+    case 'c'
+ 	puts("C");
+	break;
+    default:
+	puts("Invalid choice");
+}
+
+//--------------------------------------------------------------------------------------------
+//******************************************************************************************** for()
+for Schleife:
+
+#include <stdio.h>
+
+int main(void){
+
+    int a;
+
+    for (a=0; a<=5; a++){
+        printf("Hello \n");
+    }
+
+return 0;
+}  
+
+//-----------------------------------------------
+for( ;getchar() == ' '; );
+
+//--------------------------------------------------------for ( a = 0; a < = 10; a++ )
+#include <stdio.h>
+
+int main(){
+
+    int a;
+
+    for ( a = 0; a < = 10; a++ )
+    {
+        puts("I must do this 10 times");
+    }
+
+    return (0);
+}  
+
+//--------------------------------------------------------for ( a=0; a<b; a++ )
+#include <stdio.h>
+
+int main(){
+
+    int a,b;
+
+    printf("Type a positive value: ");
+    scanf("%d", &b);
+
+    for ( a=0; a<b; a++ )
+        printf("Countdown: %d\n", b-a);
+
+    return (0);
+}  
+
+//--------------------------------------------------------- for ( a=1, b=10; a<=10; a++, b-- )
+#include <stdio.h>
+
+int main(){
+
+    int a,b;
+
+    for ( a=1, b=10; a<=10; a++, b-- )
+        printf("%2d %2d\n",a,b);
+
+    return (0);
+}  
+
+//-----------------------------------------------------------for ( b=0; b<a; b++ )
+#include <stdio.h>
+
+int main(){
+
+    int a,b;
+
+    printf("How long is the line? ");
+    scanf("%d", &a);
+
+    for ( b=0; b<a; b++ )
+        putchar('-');
+
+    putchar('\n');
+
+    return (0);
+} 
+
+//--------------------------------------------------------------for ( row=1; row<=10; row++ )
+#include <stdio.h>
+
+int main(){
+
+    int row;
+    char column;
+    
+    for ( row=1; row<=10; row++ )
+    {
+	for ( column= 'A'; column<='J'; column++ )
+    	{
+		printf("%2d%c    ", row, column);
+    	}
+	putchar('\n');
+    }
+    return (0);
+} 
+
+//------------------------------------------------------------ for ( a=0; a<b; a++ ), break
+#include <stdio.h>
+
+int main(){
+
+    int a,b;
+    printf("Type a positive value; ")
+    scanf("%d", &b);
+
+    for ( a=0; a<b; a++ )
+    {
+        	printf("I must do this %d times\n",b);
+	if(a==9)
+	    break;
+    }
+
+    return (0);
+}  
+
+//-------------------------------------------------------- for ( row=1; row<=10; row++ ), break
+#include <stdio.h>
+
+int main(){
+
+    int row;
+    char column;
+    
+    for ( row=1; row<=10; row++ )
+    {
+	for ( column= 'A'; column<='J'; column++ )
+    	{
+		printf("%2d%c    ", row, column);
+		if(column=='E')
+		    break;
+    	}
+	putchar('\n');
+    }
+    return (0);
+} 
+
+//-----------------------------------------------------for( row=0; row<rows; row++ )
+#include <stdio.h>
+#include <stdlib.h>
+
+/* generate multiple lines of output */
+int main()
+{
+	int row,c,rows,x;
+	char column;
+
+	/* get and verify input */
+	printf("How many rows (18 max)? ");
+	scanf("%d",&rows);
+	/* avoid out-of-range values */
+	if( rows>18 )
+	rows = 18;
+
+	/* use variable c to count the number rows */
+	c = 0;
+	/* process the rows */
+	for( row=0; row<rows; row++ )
+	{
+		/* switch output every other row */
+		/* separator row */
+		if( row%2 )
+		{
+			for( x=0; x<40; x++ )
+			putchar('=');
+			putchar('\n');
+		}
+		else
+		/* values row */
+		{
+			for( column='A'; column<='J'; column++ )
+			printf(" %d%c ",c,column);
+			putchar('\n');
+			c++;
+		}
+	}
+
+	return 0;
+}
+
+//------------------------------------------------------- for( ; ;)
+#include <stdio.h>
+#include "header/loop_b.h"
+
+// Calculation
+void loopB(void)
+{
+    printf("For loop 1...10:\n\n");
+
+    const int size = 10;
+    int score[SIZE] = {19, 42, 34, 1, 13, 18, 52, 12, 19, 45};
+
+    int x;
+    x = 0;
+
+    for(x=0; x<size; x++){
+        printf("Score value: %d\n", score[x]);
+    }
+
+    /*
+    int x = 0;
+    for( ; x<size; ){
+        printf("Score value: %d\n", score[x]);
+        x++;
+    }
+    */
+   
+    printf("\n");
+}
+
+//---------------------------------------------------- for(int a=0, b=0; b<10; a--, b++)
+#include <stdio.h> 
+#include "header/loop_f.h" 
+
+// Calculation
+void loopF(void)
+{
+    printf("Down & up:\n\n");
+    
+    for(int a=0, b=0; b<10; a--, b++)
+    {
+        printf("down: %d up: %d\n", a, b);
+    }
+
+/*  
+    int a,b;
+    a = b = 0;
+    while(b<10)
+    {
+        printf("%d : %d\n", a, b);
+        a--;
+        b++;
+    }
+*/
+    printf("\n");
+}
+
+//----------------------------------------------------------------------------------------
+//**************************************************************************************** while ( a < 10 )
+#include <stdio.h>
+
+int main(){
+
+    int a;
+    a = 0;
+
+    while ( a < 10 )
+    {
+	puts("I must do this 10 times");
+	a++;     
+     }
+
+    return (0);
+}
+
+//------------------------------------------------------- while (1), break
+#include <stdio.h>
+
+int main(){
+
+    int ch;
+    printf("Type '!' to exit: ");
+
+    while (1)		//for(;;) 
+    {
+	ch = getchar();
+	if( ch=='!')
+	    break;  
+     }
+
+    return (0);
+}
+
+//------------------------------------------------------- while (a <= 5), continue
+while Schleife, continue:
+
+#include <stdio.h>
+
+int main(void){
+
+    int a = 0;
+
+    while (a <= 5)
+    {
+        printf("a ist: %d\n", a);
+        a++;
+
+        if (a== 2) {continue;}
+
+        switch(a) 
+        {
+            case 2: printf("case a ist: %d\n", a);
+            default: printf("default a ist: %d\n", a);
+         }
+     }
+
+return 0;
+} 
+
+//--------------------------------------------------------while(b<a)
+#include <stdio.h>
+
+int main(){
+
+    int a,b;
+
+    printf("How long is the line? ");
+    scanf("%d", &a);
+
+    b = 0;
+    while(b<a)
+    {
+	putchar('-');
+	b++;
+    }
+
+    putchar('\n');
+
+    return (0);
+} 
+
+//---------------------------------------------------------- while(row<=10)
+#include <stdio.h>
+
+int main(){
+
+    int row;
+    char column;
+    row = 1;
+
+    while(row<=10)
+    {
+	column = 'A';
+	while(column <= 'J' )
+	{
+		printf("%2d%c    ",row,column);
+		column++;
+	}
+	putchar('\n');
+	row++;
+    }
+
+    return (0);
+} 
+
+//----------------------------------------------------------while(1)
+#include <stdio.h>
+
+int main()
+{
+	int a = 0;
+
+	while(1)
+	{
+		puts("Here I go...!");
+		a++;
+		if( a > 10)
+		break;
+	}
+
+	return(0);
+}
+
+//-------------------------------------------------------- while(1)
+#include <stdio.h>
+
+int main()
+{
+	int a;
+
+	while(1)
+	{
+		a = getchar();
+		if(a == EOF)
+		break;
+		putchar(a);
+	}
+
+	return(0);
+}
+EOF:
+win: ctrl + z
+mac: control + z
+
+//--------------------------------------------------------
+while( getchar() == ' ');
+
+//------------------------------------------------------- string, putchar()
+#include <stdio.h>
+
+int main()
+{
+	char string[ ] = "Greetings, human!\n";
+	int index;
+
+	index = 0;
+	while( string[index] != '\0' )
+	{
+		putchar( string[index] );
+		index++;
+	}
+
+	return(0);
+}
+
+//-------------------------------------------------------------------------------------------
+//******************************************************************************************* do while
+#include <stdio.h>
+
+int main(){
+
+    int a;
+    printf("Enter a value: ");
+    scanf("%d", &a);
+
+    do
+    {
+	puts("Here we go!");
+	a--;
+    }
+    while(a > 0);
+
+    return (0);
+}
+
+//---------------------------------------------------------break
+do while Schleife / mit break:
+
+int a = 0;
+
+do{
+    printf("a ist: %d\n", a);
+    a++;
+    if (a >=4) {break;}
+}
+while (a<=7);
+
+//-----------------------------------------------------------------------------------
+//***********************************************************************************Go to
+Go to:
+
+if (a==3) {goto end;}
+end: printf("Hi\n");
+
+//--------------------------------------------------------- goto here;
+#include <stdio.h>
+
+int main(){
+
+    int a = 10;
+
+here:
+    printf("%d\n", a);
+    a--;
+
+    if(a>0)
+        goto here;
+
+    return (0);
+}
+
+//-------------------------------------------------------- goto here; goto there;
+#include <stdio.h>
+
+int main(){
+
+    int a = 10;
+
+here:
+    printf("%d\n", a);
+    a--;
+
+    if( a == 0 )
+        goto there;
+
+    if( a > 0 )
+        goto here;
+there:
+
+    return (0);
+}
+
+//*********************************************************************** Array
+//---------------------------------------------------------------------- float highscore[5]
+#include <stdio.h>
+
+int main()
+{
+	float highscore[5];
+
+	highscore[0] = 993.86;
+	highscore[1] = 682.01;
+	highscore[2] = 639.60;
+	highscore[3] = 310.45;
+	highscore[4] = 123.25;
+
+	puts("Here are the high scores:");
+	printf("#1 %.2f\n",highscore[0]);
+	printf("#2 %.2f\n",highscore[1]);
+	printf("#3 %.2f\n",highscore[2]);
+	printf("#4 %.2f\n",highscore[3]);
+	printf("#5 %.2f\n",highscore[4]);
+
+	return(0);
+}
+
+//-----------------------------------------------------for(x=0;x<5;x++)
+#include <stdio.h>
+
+int main()
+{
+	float highscore[5] = { 993.86, 682.01, 639.60, 310.45, 123.25 };
+	int x;
+
+	puts("Here are the high scores:");
+	for(x=0;x<5;x++)
+		printf("#%d %.2f\n",x+1,highscore[x]);
+
+	return(0);
+}
+
+//------------------------------------------------------
+#define SIZE 10
+int numbers[SIZE] = { 55, 44, 99, 11, 77, 22, 33, 88, 66, 0 };
+
+//-------------------------------------------------------
+/* Display the unsorted array */
+
+void displayArray(int *a);
+
+puts("Unsorted array:");
+displayArray(numbers);
+putchar('\n');
+
+//---------------------------------------------------------int iArray[3] 
+#include <stdio.h>
+#include "header/array_a.h"
+
+// Calculation
+void arrayA(void)
+{
+    printf("Array [3]: 100, 200, 300\n\n");
+
+    int array_a[SIZE] = {100, 200, 300};
+    array_a[0] *= 10;
+    array_a[1] *= 15;
+    array_a[2] *= 20;
+
+    printf("Array 0*10: %d\n", array_a[0]);
+    printf("Array 1*15: %d\n", array_a[1]);
+    printf("Array 2*20: %d\n\n", array_a[2]);
+}
+
+//--------------------------------------------------------- int iArray[3][3]
+#include <stdio.h>
+#include "header/array_b.h"
+
+// Calculation
+void arrayB(void)
+{
+    printf("Array [3][3]: {{10, 20, 30},{10, 20, 30},{10, 20, 30}}\n\n");
+    int array_a[SIZE][SIZE] = {{10, 20, 30},{10, 20, 30},{10, 20, 30}};
+    array_a[0][0] *= 2;
+    array_a[0][1] *= 2;
+    array_a[0][2] *= 2;
+
+    printf("Array [0][0]*2: %d\n", array_a[0][0]);
+    printf("Array [0][1]*2: %d\n", array_a[0][1]);
+    printf("Array [0][2]*2: %d\n\n", array_a[0][2]);
+}
+
+//----------------------------------------------------------- int iArray[5] = ?
+#include <stdio.h>
+#include "header/array_c.h"
+
+// Calculation
+void arrayC(void)
+{
+    printf("Array [5] = ?\n");
+    float highscore[5];
+    int x;
+    for(x=0; x<5; x++)
+    {
+        printf("High score #%d: ", x+1);
+        scanf("%f", &highscore[x]);
+    }
+    puts("Here are the high scores:");
+    for(x=0; x<5; x++)
+        printf("#%d %.2f\n", x+1, highscore[x]);
+        printf("\n");
+
+    return(0);
+}
+
+//---------------------------------------------------------- char pet[ ] = "kat"
+#include <stdio.h>
+#include "header/array_d.h"
+
+// Calculation
+void arrayD(void)
+{
+    char pet[] = "kat";
+
+    printf("Befor: %s\n", pet);
+    pet[0] = 'c';
+    printf("After: %s\n", pet);
+    
+    printf("\n");
+
+    return(0);
+}
+
+//------------------------------------------------------------- temp
+#include <stdio.h>
+#include "header/array_d.h"
+
+// Calculation
+void arrayD(void)
+{
+    int numbers[] = {45, 50, 88, 100, 213};
+    int temp, x;
+
+    puts("Before:");
+    for(x=0; x<5; x++)
+        printf("%d\n", numbers[x]);
+
+    printf("\n");
+
+    temp = numbers[3];
+    numbers[3] = numbers[2];
+    numbers[2] = temp;
+
+    puts("After:");
+    for(x=0; x<5; x++)
+        printf("%d\n", numbers[x]);
+
+    printf("\n");
+
+    return(0);
+}
+
+/-------------------------------------------------------------------------------
+//****************************************************************************** Random
+Random
+srand() und rand() sind in stdlib.h deklariert, time() in time.h.
+Den Zufallswert liefert eigentlich rand(), srand() dient dazu, den Zufallsgenerator zu initialisieren;
+
+numbers[x] = rand() % 5 + 1;
+
+/--------------------------------------------------------------srand( (unsigned)time(NULL) );
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+	int a;
+
+	srand( (unsigned)time(NULL) );
+	for(a=0;a<10;a++)
+		printf("%3d ",rand()%100+1);
+	putchar('\n');
+
+	return 0;
+}
+
+//*********************************************************************************Pointer
+//-------------------------------------------------------------------------------- printf(), %p, %lu
+#include <stdio.h>
+
+int main()
+{
+	char a;
+
+	/* initialize variables! */
+	a = 'A';
+
+	printf("Value of variable 'a': %c\n",a);
+	printf("Address of variable 'a': %p\n",&a);
+	printf("Size of variable 'a': %lu\n",sizeof(a));
+
+	return(0);
+}
+
+//----------------------------------------------------------- char *ptr
+#include <stdio.h>
+
+int main(void)
+{
+   	char a;
+	char *ptr;
+
+	a = 'A';
+	ptr = &a;
+
+    	printf("Value of variable 'a' %c\n", *ptr); 	  // A
+   	printf("Address of variable 'a': %p\n", ptr);	  // Address
+
+    	return(0);
+}
+
+//----------------------------------------------------------- int *ptr, scanf()
+#include <stdio.h>
+
+int main(void)
+{
+   	int age;
+	int *aptr;
+
+	aptr = &age;
+	
+    	printf("Your age: "); 	 
+	scanf("%d", aptr);
+   	printf("You claim to be %d years old\n", *aptr);	 
+
+    	return(0);
+}
+
+//----------------------------------------------------------- Address to Function
+#include <stdio.h>
+
+void set(int *x, int *y)
+{
+	*x = 100;
+	*y = 200;
+}
+
+
+int main(void)
+{
+   	int a, b;
+	
+    	set(&a,&b);
+   	printf("A = %d and B = %d\n",a,b);	 
+
+    	return(0);
+}
+
+//--------------------------------------------------------- Pointer to Function 
+#include <stdio.h>
+
+void set(int *x, int *y)
+{
+	*x = 100;
+	*y = 200;
+}
+
+
+int main(void)
+{
+   	int a, b;
+	int *x, *y;
+
+	x = &a;
+	y = &b;
+	
+    	set(x,y);
+   	printf("A = %d and B = %d\n",a,b);	 
+
+    	return(0);
+}
+
+//----------------------------------------------------------Pointer file
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	FILE *fp;
+
+	fp = fopen("01_04-fopen1.c","r");
+	/* always test the pointer returned from a function */
+	if( fp==NULL )
+	{
+		/* exit upon function failure */
+		fprintf(stderr,"Unable to open file\n");
+		exit(1);
+	}
+	puts("File opened!");
+	/* close the file */
+	fclose(fp);
+
+	return(0);
+}
+
+//----------------------------------------------------------- Pointer, Function pointer
+#include <stdio.h>
+#include <stdlib.h>
+
+int *iptr(void)
+{
+	static int a = 53;
+
+	return(&a);
+}
+
+int main()
+{
+	int *x;
+
+	x = iptr();
+	
+	if( x==NULL )
+	{
+		fprintf(stderr,"Memory error\n");
+		exit(1);
+	}
+	printf("The address returned is %p\n",x);
+	printf("The value returned is %d\n",*x);
+
+	return(0);
+}
+
+//--------------------------------------------------------- Pointer, malloc
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	void *chunk;
+
+	chunk = malloc(1024);
+	/* always test pointer allocation */
+	if( chunk==NULL )
+	{
+		puts("Memory allocation failed!");
+	}
+	else
+	{
+		printf("1024 bytes allocated at %p\n",chunk);
+		free(chunk);
+	}
+
+	return(0);
+}
+
+//---------------------------------------------------------- int *p
+#include <stdio.h>
+
+int main(void)
+{
+   	int pokey;
+    	int *p;
+
+	pokey = 987;
+	p = &pokey;
+
+    	printf("The address of 'pokey' is %p\n", &pokey);
+   	printf("The address of 'p' is %p\n", p);
+
+	printf("The value of 'pokey' is %d\n", pokey);
+	printf("The value of '*p' is %d\n", *p);
+
+    	return(0);
+}
+
+//--------------------------------------------------------- int *b, *c
+
+#include <stdio.h>
+
+int main(void)
+{
+    int a = 100;
+    int *b;
+    int *c;
+
+    b = &a;
+    c = &a;
+
+    printf("a ist: %d\n", a);
+    printf("b ist: %d\n", *b);
+
+    *b *= 2;
+    
+    printf("b *2 ist: %d\n", *b);
+    printf("a ist: %d\n", a);
+
+    *c += 4;
+
+    printf("c +4 ist: %d\n", *c);
+    printf("a ist: %d\n", a);
+
+    return 0;
+}
+
+//----------------------------------------------------------- *point
+#include <stdio.h>
+#define SIZE 10
+
+int main(void)
+{
+    int a;
+    int array[SIZE], *point;
+    point = array;
+
+    printf("Wert von point: %p, Wert von array: %p\n", point, array);
+
+    for(a=0; a<SIZE; a++, point++) 
+    {
+        *point = a;
+        printf("array[a]: %d\n, *point: %d\n", array[a], *point);
+    } 
+
+    return 0;
+}
+
+//---------------------------------------------------------- *pointer, Array address
+#include <stdio.h>
+
+int main(void)
+{
+  	int twos[5] = {2, 4, 6, 8, 10};
+	int * pt;
+	int x;
+	
+	pt = twos;
+	for(x=0; x<5; x++)
+	{
+		printf("%p = %p\n", pt+x, &twos[x]);
+	}
+
+    return 0;
+}
+
+//-------------------------------------------------------- *pointer, Array value
+#include <stdio.h>
+
+int main(void)
+{
+  	int twos[5] = {2, 4, 6, 8, 10};
+	int * pt;
+	
+	pt = twos;
+	
+	printf("%d", *(pt+0));
+	printf("%d", *(pt+1));
+	printf("%d", *(pt+2));
+	printf("%d", *(pt+3));
+	printf("%d", *(pt+4));
+
+    return 0;
+}
+
+//---------------------------------------------------------
+/* Alle Pointer mit NULL initialisieren */
+ for (iCount = 0; iCount < SIZE; iCount++)
+	 pul_1x1[iCount] = NULL;
+
+//--------------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h> 
+
+//--------------------------------------------------------
+Speicher frei geben:
+
+for( iCount = 1; iCount <= iNoOfElements; iCount++){
+	free( (void *) pul_1x1[iCount]);
+	pul_1x1[iCount] = NULL;
+	}
+
+//----------------------------------------------------------------------------------
+//********************************************************************************** Strukturen
+#include <stdio.h>
+#include "header/structure_a.h"
+
+// Structure A
+void structure_a(void)
+{
+    struct house {
+        int window;
+        int door;
+    };
+    struct house apartment1;
+
+    apartment1.window = 4;
+    apartment1.door = 3;
+    
+
+    printf("The Apartment 1 has %d Windows, and %d Doors.\n\n", apartment1.window, apartment1.door);
+}
+
+//-------------------------------------------------------
+#include <stdio.h>
+#include "header/structure_b.h" 
+
+// Structure B
+void structure_b(void)
+{
+    struct house {
+        int window;
+        int door;
+    } apartment1 = {4, 3}, apartment2 = {7, 4};
+    
+    //apartment1.window = 4;
+    //apartment1.door = 3;
+
+    //apartment2.window = 7;
+    //apartment2.door = 4;
+
+    printf("The Apartment 1 has %d Windows, and %d Doors.\n", apartment1.window, apartment1.door);
+    printf("The Apartment 2 has %d Windows, and %d Doors.\n\n", apartment2.window, apartment2.door);
+}
+
+//-------------------------------------------------------
+#include <stdio.h>
+#include "header/structure_c.h" 
+
+// Structure C
+// Structure in Structure and Char String.
+void structure_c(void)
+{
+    struct kitchen {
+        char breakfast[32];
+        char lunch[32];
+        char dinner[32];
+    } menu1;
+
+    struct house {
+        struct kitchen menu1;
+    } apartment1;
+    
+    strcpy(apartment1.menu1.breakfast,"Milk and cornflakes"); 
+    strcpy(apartment1.menu1.lunch,"Beef and noodles"); 
+    strcpy(apartment1.menu1.dinner,"Fish and potatoes"); 
+
+    printf("My Breakfast was %s.\n", apartment1.menu1.breakfast);
+    printf("My Lunch was %s.\n", apartment1.menu1.lunch);
+    printf("My Dinner was %s.\n\n", apartment1.menu1.dinner);
+}
+
+//-------------------------------------------------------------------------------
+//******************************************************************************* Funktionen
+#include <stdio.h>
+
+char valchar(void)
+{
+	return 'A';
+}
+
+int valint(void)
+{
+	return 7;
+}
+
+float valfloat(void)
+{
+	return 3.141;
+}
+
+double valdouble(void)
+{
+	return 6.023e23;
+}
+
+void valvoid(void)
+{
+	puts("void function returns nothing!");
+}
+
+int main()
+{
+	printf("char function returns %c\n",valchar() );
+	printf("int function returns %d\n",valint() );
+	printf("float function returns %f\n",valfloat() );
+	printf("double function returns %f\n",valdouble() );
+	valvoid();
+
+	return 0;
+}
+
+//------------------------------------------------------------ void repeat
+#include <stdio.h>
+
+void repeat(int r)
+{
+	int a;
+	for(a=0; a<r; a++)
+	putchar('-');
+	putchar('\n');
+}
+
+
+int main()
+{
+	printf("40 dashes:\n");
+	repeat(40);
+return 0;
+}
+
+//------------------------------------------------------------void repeat
+#include <stdio.h>
+
+void line(void)
+{
+	int a;
+
+	for(a=0;a<40;a++)
+	putchar('-');
+	putchar('\n');
+}
+
+int main()
+{
+	puts("How to Fight Off a Robot Attack");
+	line();
+	puts("A Survival Guide for the 21st Century");
+	line();
+
+	return(0);
+}
+
+//------------------------------------------------------------printf char, int
+#include <stdio.h>
+
+int total(int a, int b, int c, int d, int e)
+{
+	return a+b+c+d+e;
+}
+
+char *title(void)
+{
+	return("Here is the total:");
+}
+
+int main()
+{
+	printf("%s %d\n",title(), total(1,2,3,4,5));
+	return 0;
+}
+
+//----------------------------------------------------------Funktion nach main()
+#include <stdio.h>
+
+void sum(void);
+
+int main()
+{
+	puts("Calling the sum() function:");
+	sum();
+	puts("Done");
+
+	return(0);
+}
+
+void sum(void)
+{
+	int a,b,sum;
+
+	a = 91; b = 7;
+	sum = a + b;
+	printf("%d + %d = %d\n",a,b,sum);
+}
+
+//----------------------------------------------------------------------------------getchar()
+#include <stdio.h>
+
+void pressAny(void)
+{
+	printf("Press any key to continue: ");
+	getchar();
+}
+
+int main()
+{
+	puts("Carefully read these directions!");
+	pressAny();
+	puts("Are you sure you read the directions?");
+	pressAny();
+	puts("Okay. I'm sure you're sure.");
+	pressAny();
+
+	return(0);
+}
+
+//---------------------------------------------------------------------------------
+//*********************************************************************************Umwandlungs-Funktionen
+Umwandlungs-Funktionen
+
+Funktion				Wandelt die Zeichenkette, auf die pszString zeigt,...
+double atof(const char *pszString)	in eine Zahl vom Typ double um.
+int atoi(const char *pszString)		in eine Zahl vom Typ int um.
+long atol(const char *pszString)		in eine Zahl vom Typ long um.
+double strtod(const char *pszString, char **pszEnd)		in eine Zahl vom Typ double um.
+double strtol(const char *pszString, char **pszEnd, int iBasis)	in eine Zahl vom Typ long um.
+double strtoul(const char *pszString, char **pszEnd, int iBasis)	in eine Zahl vom Typ unsigned long um.
+
+//----------------------------------------------------------------------------------
+//**********************************************************************************Character in Zahl
+Character in Zahl:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+
+double dResult;
+long lResult;
+char *pszMsg="53.6% Wahlbeteiligung wird erwartet";
+char *pszEnd;
+
+ puts("atof:");
+ dResult = atof(pszMsg);
+ printf("dResult: %f\n", dResult);
+
+ puts("strtod:");
+ pszMsg="68.2% Wahlbeteiligung wird erwartet";
+ dResult = strtod(pszMsg, &pszEnd);
+ printf("dResult: %f, Restzeichenkette: %s\n",
+	dResult, pszEnd);
+
+ puts("strtol:");
+ pszMsg="0x3f% Wahlbeteiligung wird erwartet";
+ lResult = strtol(pszMsg, &pszEnd, 16);
+ printf("lResult: %ld, Restzeichenkette: %s\n",
+	lResult, pszEnd);
+return 0;
+}
+
+//-------------------------------------------------------------------------------
+//*******************************************************************************Zahl in Character
+Zahl in Character mit sprintf():
+
+#include <stdio.h>
+
+int main(void){
+
+double dProzent =53.6;
+char *pszMsg="Wahlbeteiligung wird";
+char *pszEnd="erwartet\n";
+char szBuffer[100];
+
+/* Das doppelte %-Zeichen nach %.2f ist
+ * notwendig, um ’%’ auszugeben (siehe 5.2)
+ */
+sprintf(szBuffer, "%.2f%% %s %s",
+	dProzent, pszMsg, pszEnd);
+ puts(szBuffer);
+
+return 0;
+}
+
+//-------------------------------------------------------------------------------
+//*******************************************************************************int f[5] = {13, 21, 34, 55, 89};
+int main()
+{
+	int f[5] = {13, 21, 34, 55, 89};
+	int x;
+	int *pf;
+	
+	pf = f;
+	for(x=0; x<5; x++)
+	{
+		printf("%d\n", *(pf+x));
+	}
+return 0;
+}
+//----------------------------
+pf[0] = pf+0
+pf[1] = pf+1
+pf[n] = pf+n
+
+
+
+---------------------------------------------------------------------------------------- END
+*********************************************************************************************

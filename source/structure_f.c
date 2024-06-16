@@ -17,7 +17,7 @@ void structure_f(void)
 
     // Output
     printf("Output:\n");
-    printf("House 1 has %d Apartments.\n\n",  house1.apartment);
-    printf("Copy Structure 1 to Structure 2.\n\n",  house1.apartment);
+    printf("House 1 has %d Apartments.\n",  house1.apartment);
+    printf("Copy Structure 1 to Structure 2.\n\n");
     printf("House 2 has %d Apartments.\n\n",  house2.apartment);
 }
