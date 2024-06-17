@@ -2,7 +2,7 @@
 #include <string.h>
 #include "../header/structure_b.h" 
 
-// Structure B
+// Structure B, short
 void structure_b(void)
 {
     struct house {
