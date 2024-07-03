@@ -25,13 +25,14 @@ void structure_b(void)
     // Input
     person1.a = 'A';
     person1.n[0] = 'A';
-    person1.n[1] = 'B';
+    person1.n[1] = 'R';
 
-    strcpy(person1.name,"Name1"); 
+    strcpy(person1.name,"Alex Rudi"); 
 
     // Output
     printf("Zeichen 1: %c\n", person1.a);
-    printf("Zeichen im Array: %c\n", person1.n[1]);
+    printf("Zeichen 1 im Array: %c\n", person1.n[0]);
+    printf("Zeichen 2 im Array: %c\n", person1.n[1]);
     printf("Char Array 1: %s\n", person1.n);
     printf("Char Array 2: %s\n\n", person1.name);
 }

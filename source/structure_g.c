@@ -21,6 +21,6 @@ void structure_g(void)
 
     // Output
     printf("Output:\n");
-    printf("House = %u (%u) Bytes\n",  sizeof(house), sizeof(*house_pointer));
+    printf("House = %lu, Pointer = (%lu) Bytes\n\n",  sizeof(house), sizeof(*house_pointer));
     
 }

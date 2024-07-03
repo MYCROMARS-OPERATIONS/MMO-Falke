@@ -46,7 +46,7 @@ void structure_c(void)
     strcpy(apartment.menu.breakfast,"Milk and cornflakes"); 
     strcpy(apartment.menu.lunch,"Beef and noodles"); 
     strcpy(apartment.menu.dinner,"Fish and potatoes"); 
-    strcpy(apartment.menu.name,"Alex Rudi"); 
+    strcpy(apartment.menu.name,"Fastfood"); 
     
     strcpy(apartment.person.lastname,"Rudi"); 
 

@@ -11,8 +11,10 @@ void structure_f(void)
     // Struct Variable name, Array:
     struct house house1, house2;
 
-    // Input
+    // struct
     house1.apartment = 4;
+    
+    // copy 
     house2 = house1;
 
     // Output
