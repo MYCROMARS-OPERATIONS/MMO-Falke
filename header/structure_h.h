@@ -1,7 +1,7 @@
 #ifndef STRUCTURE_H
 #define STRUCTURE_H
 
-// Input
+// struct
 void structure_h();
 
 #endif
