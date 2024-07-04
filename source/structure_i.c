@@ -7,18 +7,18 @@ typedef struct house2 {
     int b;
 } datatype_b;
 
-// Funktion print
-void print(datatype_b i){
-    printf("data a: %d, data b: %d\n\n", i.a, i.b);
+// Funktion print, definieren
+void print(datatype_b point_c){
+    printf("data a: %d, data b: %d\n\n", point_c.a, point_c.b);
 }
 
-// Funktion mit Pointer werte ändern
-void del(datatype_b *i){
-    i->a = 0;
-    i->b = 0;
+// Funktion, definition Pointer, Zuweisung, Werte ändern
+void del(datatype_b *point_bp){
+    point_bp->a = 0;
+    point_bp->b = 0;
 }
 
-// Structure H, mit 0 initialisieren
+// Hauptfunktion I
 void structure_i(void)
 {
     // typedef Struktur definieren
@@ -28,26 +28,26 @@ void structure_i(void)
     } datatype_a;
     
     // Deklaration und Werte zuweisen
-    datatype_a point = {5, 8};
+    datatype_a point_a = {5, 8};
 
-    printf("Point x: %d\n", point.x);
-    printf("Point y: %d\n\n", point.y);
+    printf("Point x: %d\n", point_a.x);
+    printf("Point y: %d\n\n", point_a.y);
 
     // Deklaration
-    datatype_a *p_point;
+    datatype_a *point_ap;
 
     // Adresszuweisung
-    p_point = &point;
+    point_ap = &point_a;
 
     // Werte ändern
-    p_point->x = 0;
-    p_point->y = 0;
+    point_ap->x = 0;
+    point_ap->y = 0;
 
     printf("After Pointer\n");
-    printf("Point x: %d\n", point.x);
-    printf("Point y: %d\n\n", point.y);
+    printf("Point x: %d\n", point_a.x);
+    printf("Point y: %d\n\n", point_a.y);
 
-    // **********************************
+    // ********************************** Struktur Ausserhalb
     // Deklaration und Werte zuweisen
     datatype_b point_b = {1, 2};
 
@@ -55,10 +55,13 @@ void structure_i(void)
     point_b.a = 10;
     point_b.b = 100;
 
-    // Funktionsaufruf
+    // Funktionsaufruf Print
     print(point_b);
+
+    // Funktionsaufruf Pointer Adresse übergeben
     del(&point_b);
 
+    // Print out
     printf("After Pointer\n");
     print(point_b);
 

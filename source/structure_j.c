@@ -14,7 +14,7 @@ void print2(Rechteck r)
     printf("Hoehe: %d, Breite: %d, Farbe: %s\n\n", r.hoehe, r.breite, r.farbe);
 }
 
-// Haupt Funktion J
+// Hauptfunktion J
 void structure_j(void)
 {
     Rechteck r1 = {5, 10, "Rot"};
@@ -25,7 +25,9 @@ void structure_j(void)
     Rechteck r2;
     r2.hoehe = 3;
     r2.breite = 2;
-    strcpy(r2.farbe, "Gelb");
+
+    // benötigt #include <string.h>
+    strcpy(r2.farbe, "Gelb"); 
 
     // Ausgabe neue Werte:
     printf("Neue Werte:\n");
