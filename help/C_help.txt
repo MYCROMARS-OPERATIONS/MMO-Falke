@@ -1718,7 +1718,7 @@ int main(void)
 int main(void)
 {
   	int twos[5] = {2, 4, 6, 8, 10};
-	int * pt;
+	int *pt;
 	int x;
 	
 	pt = twos;
@@ -1736,7 +1736,7 @@ int main(void)
 int main(void)
 {
   	int twos[5] = {2, 4, 6, 8, 10};
-	int * pt;
+	int *pt;
 	
 	pt = twos;
 	
@@ -1788,7 +1788,7 @@ void structure_a(void)
     printf("The Apartment 1 has %d Windows, and %d Doors.\n\n", apartment1.window, apartment1.door);
 }
 
-//-------------------------------------------------------
+//------------------------------------------------------- Structure
 #include <stdio.h>
 #include "header/structure_b.h" 
 
@@ -1810,7 +1810,7 @@ void structure_b(void)
     printf("The Apartment 2 has %d Windows, and %d Doors.\n\n", apartment2.window, apartment2.door);
 }
 
-//-------------------------------------------------------
+//------------------------------------------------------- Structure
 #include <stdio.h>
 #include "header/structure_c.h" 
 
@@ -1836,6 +1836,352 @@ void structure_c(void)
     printf("My Lunch was %s.\n", apartment1.menu1.lunch);
     printf("My Dinner was %s.\n\n", apartment1.menu1.dinner);
 }
+
+//------------------------------------------------------- Structure
+struct house {
+   short int window;
+   short int door;
+   // Input:
+} apartment1 = {4, 3}, apartment2 = {7, 4};
+
+// Output
+printf("The Apartment 1 has %d Windows, and %d Doors.\n", apartment1.window, apartment1.door);
+printf("The Apartment 2 has %d Windows, and %d Doors.\n\n", apartment2.window, apartment2.door);
+
+    // Char, Char Array
+    struct character {
+        char a;
+        char n[3];      // muss 1 zeichen mehr sein als benötigt
+        char name[32];
+    } person1;
+
+    // Input
+    person1.a = 'A';
+    person1.n[0] = 'A';
+    person1.n[1] = 'R';
+
+    strcpy(person1.name,"Alex Rudi"); 
+
+    // Output
+    printf("Zeichen 1: %c\n", person1.a);
+    printf("Zeichen 1 im Array: %c\n", person1.n[0]);
+    printf("Zeichen 2 im Array: %c\n", person1.n[1]);
+    printf("Char Array 1: %s\n", person1.n);
+    printf("Char Array 2: %s\n\n", person1.name);
+
+//------------------------------------------------------- Structure
+void structure_d(void)
+{
+    struct ZLB {
+        long int postleitzahl;
+        float zahl1;
+        double zahl2;
+        double zahl3;
+    } book;
+
+    book.postleitzahl = 2100100100;
+    book.zahl1 = 2100100100;
+    book.zahl2 = 2100100100.100101;
+    book.zahl3 = 2100100100.0;
+
+    printf("Postleitzahl long int: %ld\n\n", book.postleitzahl);
+
+    printf("Zahl 1 float %%f: %f\n", book.zahl1);
+    printf("Zahl 1 float %%.0f: %.0f\n", book.zahl1);
+    printf("Zahl 1 float %%.1f: %.1f\n\n", book.zahl1);
+
+    printf("Zahl 1 double %%f: %f\n", book.zahl1);
+    printf("Zahl 1 double %%.0f: %.0f\n", book.zahl1);
+    printf("Zahl 1 double %%.1f: %.1f\n", book.zahl1);
+    printf("Zahl 1 double %%g: %g\n", book.zahl1);
+    printf("Zahl 1 double %%e: %e\n\n", book.zahl1);
+
+    printf("Zahl 2 float %%f: %f\n", book.zahl2);
+    printf("Zahl 2 float %%.1f: %.1f\n\n", book.zahl2);
+
+    printf("Zahl 2 double %%f: %f\n", book.zahl2);
+    printf("Zahl 2 double %%.0f: %.0f\n", book.zahl2);
+    printf("Zahl 2 double %%.2f: %.2f\n", book.zahl2);
+    printf("Zahl 2 double %%g: %g\n", book.zahl2);
+    printf("Zahl 2 double %%e: %e\n\n", book.zahl2);
+
+    printf("Zahl 3 double %%f: %f\n", book.zahl3);
+    printf("Zahl 3 double %%.0f: %.0f\n", book.zahl3);
+    printf("Zahl 3 double %%1.1f: %.2f\n\n", book.zahl3);
+}
+//------------------------------------------------------- Structure
+void structure_e(void)
+{
+    // Struct Name: house
+    struct house {
+        short int apartment_persons[3];
+    };
+    // Struct Variable name, Array:
+    struct house house[3];
+
+    // Input
+    house[0].apartment_persons[0] = 1;
+    house[0].apartment_persons[1] = 5;
+    house[0].apartment_persons[2] = 2;
+
+    house[1].apartment_persons[0] = 3;
+    house[1].apartment_persons[1] = 2;
+    house[1].apartment_persons[2] = 1;
+
+    house[2].apartment_persons[0] = 5;
+    house[2].apartment_persons[1] = 4;
+    house[2].apartment_persons[2] = 3;
+
+    // Output
+    printf("Output:\n");
+    printf("In House 1, Apartment 1 are %d Persons.\n",  house[0].apartment_persons[0]);
+    printf("In House 1, Apartment 2 are %d Persons.\n",  house[0].apartment_persons[1]);
+    printf("In House 1, Apartment 3 are %d Persons.\n\n",  house[0].apartment_persons[2]);
+
+    printf("In House 2, Apartment 1 are %d Persons.\n",  house[1].apartment_persons[0]);
+    printf("In House 2, Apartment 2 are %d Persons.\n",  house[1].apartment_persons[1]);
+    printf("In House 2, Apartment 3 are %d Persons.\n\n",  house[1].apartment_persons[2]);
+
+    printf("In House 3, Apartment 1 are %d Persons.\n",  house[2].apartment_persons[0]);
+    printf("In House 3, Apartment 2 are %d Persons.\n",  house[2].apartment_persons[1]);
+    printf("In House 3, Apartment 3 are %d Persons.\n\n",  house[2].apartment_persons[2]);
+}
+
+//------------------------------------------------------- copy Structure
+// Structure F, copy Structure
+void structure_f(void)
+{
+    // Struct Name: house
+    struct house {
+        short int apartment;
+    };
+    // Struct Variable name, Array:
+    struct house house1, house2;
+
+    // struct
+    house1.apartment = 4;
+    
+    // copy 
+    house2 = house1;
+
+    // Output
+    printf("Output:\n");
+    printf("House 1 has %d Apartments.\n",  house1.apartment);
+    printf("Copy Structure 1 to Structure 2.\n\n");
+    printf("House 2 has %d Apartments.\n\n",  house2.apartment);
+}
+
+//------------------------------------------------------- Structure, Pointer of Structure Variable
+// Structure G, Pointer of Structure Variable, sizeof
+void structure_g(void)
+{
+    // Struct Name: house
+    struct buildings {
+        short int apartment_1;
+        //short int apartment_2;
+        long int apartment_2;
+    };
+    // Struct Variable name:
+    struct buildings house, *house_pointer;
+
+    // Input
+    house.apartment_1 = 2;
+    house.apartment_2 = 4;
+
+    // Pointer
+    house_pointer = &house;
+
+    // Output
+    printf("Output:\n");
+    printf("House = %lu Bytes\n",  sizeof(house));
+    printf("Apartment_1 size = %lu Bytes\n",  sizeof(house.apartment_1));
+    printf("Apartment_2 size = %lu Bytes\n\n",  sizeof(house.apartment_2));
+
+    printf("House Address is: %p\n\n",  &house);
+
+    printf("Apartment_1 has %hd rooms.\n",  house.apartment_1);
+    printf("Apartment_2 has %ld rooms.\n\n",  house.apartment_2);
+
+    printf("Apartment_1 Address is: %p\n",  &house.apartment_1);
+    printf("Apartment_2 Address is: %p\n\n",  &house.apartment_2);
+
+    printf("Pointer:\n");
+    printf("House_Pointer = %lu Bytes\n\n", sizeof(*house_pointer));
+
+    printf("House_Pointer Address is: %p\n\n",  &house_pointer);
+
+    printf("Pointer Apartment_1 has %hd rooms.\n",  house_pointer->apartment_1);
+    printf("Pointer Apartment_2 has %ld rooms.\n\n",  house_pointer->apartment_2);
+    
+    printf("Pointer Apartment_1 Address is: %p\n",  &house_pointer->apartment_1);
+    printf("Pointer Apartment_2 Address is: %p\n\n",  &house_pointer->apartment_2);
+}
+
+//------------------------------------------------------- Structure mit 0 initialisieren
+// Structure H, mit 0 initialisieren
+void structure_h(void)
+{
+    // Struct Name: house
+    struct buildings {
+        short int apartment_1;
+        short int apartment_2;
+        //long int apartment_2;
+    };
+    // Variable all(first) = 0:
+    struct buildings house = {0};
+
+    // Output mit 0 initialisiert:
+    printf("Output:\n");
+    printf("Apartment_1 = %d\n",  house.apartment_1);
+    printf("Apartment_2 = %d\n\n",  house.apartment_2);
+}
+
+//------------------------------------------------------- Struktur mit Pointer
+// typedef Struktur definieren
+typedef struct house2 {
+    int a;
+    int b;
+} datatype_b;
+
+// Funktion print, definieren
+void print(datatype_b point_c){
+    printf("data a: %d, data b: %d\n\n", point_c.a, point_c.b);
+}
+
+// Funktion, definition Pointer, Zuweisung, Werte ändern
+void del(datatype_b *point_bp){
+    point_bp->a = 0;
+    point_bp->b = 0;
+}
+
+// Hauptfunktion I
+void structure_i(void)
+{
+    // typedef Struktur definieren
+    typedef struct house {
+        int x;
+        int y;
+    } datatype_a;
+    
+    // Deklaration und Werte zuweisen
+    datatype_a point_a = {5, 8};
+
+    printf("Point x: %d\n", point_a.x);
+    printf("Point y: %d\n\n", point_a.y);
+
+    // Deklaration Pointer
+    datatype_a *point_ap;
+
+    // Adresszuweisung
+    point_ap = &point_a;
+
+    // Werte ändern
+    point_ap->x = 0;
+    point_ap->y = 0;
+
+    printf("Pointer\n");
+    printf("Point x: %d\n", point_a.x);
+    printf("Point y: %d\n\n", point_a.y);
+
+    // ********************************** Struktur Ausserhalb
+    // Deklaration und Werte zuweisen
+    datatype_b point_b = {1, 2};
+
+    // Werte ändern
+    point_b.a = 10;
+    point_b.b = 100;
+
+    // Funktionsaufruf Print
+    print(point_b);
+
+    // Funktionsaufruf Adresse übergeben
+    del(&point_b);
+
+    // Print out
+    printf("After Pointer\n");
+    print(point_b);
+}
+
+//------------------------------------------------------- Struktur mit Pointer
+#include <stdio.h>
+#include <string.h>
+#include "../header/structure_j.h"
+
+// Struktur mit Pointer
+typedef struct _Rechteck_
+{
+    int hoehe;
+    int breite;
+    char farbe[25];
+} Rechteck;
+
+// Print
+void print2(Rechteck r)
+{
+    printf("Hoehe: %d, Breite: %d, Farbe: %s\n\n", r.hoehe, r.breite, r.farbe);
+}
+
+// Funktion 3
+void verdoppeleHoehe(Rechteck ***r)
+{
+    (**r)->hoehe = (**r)->hoehe * 2;
+}
+
+// Funktion 2
+void verdoppeleBreite(Rechteck **r)
+{
+    (*r)->breite = (*r)->breite * 2;
+
+    // Funktionsaufruf mit Pointer
+    verdoppeleHoehe(&r);
+}
+
+// Funktion 1
+void changeColor(Rechteck *r)
+{
+    strcpy(r->farbe, "Schwarz");
+
+    // Funktionsaufruf mit Pointer
+    verdoppeleBreite(&r);
+}
+
+
+// Hauptfunktion J
+void structure_j(void)
+{
+    // Struktur Name deklaration r1, und Werte zuweisen
+    Rechteck r1 = {5, 10, "Rot"};
+
+    // Ausgabe:
+    printf("Werte r1: \n");
+    print2(r1);
+
+    // Struktur Name deklaration r2
+    Rechteck r2;
+
+    // Werte zuweisen
+    r2.hoehe = 3;
+    r2.breite = 2;
+
+    // benötigt #include <string.h>
+    strcpy(r2.farbe, "Gelb"); 
+
+    // Ausgabe:
+    printf("Werte r2: \n");
+
+    // Funktionsaufruf Print
+    print2(r2);
+
+    // Funktionsaufruf
+    changeColor(&r1);
+
+    // Ausgabe:
+    printf("Werte r1: \n");
+    // Funktionsaufruf Print
+    print2(r1);
+}
+
+
 
 //-------------------------------------------------------------------------------
 //******************************************************************************* Funktionen

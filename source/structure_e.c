@@ -37,5 +37,4 @@ void structure_e(void)
     printf("In House 3, Apartment 1 are %d Persons.\n",  house[2].apartment_persons[0]);
     printf("In House 3, Apartment 2 are %d Persons.\n",  house[2].apartment_persons[1]);
     printf("In House 3, Apartment 3 are %d Persons.\n\n",  house[2].apartment_persons[2]);
-
 }

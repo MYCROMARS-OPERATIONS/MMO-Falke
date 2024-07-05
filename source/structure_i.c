@@ -33,7 +33,7 @@ void structure_i(void)
     printf("Point x: %d\n", point_a.x);
     printf("Point y: %d\n\n", point_a.y);
 
-    // Deklaration
+    // Deklaration Pointer
     datatype_a *point_ap;
 
     // Adresszuweisung
@@ -43,7 +43,7 @@ void structure_i(void)
     point_ap->x = 0;
     point_ap->y = 0;
 
-    printf("After Pointer\n");
+    printf("Pointer\n");
     printf("Point x: %d\n", point_a.x);
     printf("Point y: %d\n\n", point_a.y);
 
@@ -58,12 +58,11 @@ void structure_i(void)
     // Funktionsaufruf Print
     print(point_b);
 
-    // Funktionsaufruf Pointer Adresse übergeben
+    // Funktionsaufruf Adresse übergeben
     del(&point_b);
 
     // Print out
     printf("After Pointer\n");
     print(point_b);
-
 }
 
