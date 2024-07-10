@@ -41,7 +41,6 @@ void changeColor(Rechteck *r)
 }
 
 
-
 // Hauptfunktion J
 void structure_j(void)
 {

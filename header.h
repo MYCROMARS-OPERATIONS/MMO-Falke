@@ -42,6 +42,7 @@
 #include "header/structure_h.h"
 #include "header/structure_i.h"
 #include "header/structure_j.h"
+#include "header/structure_k.h"
 
 #include "header/malloc_a.h"
 #include "header/malloc_b.h"  
@@ -96,6 +97,7 @@
 #include "source/structure_h.c"
 #include "source/structure_i.c"
 #include "source/structure_j.c"
+#include "source/structure_k.c"
 
 #include "source/malloc_a.c"
 #include "source/malloc_b.c"
