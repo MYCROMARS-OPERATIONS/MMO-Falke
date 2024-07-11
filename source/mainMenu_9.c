@@ -1,7 +1,7 @@
 #include <stdio.h>  
 #include "../header/mainMenu.h" 
 
-// INPUT MENU
+// MALLOC MENU
 void mainMenu_9(int *m)
 {
     printf("*** MALLOC MENU ***\n");
