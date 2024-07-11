@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
-// #include <windows.h> 
 #include "../header/structure_k.h"
 
+// Struktur typ
 typedef struct _quest_
 {
     int point;
@@ -10,31 +10,36 @@ typedef struct _quest_
     char answer[255];
 } Question;
 
+// Funktion
 void welcome_screen()
 {
+    // Bilschirm löschen
+    system("cls");
+
     printf("Willkommen bei LyriX\n"
     ".............................\n"
-    "Druecke 's', um zu starten.\n\n");
+    "Druecke 's', um zu starten: \n");
+    printf("Input: ");
 }
 
+// Funktion
 void qustion_method(Question q, int **points1)
 {
     char input[255];
-
-    // Bilschirm löschen
-    // system("cls");
-
-    printf("POINT: %d\n", **points1);
-    printf("%s\n", q.questtion_to_answer);
+    
+    // Ausgabe
+    printf("\n%s\n", q.questtion_to_answer);
     printf("Antwort: ");
 
     // Input von maximal 255 Zeichen
     scanf("%255s", &input[0]);
 
+    // Vergleichen, bei 0 sind sie gleich
     if(strcmp(q.answer, input) == 0)
     {
-        printf("KORREKT!\n\n");
+        printf("KORREKT!\n");
         **points1 += q.point;
+        printf("\nPOINTS: %d\n", **points1);
     }
     else
     {
@@ -63,10 +68,21 @@ void structure_k(void)
     if(getchar() == 's'){
         while(*points < 8)
         {
+            // Frage 1
             qustion_method(q1, &points);
-            qustion_method(q2, &points);
-            qustion_method(q3, &points);
+            if (*points > 7) {break;}
 
+            // Frage 2
+            qustion_method(q2, &points);
+            if (*points > 7) {break;}
+
+            // Frage 3
+            qustion_method(q3, &points);
+        }
+
+        // Ende
+        if (*points > 7) {
+            printf("END\n\n");
         }
     }
 }

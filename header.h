@@ -2,6 +2,8 @@
 #define HEADER
 
 // ****************** Include files: .h ******************
+#include "header/mainMenu.h"
+
 #include "header/calculation.h"
 
 #include "header/delay.h"
@@ -57,6 +59,18 @@
 
 
 // ****************** Include files: .c ******************
+#include "source/mainMenu_0.c"
+#include "source/mainMenu_1.c"
+#include "source/mainMenu_2.c"
+#include "source/mainMenu_3.c"
+#include "source/mainMenu_4.c"
+#include "source/mainMenu_5.c"
+#include "source/mainMenu_6.c"
+#include "source/mainMenu_7.c"
+#include "source/mainMenu_8.c"
+#include "source/mainMenu_9.c"
+#include "source/mainMenu_10.c"
+
 #include "source/calculation.c"
 
 #include "source/delay.c"
