@@ -1,7 +1,7 @@
 #include <stdio.h>  
 #include "../header/mainMenu.h" 
 
-// INPUT MENU
+// DATA MENU
 void mainMenu_10(int *m)
 {
     printf("*** DATA MENU ***\n");
@@ -12,51 +12,58 @@ void mainMenu_10(int *m)
     scanf("%d", m);
     printf("\n");
 
-    if (*m == 1)
+    switch (*m)
     {
-        // Datei A, 
+    case 0:
+        *m = 0;
+        printf("### EXIT MALLOC ###\n\n");
+        break;
+
+    case 1:
+        // Data A, 
         // Datei erfolgreich geoeffnet/erstellt zum schreiben ans Dateiende.
         datei_a();
-    }
-    else if (*m == 2)
-    {
-        // Datei B
+        break;
+
+    case 2:
+        // Data B
         // Datei erfolgreich geoeffnet/erstellt zum schreiben/überschreiben.
         datei_b();
-    }
-    else if (*m == 3)
-    {
-        // Datei C
+        break;
+
+    case 3:
+        // Data C
         // Datei erfolgreich geoeffnet zum lesen von integer.
         datei_c();
-    }
-    else if (*m == 4)
-    {
-        // Datei D
+        break;
+
+    case 4:
+        // Data D
         // Datei erfolgreich geoeffnet zum lesen von string.
         datei_d();
-    }
-    else if (*m == 5)
-    {
-        // Datei E
+        break;
+
+    case 5:
+        // Data E
         // Datei erfolgreich geoeffnet zum lesen von 2 strings.
         datei_e();
-    }
-    else if (*m == 6)
-    {
-        // Datei F
+        break;
+
+    case 6:
+        // DataF
         // Datei erfolgreich geoeffnet zum lesen von int Array.
         datei_f();
-    }
-    else if (*m == 7)
-    {
-        // Datei G
+        break;
+
+    case 7:
+        // Data G
         // Datei erfolgreich geoeffnet zum lesen von int Array.
         datei_g();
-    }
-    else
-    {
+        break;
+    
+    default:
         *m = 0;
         printf("### END DATA ###\n\n");
+        break;
     }
 }

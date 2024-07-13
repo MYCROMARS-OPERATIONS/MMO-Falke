@@ -12,11 +12,8 @@ void input_b(void)
         printf("Input is not correct (NULL)!\n");
     }
     else {
-        printf("Input is correct\n");
-        printf("Input = %d\n\n", a);
-        
+        printf("Your Input: %d\n\n", a);
     }
 
     //return (0);
-    
 }

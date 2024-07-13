@@ -11,49 +11,53 @@ void mainMenu_5(int *m)
     scanf("%d", m);
     printf("\n");
 
-    if (*m == 1)
+    switch (*m)
     {
+    case 0:
+        *m = 0;
+        printf("### EXIT Pointer ###\n\n");
+        break;
+
+    case 1:
         // Pointer A
         pointerA();
-    }
-    else if (*m == 2)
-    {
+        break;
+
+    case 2:
         // Pointer B
         pointerB();
-    }
-    else if (*m == 3)
-    {
+        break;
+
+    case 3:
         // Pointer C
         pointerC();
-    }
-    else if (*m == 4)
-    {
+        break;
+
+    case 4:
         // Pointer D, Address of int to Function
         int ival = 1234567;
         pointerD(&ival);
-
         printf("Int value: %d\n\n", ival);
-    }
-    else if (*m == 5)
-    {
+        break;
+
+    case 5:
         // Pointer E
-        int ival = 20304050;
+        int ival0 = 20304050;
 
         // Address of int to Pointer
-        int *v = &ival;
+        int *v = &ival0;
 
         // Address of Pointer to Function
         pointerE(v);
 
-        printf("Int value: %d\n\n", ival);
-    }
-    else if (*m == 6)
-    {
+        printf("Int value: %d\n\n", ival0);
+        break;
+
+    case 6:
         // Pointer F, change Pointer Address
         int val1 = 100;
         int val2 = 200;
         int *p;
-
 
         // Address 1 of int to Pointer --------------------- 1
         p = &val1;
@@ -71,15 +75,11 @@ void mainMenu_5(int *m)
         // Address 2 of Pointer to Function
         pointerF(p);
         printf("Int val2: %d\n\n", val2);
-    }
-    else if (*m == 0)
-    {
-        *m = 0;
-        printf("### EXIT Pointer ###\n\n");
-    }
-    else
-    {
+        break;
+    
+    default:
         *m = 0;
         printf("### END Pointer ###\n\n");
+        break;
     }
 }

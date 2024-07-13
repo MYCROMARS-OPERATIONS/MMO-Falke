@@ -11,24 +11,26 @@ void mainMenu_9(int *m)
     scanf("%d", m);
     printf("\n");
 
-    if (*m == 1)
+    switch (*m)
     {
-        // Malloc A
-        malloc_a();
-    }
-    else if (*m == 2)
-    {
-        // Malloc B
-        malloc_b();
-    }
-    else if (*m == 0)
-    {
+    case 0:
         *m = 0;
         printf("### EXIT MALLOC ###\n\n");
-    }
-    else
-    {
+        break;
+
+    case 1:
+        // Malloc A
+        malloc_a();
+        break;
+
+    case 2:
+        // Malloc B
+        malloc_b();
+        break;
+    
+    default:
         *m = 0;
         printf("### END MALLOC ###\n\n");
+        break;
     }
 }

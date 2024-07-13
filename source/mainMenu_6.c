@@ -11,44 +11,46 @@ void mainMenu_6(int *m)
     scanf("%d", m);
     printf("\n");
 
-    if (*m == 1)
+    switch (*m)
     {
-        // Array A
-        arrayA();
-    }
-    else if (*m == 2)
-    {
-        // Array B
-        arrayB();
-    }
-    else if (*m == 3)
-    {
-        // Array C
-        arrayC();
-    }
-    else if (*m == 4)
-    {
-        // Array C
-        arrayD();
-    }
-    else if (*m == 5)
-    {
-        // Array E
-        arrayE();
-    }
-    else if (*m == 6)
-    {
-        // Array F
-        arrayF();
-    }
-    else if (*m == 0)
-    {
+    case 0:
         *m = 0;
         printf("### EXIT Array ###\n\n");
-    }
-    else
-    {
+        break;
+
+    case 1:
+        // Array A
+        arrayA();
+        break;
+
+    case 2:
+        // Array B
+        arrayB();
+        break;
+
+    case 3:
+        // Array C
+        arrayC();
+        break;
+
+    case 4:
+        // Array C
+        arrayD();
+        break;
+
+    case 5:
+        // Array E
+        arrayE();
+        break;
+
+    case 6:
+        // Array F
+        arrayF();
+        break;
+    
+    default:
         *m = 0;
         printf("### END Array ###\n\n");
+        break;
     }
 }

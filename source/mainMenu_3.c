@@ -11,20 +11,21 @@ void mainMenu_3(int *m)
     scanf("%d", m);
     printf("\n");
 
-     if (*m == 1)
-        {
-            // Input A
-            // Input Character
-            inputChar();
-        }
-        else if (*m == 2)
-        {
-            // Input B
-            input_b();
-        }
-        else
-        {
-            *m = 0;
-            printf("### END Input ###\n\n");
-        }
+    switch (*m)
+    {
+    case 1: 
+        // Input A
+        // Input Character
+        inputChar();
+        break;
+
+    case 2:
+        // Input B
+        input_b();
+    
+    default:
+        *m = 0;
+        printf("### END Input ###\n\n");
+        break;
+    }
 }

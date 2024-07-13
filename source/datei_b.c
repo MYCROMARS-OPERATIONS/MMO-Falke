@@ -18,7 +18,7 @@ void datei_b(void)
     }
     else
     {
-        puts("Datei erfolgreich geoeffnet/erstellt zum schreiben/überschreiben.");
+        puts("Datei erfolgreich geoeffnet/erstellt zum schreiben/ueberschreiben.");
         fprintf(SampleFile, "%d", a);
         fclose(SampleFile);
         puts("Datei geschlossen.\n");

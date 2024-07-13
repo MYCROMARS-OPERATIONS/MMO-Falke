@@ -14,69 +14,71 @@ void mainMenu_8(int *m)
     scanf("%d", m);
     printf("\n");
 
-    if (*m == 1)
+    switch (*m)
     {
-        // Structure A
-        structure_a();
-    }
-    else if (*m == 2)
-    {
-        // Structure B
-        structure_b();
-    }
-    else if (*m == 3)
-    {
-        // Structure C
-        structure_c();
-    }
-    else if (*m == 4)
-    {
-        // Structure D
-        structure_d();
-    }
-    else if (*m == 5)
-    {
-        // Structure E
-        structure_e();
-    }
-    else if (*m == 6)
-    {
-        // Structure F
-        structure_f();
-    }
-    else if (*m == 7)
-    {
-        // Structure G
-        structure_g();
-    }
-    else if (*m == 8)
-    {
-        // Structure H
-        structure_h();
-    }
-    else if (*m == 9)
-    {
-        // Structure I
-        structure_i();
-    }
-    else if (*m == 10)
-    {
-        // Structure J
-        structure_j();
-    }
-    else if (*m == 11)
-    {
-        // Structure K
-        structure_k();
-    }
-    else if (*m == 0)
-    {
+    case 0:
         *m = 0;
         printf("### EXIT STRUCTURE ###\n\n");
-    }
-    else
-    {
+        break;
+
+    case 1:
+        // Structure A
+        structure_a();
+        break;
+
+    case 2:
+        // Structure B
+        structure_b();
+        break;
+
+    case 3:
+        // Structure C
+        structure_c();
+        break;
+
+    case 4:
+        // Structure D
+        structure_d();
+        break;
+
+    case 5:
+        // Structure E
+        structure_e();
+        break;
+
+    case 6:
+        // Structure F
+        structure_f();
+        break;
+
+    case 7:
+        // Structure G
+        structure_g();
+        break;
+
+    case 8:
+        // Structure H
+        structure_h();
+        break;
+
+    case 9:
+        // Structure I
+        structure_i();
+        break;
+
+    case 10:
+        // Structure J
+        structure_j();
+        break;
+
+    case 11:
+        // Structure K
+        structure_k();
+        break;
+   
+    default:
         *m = 0;
         printf("### END STRUCTURE ###\n\n");
+        break;
     }
 }

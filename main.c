@@ -23,9 +23,10 @@ int main()
     int menu = 0;
     int menuB = 0;
     
-// Go here <<<---
-mainMenu:
     /* ********************** MAIN MENU ********************* */
+    // Go here <<<---
+    mainMenu:
+
     printf("********** MAIN MENU ***********\n");
     printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT     | (4) OUTPUT  | (5) POINTER\n");
     printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (10) DATA | (0) EXIT\n");

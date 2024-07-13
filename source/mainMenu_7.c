@@ -11,44 +11,46 @@ void mainMenu_7(int *m)
     scanf("%d", m);
     printf("\n");
 
-    if (*m == 1)
+    switch (*m)
     {
-        // Loop A
-        loopA();
-    }
-    else if (*m == 2)
-    {
-        // Loop B
-        loopB();
-    }
-    else if (*m == 3)
-    {
-        // Loop C
-        loopC();
-    }
-    else if (*m == 4)
-    {
-        // Loop D
-        loopD();
-    }
-    else if (*m == 5)
-    {
-        // Loop E
-        loopE();
-    }
-    else if (*m == 6)
-    {
-        // Loop F
-        loopF();
-    }
-    else if (*m == 0)
-    {
+    case 0:
         *m = 0;
         printf("### EXIT Loop ###\n\n");
-    }
-    else
-    {
+        break;
+
+    case 1:
+        // Loop A
+        loopA();
+        break;
+
+    case 2:
+        // Loop B
+        loopB();
+        break;
+
+    case 3:
+        // Loop C
+        loopC();
+        break;
+
+    case 4:
+        // Loop D
+        loopD();
+        break;
+
+    case 5:
+        // Loop E
+        loopE();
+        break;
+
+    case 6:
+        // Loop F
+        loopF();
+        break;
+
+    default:
         *m = 0;
         printf("### END Loop ###\n\n");
+        break;
     }
 }
