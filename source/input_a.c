@@ -10,7 +10,7 @@ void input_a(void)
    
     // getchar() with int
     printf("INPUT int with getchar().\n");
-    printf("Input a character: ");
+    printf("Input a number: ");
     getchar();
     ch = getchar();
     printf("Your Input: %c\n\n", ch);

@@ -4,7 +4,7 @@
 // OUTPUT MENU
 void mainMenu_4(int *m)
 {
-    printf("*** OUTPUT ***\n");
+    printf("\n*** OUTPUT ***\n");
 
     // Funktion
     output_a();   

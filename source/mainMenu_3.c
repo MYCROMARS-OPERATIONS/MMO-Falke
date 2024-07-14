@@ -4,7 +4,7 @@
 // INPUT MENU
 void mainMenu_3(int *m)
 {
-    printf("*** INPUT MENU ***\n");
+    printf("\n*** INPUT MENU ***\n");
     printf("Press: (1) INPUT-A | (2) INPUT-B\n");
     printf("Press: (0) EXIT\n");
     printf("Input: ");

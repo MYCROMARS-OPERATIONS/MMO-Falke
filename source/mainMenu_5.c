@@ -4,7 +4,7 @@
 // POINTER MENU
 void mainMenu_5(int *m)
 {
-    printf("*** POINTER MENU ***\n");
+    printf("\n*** POINTER MENU ***\n");
     printf("Press: (1) POINTER-A | (2) POINTER-B | (3) POINTER-C | (4) POINTER-D | (5) POINTER-E\n");
     printf("Press: (6) POINTER-F | (0) EXIT\n");
     printf("Your Input: ");

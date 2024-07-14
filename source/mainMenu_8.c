@@ -4,7 +4,7 @@
 // STRUKTUR MENU
 void mainMenu_8(int *m)
 {
-    printf("*** STRUCTURE MENU ***\n");
+    printf("\n*** STRUCTURE MENU ***\n");
     printf("Press: (1) STRUCTURE-A | (2) STRUCTURE-B | (3) STRUCTURE-C | (4) STRUCTURE-D | (5) STRUCTURE-E\n");
     printf("Press: (6) STRUCTURE-F | (7) STRUCTURE-G | (8) STRUCTURE-H | (9) STRUCTURE-I | (10) STRUCTURE-J\n");
     printf("Press: (11) STRUCTURE-K\n");

@@ -4,7 +4,7 @@
 // MALLOC MENU
 void mainMenu_9(int *m)
 {
-    printf("*** MALLOC MENU ***\n");
+    printf("\n*** MALLOC MENU ***\n");
     printf("Press: (1) MALLOC-A | (2) MALLOC-B | (0) EXIT\n");
 
     printf("Your Input: ");

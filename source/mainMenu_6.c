@@ -4,7 +4,7 @@
 // ARRAY MENU
 void mainMenu_6(int *m)
 {
-    printf("*** ARRAY MENU ***\n");
+    printf("\n*** ARRAY MENU ***\n");
     printf("Press: (1) ARRAY-A | (2) ARRAY-B | (3) ARRAY-C | (4) ARRAY-D | (5) ARRAY-E\n");
     printf("Press: (6) ARRAY-F | (0) EXIT\n");
     printf("Your Input: ");

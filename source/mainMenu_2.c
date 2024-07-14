@@ -6,7 +6,7 @@ void mainMenu_2(int *m)
 {
     int timer = 0;
     
-    printf("*** DELAY ***\n");
+    printf("\n*** DELAY ***\n");
     printf("Input a number (1-10): ");
 
     // Input
