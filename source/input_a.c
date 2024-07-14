@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "../header/input.h"
+#include "../header/input_a.h"
 
 // Input
-void inputChar(void)
+void input_a(void)
 {
     char b, id;
     int ch;
@@ -31,7 +31,7 @@ void inputChar(void)
     printf("Your Input: %c\n\n", id);
     printf(id == 'a' ? "You have access!\n" : "You don't have access!\n");
 
-    // Exit or continue
+    // continue with a
     if (id == 'a')
     {
         printf("*** ID correct! ***\n\n");

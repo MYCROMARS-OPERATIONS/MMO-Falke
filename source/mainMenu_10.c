@@ -9,6 +9,8 @@ void mainMenu_10(int *m)
     printf("Press: (6) DATA-F | (7) DATA-G | (0) EXIT\n");
 
     printf("Your Input: ");
+
+    // Input
     scanf("%d", m);
     printf("\n");
 
@@ -20,42 +22,49 @@ void mainMenu_10(int *m)
         break;
 
     case 1:
+        // Funktion
         // Data A, 
         // Datei erfolgreich geoeffnet/erstellt zum schreiben ans Dateiende.
         datei_a();
         break;
 
     case 2:
+        // Funktion
         // Data B
         // Datei erfolgreich geoeffnet/erstellt zum schreiben/überschreiben.
         datei_b();
         break;
 
     case 3:
+        // Funktion
         // Data C
         // Datei erfolgreich geoeffnet zum lesen von integer.
         datei_c();
         break;
 
     case 4:
+        // Funktion
         // Data D
         // Datei erfolgreich geoeffnet zum lesen von string.
         datei_d();
         break;
 
     case 5:
+        // Funktion
         // Data E
         // Datei erfolgreich geoeffnet zum lesen von 2 strings.
         datei_e();
         break;
 
     case 6:
-        // DataF
+        // Funktion
+        // Data F
         // Datei erfolgreich geoeffnet zum lesen von int Array.
         datei_f();
         break;
 
     case 7:
+        // Funktion
         // Data G
         // Datei erfolgreich geoeffnet zum lesen von int Array.
         datei_g();

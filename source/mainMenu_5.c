@@ -8,6 +8,8 @@ void mainMenu_5(int *m)
     printf("Press: (1) POINTER-A | (2) POINTER-B | (3) POINTER-C | (4) POINTER-D | (5) POINTER-E\n");
     printf("Press: (6) POINTER-F | (0) EXIT\n");
     printf("Your Input: ");
+
+    // Input
     scanf("%d", m);
     printf("\n");
 
@@ -19,16 +21,19 @@ void mainMenu_5(int *m)
         break;
 
     case 1:
+        // Funktion
         // Pointer A
         pointerA();
         break;
 
     case 2:
+        // Funktion
         // Pointer B
         pointerB();
         break;
 
     case 3:
+        // Funktion
         // Pointer C
         pointerC();
         break;
@@ -36,6 +41,8 @@ void mainMenu_5(int *m)
     case 4:
         // Pointer D, Address of int to Function
         int ival = 1234567;
+
+        // Funktion
         pointerD(&ival);
         printf("Int value: %d\n\n", ival);
         break;
@@ -47,6 +54,7 @@ void mainMenu_5(int *m)
         // Address of int to Pointer
         int *v = &ival0;
 
+        // Funktion
         // Address of Pointer to Function
         pointerE(v);
 
@@ -63,6 +71,7 @@ void mainMenu_5(int *m)
         p = &val1;
         printf("Int val1: %d\n\n", val1);
 
+        // Funktion
         // Address 1 of Pointer to Function
         pointerF(p);
         printf("Int val1: %d\n\n", val1);
@@ -72,6 +81,7 @@ void mainMenu_5(int *m)
         p = &val2;
         printf("Int val2: %d\n\n", val2);
 
+        // Funktion
         // Address 2 of Pointer to Function
         pointerF(p);
         printf("Int val2: %d\n\n", val2);

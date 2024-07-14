@@ -2,6 +2,6 @@
 #define DELAY_
 
 // Delay
-void delayA(double tx);
+void delay_a(double tx);
 
 #endif

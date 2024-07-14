@@ -8,6 +8,8 @@ void mainMenu_9(int *m)
     printf("Press: (1) MALLOC-A | (2) MALLOC-B | (0) EXIT\n");
 
     printf("Your Input: ");
+
+    // Input
     scanf("%d", m);
     printf("\n");
 
@@ -19,11 +21,13 @@ void mainMenu_9(int *m)
         break;
 
     case 1:
+        // Funktion
         // Malloc A
         malloc_a();
         break;
 
     case 2:
+        // Funktion
         // Malloc B
         malloc_b();
         break;

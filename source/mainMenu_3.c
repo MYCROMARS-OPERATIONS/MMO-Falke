@@ -8,21 +8,25 @@ void mainMenu_3(int *m)
     printf("Press: (1) INPUT-A | (2) INPUT-B\n");
     printf("Press: (0) EXIT\n");
     printf("Input: ");
+
+    // Input
     scanf("%d", m);
     printf("\n");
 
     switch (*m)
     {
     case 1: 
-        // Input A
-        // Input Character
-        inputChar();
+        // Funktion
+        // Input A, Int, Character, while: char
+        input_a();
         break;
 
     case 2:
-        // Input B
+        // Funktion
+        // Input B, Number, check if it is correct 
         input_b();
-    
+        break;
+
     default:
         *m = 0;
         printf("### END Input ###\n\n");

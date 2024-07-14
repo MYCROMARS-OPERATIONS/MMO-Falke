@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "../header/delay.h"
+#include "../header/delay_a.h"
 
 // Delay
-void delayA(double tx)
+void delay_a(double tx)
 {
     int menuB = 0;
     double i = 1;
@@ -17,11 +17,13 @@ void delayA(double tx)
     // Timer ^UP
     tx *= multi;
 
-    printf("Delay new size: %f\n", tx);
+    printf("Delay new size: %f\n\n", tx);
 
     // *------------- Menu B-------------*
     printf("Press: (1) START | (0) EXIT\n");
     printf("Your Input: ");
+
+    // Input
     scanf("%d", &menuB);
 
     if (menuB == 1)

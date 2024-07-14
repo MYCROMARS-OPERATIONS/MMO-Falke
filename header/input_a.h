@@ -2,6 +2,6 @@
 #define INPUT_
 
 // Input
-void inputChar();
+void input_a();
 
 #endif

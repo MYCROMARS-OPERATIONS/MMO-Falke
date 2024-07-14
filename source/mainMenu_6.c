@@ -8,6 +8,8 @@ void mainMenu_6(int *m)
     printf("Press: (1) ARRAY-A | (2) ARRAY-B | (3) ARRAY-C | (4) ARRAY-D | (5) ARRAY-E\n");
     printf("Press: (6) ARRAY-F | (0) EXIT\n");
     printf("Your Input: ");
+
+    // Input
     scanf("%d", m);
     printf("\n");
 
@@ -19,31 +21,37 @@ void mainMenu_6(int *m)
         break;
 
     case 1:
+        // Funktion
         // Array A
         arrayA();
         break;
 
     case 2:
+        // Funktion
         // Array B
         arrayB();
         break;
 
     case 3:
+        // Funktion
         // Array C
         arrayC();
         break;
 
     case 4:
+        // Funktion
         // Array C
         arrayD();
         break;
 
     case 5:
+        // Funktion
         // Array E
         arrayE();
         break;
 
     case 6:
+        // Funktion
         // Array F
         arrayF();
         break;

@@ -8,6 +8,8 @@ void mainMenu_7(int *m)
     printf("Press: (1) LOOP-A | (2) LOOP-B | (3) LOOP-C | (4) LOOP-D | (5) LOOP-E\n");
     printf("Press: (6) LOOP-F | (0) EXIT\n");
     printf("Your Input: ");
+
+    // Input
     scanf("%d", m);
     printf("\n");
 
@@ -19,31 +21,37 @@ void mainMenu_7(int *m)
         break;
 
     case 1:
+        // Funktion
         // Loop A
         loopA();
         break;
 
     case 2:
+        // Funktion
         // Loop B
         loopB();
         break;
 
     case 3:
+        // Funktion
         // Loop C
         loopC();
         break;
 
     case 4:
+        // Funktion
         // Loop D
         loopD();
         break;
 
     case 5:
+        // Funktion
         // Loop E
         loopE();
         break;
 
     case 6:
+        // Funktion
         // Loop F
         loopF();
         break;

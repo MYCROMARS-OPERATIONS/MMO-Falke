@@ -1,16 +1,18 @@
 #include <stdio.h>  
 #include "../header/mainMenu.h" 
 
-// CALCULTION MENU
+// DELAY MENU
 void mainMenu_2(int *m)
 {
     int timer = 0;
     
     printf("*** DELAY ***\n");
-    printf("Input a number: ");
+    printf("Input a number (1-10): ");
+
+    // Input
     scanf("%d", &timer);
 
-    // Function
-    delayA(timer);
+    // Funktion
+    delay_a(timer);
     timer = 0;
 }

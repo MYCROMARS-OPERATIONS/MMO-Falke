@@ -6,9 +6,9 @@
 
 #include "header/calculation.h"
 
-#include "header/delay.h"
+#include "header/delay_a.h"
 
-#include "header/input.h"
+#include "header/input_a.h"
 #include "header/input_b.h"
 
 #include "header/output.h"
@@ -73,9 +73,9 @@
 
 #include "source/calculation.c"
 
-#include "source/delay.c"
+#include "source/delay_a.c"
 
-#include "source/input.c"
+#include "source/input_a.c"
 #include "source/input_b.c"
 
 #include "source/output.c"

@@ -11,6 +11,8 @@ void mainMenu_8(int *m)
     printf("Press: (0) EXIT\n");
 
     printf("Your Input: ");
+
+    // Input
     scanf("%d", m);
     printf("\n");
 
@@ -22,56 +24,67 @@ void mainMenu_8(int *m)
         break;
 
     case 1:
+        // Funktion
         // Structure A
         structure_a();
         break;
 
     case 2:
+        // Funktion
         // Structure B
         structure_b();
         break;
 
     case 3:
+        // Funktion
         // Structure C
         structure_c();
         break;
 
     case 4:
+        // Funktion
         // Structure D
         structure_d();
         break;
 
     case 5:
+        // Funktion
         // Structure E
         structure_e();
         break;
 
     case 6:
+        // Funktion
         // Structure F
         structure_f();
         break;
 
     case 7:
+        // Funktion
         // Structure G
         structure_g();
         break;
 
     case 8:
+        // Funktion
         // Structure H
         structure_h();
         break;
 
     case 9:
+        // Funktion
         // Structure I
         structure_i();
         break;
 
     case 10:
+        // Funktion
         // Structure J
         structure_j();
         break;
 
     case 11:
+        // Funktion
         // Structure K
         structure_k();
         break;
