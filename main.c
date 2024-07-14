@@ -40,12 +40,10 @@ int main()
     printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (10) DATA | (0) EXIT\n");
     
     printf("Input: ");
-    // scanf("%d", &menu);
-    // printf("\n");
 
     if (scanf("%d", &menu)) {
        
-        // Falsche Zahl (1-10)
+        // Falsche Zahl (nicht 1-10)
         if (menu < 0 || menu > 10){
                 printf("\nInput is not 1-10\n\n");
                 // Go here <<<---
@@ -102,19 +100,19 @@ int main()
             break;
 
         case 8:
-            // *------------- Strukturen -------------*
+            // *------------- Structure -------------*
             // Funktion
             mainMenu_8(&menuB);
             break;
 
         case 9:
-            // *------------- Maloc -------------*
+            // *------------- Malloc -------------*
             // Funktion
             mainMenu_9(&menuB);
             break;
 
         case 10:
-            // *------------- Datei -------------*
+            // *------------- Data -------------*
             // Funktion
             mainMenu_10(&menuB);
             break;
