@@ -32,80 +32,90 @@ int main()
     printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (10) DATA | (0) EXIT\n");
     
     printf("Input: ");
-    scanf("%d", &menu);
-    printf("\n");
- 
-    switch (menu)
-    {
-    case 0:
-        // *------------- Exit -------------*
-        // Funktion
-        mainMenu_0(&menuB);
+    // scanf("%d", &menu);
+    // printf("\n");
 
-    case 1:
-        // *------------- Calculation -------------*
-        // Funktion
-        mainMenu_1(&menuB);
-        break;
+    if (scanf("%d", &menu)) {
 
-    case 2:
-        // *------------- Delay -------------*
-        // Funktion
-        mainMenu_2(&menuB);
-        break;
+        switch (menu)
+        {
+        case 0:
+            // *------------- Exit -------------*
+            // Funktion
+            mainMenu_0(&menuB);
 
-    case 3:
-        // *------------- Input -------------*
-        // Funktion
-        mainMenu_3(&menuB);
-        break;
+        case 1:
+            // *------------- Calculation -------------*
+            // Funktion
+            mainMenu_1(&menuB);
+            break;
 
-    case 4:
-    // *------------- Output -------------*
-        // Funktion
-        mainMenu_4(&menuB);
-        break;
+        case 2:
+            // *------------- Delay -------------*
+            // Funktion
+            mainMenu_2(&menuB);
+            break;
 
-    case 5:
-        // *------------- Pointer -------------*
-        // Funktion
-        mainMenu_5(&menuB);
-        break;
+        case 3:
+            // *------------- Input -------------*
+            // Funktion
+            mainMenu_3(&menuB);
+            break;
 
-    case 6:
-        // *------------- Array -------------*
-        // Funktion
-        mainMenu_6(&menuB);
-        break;
+        case 4:
+        // *------------- Output -------------*
+            // Funktion
+            mainMenu_4(&menuB);
+            break;
 
-    case 7:
-        // *------------- Loop -------------*
-        // Funktion
-        mainMenu_7(&menuB);
-        break;
+        case 5:
+            // *------------- Pointer -------------*
+            // Funktion
+            mainMenu_5(&menuB);
+            break;
 
-    case 8:
-        // *------------- Strukturen -------------*
-        // Funktion
-        mainMenu_8(&menuB);
-        break;
+        case 6:
+            // *------------- Array -------------*
+            // Funktion
+            mainMenu_6(&menuB);
+            break;
 
-    case 9:
-        // *------------- Maloc -------------*
-        // Funktion
-        mainMenu_9(&menuB);
-        break;
+        case 7:
+            // *------------- Loop -------------*
+            // Funktion
+            mainMenu_7(&menuB);
+            break;
 
-    case 10:
-        // *------------- Datei -------------*
-        // Funktion
-        mainMenu_10(&menuB);
-        break;
+        case 8:
+            // *------------- Strukturen -------------*
+            // Funktion
+            mainMenu_8(&menuB);
+            break;
 
-    default:
-        break;
+        case 9:
+            // *------------- Maloc -------------*
+            // Funktion
+            mainMenu_9(&menuB);
+            break;
+
+        case 10:
+            // *------------- Datei -------------*
+            // Funktion
+            mainMenu_10(&menuB);
+            break;
+
+        default:
+            printf("Input is not a number 1-10\n\n");
+            break;
+        }
     }
-
+    else{
+        printf("\nInput is not a number 1-10\n\n");
+        getchar();
+        // Go here <<<---
+        goto mainMenu;
+    }
+ 
     // reset variable
     menu = 0;
     menuB = 0;
