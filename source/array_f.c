@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "../header/array_f.h"
 
-// ARRAY F, to Function
+// ARRAY F
+// char Array 
+// Function
 void incshow(char a)
  {
     a++;

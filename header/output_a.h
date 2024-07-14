@@ -2,6 +2,6 @@
 #define OUTPUT_
 
 // Input
-void outputString();
+void output_a();
 
 #endif

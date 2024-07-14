@@ -23,36 +23,42 @@ void mainMenu_6(int *m)
     case 1:
         // Funktion
         // Array A
+        // Int Array []
         arrayA();
         break;
 
     case 2:
         // Funktion
         // Array B
+        // Int Array [] []
         arrayB();
         break;
 
     case 3:
         // Funktion
         // Array C
+        // float Array [] scanf()
         arrayC();
         break;
 
     case 4:
         // Funktion
-        // Array C
+        // Array D
+        // int Array switch number
         arrayD();
         break;
 
     case 5:
         // Funktion
         // Array E
+        // int Array dublicate numbers
         arrayE();
         break;
 
     case 6:
         // Funktion
         // Array F
+        // char Array
         arrayF();
         break;
     

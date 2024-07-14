@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "../header/malloc_a.h"
 
-// Input
+// Maloc
+// Storage for 100 int-Type's
 void malloc_a(void)
 {
     void* malloc(size_t size);

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "../header/structure_g.h"
 
-// Structure G, Pointer of Structure Variable, sizeof
+// Structure G
+// Pointer of Structure Variable, sizeof
 void structure_g(void)
 {
     // Struct Name: house

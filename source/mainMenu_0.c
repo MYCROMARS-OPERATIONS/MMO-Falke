@@ -6,7 +6,7 @@
 void mainMenu_0(int *m)
 {
     //printf("Menu=%d\n", menu);
-    printf("%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
+    printf("\n%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");
     printf("*****************************");
     exit(EXIT_SUCCESS);
     // exit(1);

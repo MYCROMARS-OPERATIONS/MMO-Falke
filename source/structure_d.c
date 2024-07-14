@@ -2,7 +2,8 @@
 #include <string.h> 
 #include "../header/structure_d.h" 
 
-// Structure D, long, float, double
+// Structure D
+// long, float, double
 void structure_d(void)
 {
     struct ZLB {

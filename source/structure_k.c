@@ -2,7 +2,8 @@
 #include <string.h>
 #include "../header/structure_k.h"
 
-// Struktur typ
+// Structure with Pointer Pointer
+
 typedef struct _quest_
 {
     int point;

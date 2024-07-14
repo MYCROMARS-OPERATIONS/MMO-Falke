@@ -2,7 +2,7 @@
 #include <string.h>
 #include "../header/structure_j.h"
 
-// Struktur mit Pointer
+// Structure with Pointer
 typedef struct _Rechteck_
 {
     int hoehe;

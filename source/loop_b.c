@@ -2,6 +2,7 @@
 #include "../header/loop_b.h"
 
 // LOOP B
+// For Loop
 void loopB(void)
 {
     printf("For loop 1...10:\n\n");

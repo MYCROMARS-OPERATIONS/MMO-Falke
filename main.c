@@ -11,6 +11,13 @@
 // header file
 #include "header.h"
 
+
+// Input String löschen
+char b[50];
+void scanString0(void){
+    scanf("%s", &b);
+}
+
 int main()
 {
     printf("\n");
@@ -21,6 +28,7 @@ int main()
     printf("**********************************************\n\n");
 
     int menu = 0;
+    int menuA = 0;
     int menuB = 0;
     
     /* ********************** MAIN MENU ********************* */
@@ -36,6 +44,13 @@ int main()
     // printf("\n");
 
     if (scanf("%d", &menu)) {
+       
+        // Falsche Zahl (1-10)
+        if (menu < 0 || menu > 10){
+                printf("\nInput is not 1-10\n\n");
+                // Go here <<<---
+                goto mainMenu;
+            }
 
         switch (menu)
         {
@@ -111,13 +126,15 @@ int main()
     }
     else{
         printf("\nInput is not a number 1-10\n\n");
-        getchar();
+        scanString0();
+        
         // Go here <<<---
         goto mainMenu;
     }
  
     // reset variable
     menu = 0;
+    menuA = 0;
     menuB = 0;
 
     // goto mainMenu;

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "../header/structure_h.h"
 
-// Structure H, mit 0 initialisieren
+// Structure H
+// with 0 initialize
 void structure_h(void)
 {
     // Struct Name: house

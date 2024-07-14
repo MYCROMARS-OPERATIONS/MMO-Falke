@@ -23,26 +23,31 @@ void mainMenu_5(int *m)
     case 1:
         // Funktion
         // Pointer A
+        // Pointer of Int
         pointerA();
         break;
 
     case 2:
         // Funktion
         // Pointer B
+        // Pointer of Array
         pointerB();
         break;
 
     case 3:
         // Funktion
         // Pointer C
+        // Pointer of Array
         pointerC();
         break;
 
     case 4:
-        // Pointer D, Address of int to Function
+        // Pointer D
+        // Pointer to Function
         int ival = 1234567;
 
         // Funktion
+        // Address of int to Function
         pointerD(&ival);
         printf("Int value: %d\n\n", ival);
         break;
@@ -62,7 +67,8 @@ void mainMenu_5(int *m)
         break;
 
     case 6:
-        // Pointer F, change Pointer Address
+        // Pointer F
+        // change Pointer Address
         int val1 = 100;
         int val2 = 200;
         int *p;

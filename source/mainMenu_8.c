@@ -26,66 +26,77 @@ void mainMenu_8(int *m)
     case 1:
         // Funktion
         // Structure A
+        // Structure define int
         structure_a();
         break;
 
     case 2:
         // Funktion
         // Structure B
+        // Structure define short int
         structure_b();
         break;
 
     case 3:
         // Funktion
         // Structure C
+        // Structure in Structure and Char String.
         structure_c();
         break;
 
     case 4:
         // Funktion
         // Structure D
+        // long, float, double
         structure_d();
         break;
 
     case 5:
         // Funktion
         // Structure E
+        // with Array
         structure_e();
         break;
 
     case 6:
         // Funktion
         // Structure F
+        // copy Structure
         structure_f();
         break;
 
     case 7:
         // Funktion
         // Structure G
+        // Pointer of Structure Variable, sizeof
         structure_g();
         break;
 
     case 8:
         // Funktion
         // Structure H
+        // with 0 initialize
         structure_h();
         break;
 
     case 9:
         // Funktion
         // Structure I
+        // typedef 
         structure_i();
         break;
 
     case 10:
         // Funktion
         // Structure J
+        // Structure with Pointer
         structure_j();
         break;
 
     case 11:
         // Funktion
         // Structure K
+        // Structure with Pointer Pointer
         structure_k();
         break;
    

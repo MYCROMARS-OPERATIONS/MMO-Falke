@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include "../header/malloc_b.h"
 
-// malloc
+// Storage reservation
+
 int *iArray(unsigned int n) {
     int *iptr = malloc(n*(sizeof(int)));
 
@@ -16,7 +17,7 @@ int *iArray(unsigned int n) {
 }
 
 
-// Input
+// Malloc Hauptfunktion
 int malloc_b(void)
 {
     unsigned int val = 0;

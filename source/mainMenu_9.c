@@ -23,12 +23,14 @@ void mainMenu_9(int *m)
     case 1:
         // Funktion
         // Malloc A
+        // Storage for 100 int-Type's
         malloc_a();
         break;
 
     case 2:
         // Funktion
         // Malloc B
+        // Storage reservation
         malloc_b();
         break;
     

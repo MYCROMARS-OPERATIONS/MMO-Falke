@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../header/structure_i.h"
 
-// typedef Struktur definieren
+// typedef 
 typedef struct house2 {
     int a;
     int b;

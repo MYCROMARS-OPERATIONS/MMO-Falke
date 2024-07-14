@@ -7,5 +7,5 @@ void mainMenu_4(int *m)
     printf("*** OUTPUT ***\n");
 
     // Funktion
-    outputString();   
+    output_a();   
 }

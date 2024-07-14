@@ -23,36 +23,42 @@ void mainMenu_7(int *m)
     case 1:
         // Funktion
         // Loop A
+        // While Loop
         loopA();
         break;
 
     case 2:
         // Funktion
         // Loop B
+        // For Loop
         loopB();
         break;
 
     case 3:
         // Funktion
         // Loop C
+        // For Loop time.h
         loopC();
         break;
 
     case 4:
         // Funktion
         // Loop D
+        // For Loop in for Loop
         loopD();
         break;
 
     case 5:
         // Funktion
         // Loop E
+        // For Loop in for Loop
         loopE();
         break;
 
     case 6:
         // Funktion
         // Loop F
+        // For Loop & While Loop
         loopF();
         break;
 

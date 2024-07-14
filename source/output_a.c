@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "../header/output.h"
+#include "../header/output_a.h"
 
 // Output
-void outputString(void) {
+void output_a(void) {
         printf("Output over output.c:\n");
         printf("With printf(): Hello World\n");
         printf("With putc(): ");

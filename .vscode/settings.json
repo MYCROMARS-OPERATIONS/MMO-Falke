@@ -8,6 +8,7 @@
         "pointer_a.h": "c",
         "array_d.h": "c",
         "input_b.h": "c",
-        "input.h": "c"
+        "input.h": "c",
+        "structure_d.h": "c"
     }
 }

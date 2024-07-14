@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "../header/structure_e.h"
 
-// Structure E, mit Array
+// Structure E
+// with Array
 void structure_e(void)
 {
     // Struct Name: house

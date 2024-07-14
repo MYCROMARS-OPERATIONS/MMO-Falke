@@ -2,6 +2,7 @@
 #include "../header/loop_f.h" 
 
 // LOOP F
+// For Loop & While Loop
 void loopF(void)
 {
     printf("Down & up:\n\n");

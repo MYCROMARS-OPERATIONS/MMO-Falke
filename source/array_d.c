@@ -2,6 +2,7 @@
 #include "../header/array_d.h"
 
 // ARRAY D
+// int Array switch number
 void arrayD(void)
 {
     int numbers[] = {45, 50, 88, 100, 213};
