@@ -15,8 +15,8 @@ void structure_g(void)
     struct buildings house, *house_pointer;
 
     // Input
-    house.apartment_1 = 2;
-    house.apartment_2 = 4;
+    house.apartment_1 = 5;
+    house.apartment_2 = 10;
 
     // Pointer
     house_pointer = &house;

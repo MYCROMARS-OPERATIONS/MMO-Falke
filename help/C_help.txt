@@ -118,6 +118,11 @@ p	Pointer
 lp	long (oder far) pointer
 np	short (oder near) pointer
 
+Print out:
+&lu	sizeof(), Struct variable or *pointer
+%hd	short int struct variable
+%ld	log int struct variable
+
 
 
 //------------------------------------------------------------------- Hexdecimal:
@@ -151,8 +156,16 @@ Oktal value:
 07 = 7
 010 = 8
 
-----------------------------------------------------------------------------------
-********************************************************************************** Konstanten
+------------------------------------------------------------ Datei rechte:
+r = read
+w = write, neu erzeugt wenn nicht vorhanden, Inhalt wird überschrieben
+a = append, neu erzeugt wenn nicht vorhanden, Inhalt ans Datei ende angehängt
+r+ = read & write
+w+ = read & write, neu erzeugt wenn nicht vorhanden, Inhalt wird überschrieben
+a+ = read & write, neu erzeugt wenn nicht vorhanden, Inhalt ans Datei ende angehängt
+
+---------------------------------------------------------------- Konstanten
+**************************************************************** 
 Symbolische Konstanten:
 
 #define SYMBOLISCHER_NAME Konstante
@@ -166,7 +179,7 @@ printf("Dieses printf() befindet sich in Zeile %d\n",__LINE__);
 printf("Compiliert am %s um %s\n",__DATE__, __TIME__);
 printf("Mein Compiler ist %sANSI-konform!\n",__STDC__ == 1? "": "nicht ");
 
----------------------------------------------------------------------------------Header file
+--------------------------------------------------------------- Header file
 #include <stdio.h>
 #include "includes/calculation.h"
 int add(int, int);
@@ -191,9 +204,7 @@ return 0;
 ----------------------------------------
 gcc -o main.exe main.c includes/calculation.c
 
---------------------------------------------------------------------------------- Makros:
-Makros:
-
+------------------------------------------------------------ Makros:
 #define SYMBOLISCHER_NAME Anweisungen
 #define DRUCKE_HELLO printf("Hello world\n")
 #define DRUCKE(x) puts(x) 
@@ -212,6 +223,7 @@ int main(void){
   * Die if Anweisung wird expandiert zu
   * if( ((x >= 'a' && x <= 'z') ||......))
   */
+
  if( ISLOWER(cChar))
 	printf("%c ist ein Kleinbuchstabe\n", cChar);
 
@@ -223,36 +235,30 @@ int main(void){
 
 /* Das Resultat unten ist nicht 10*30, also 300,
  * sondern 10 * 20 + 10, mithin 210! */
+
 printf("Das Resultat ist: %d", 10 * MAX_VAL);
+
 /* besser wäre daher:
  * #define MAX_VAL (20 + 10)
  */
 
-------------------------------------------------------
+------------------------------------------------------ Makros löschen
 Symbolische Konstanten und Makros löschen:
 
 #define SIZE 127
 #undef SIZE
 #define SIZE 256
 
-//------------------------------------------------------------------ Datei rechte:
-r = read
-w = write, neu erzeugt wenn nicht vorhanden, Inhalt wird überschrieben
-a = append, neu erzeugt wenn nicht vorhanden, Inhalt ans Datei ende angehängt
-r+ = read & write
-w+ = read & write, neu erzeugt wenn nicht vorhanden, Inhalt wird überschrieben
-a+ = read & write, neu erzeugt wenn nicht vorhanden, Inhalt ans Datei ende angehängt
-
-----------------------------------------------------------------------------------------
-**************************************************************************************** Bedingte Kompilierung:
+---------------------------------------------------------------- Bedingte Kompilierung
 #if 0
-	/* Keine der Anweisungen zwischen #if
-	 * und #endif würde vom Compiler übersetzt
+	/* Keine der Anweisungen zwischen #if und #endif würde vom Compiler übersetzt
 	 */
-	printf("Wert von iCount: %d", iCount);
+
+   printf("Wert von iCount: %d", iCount);
+
 #endif
 
-------------------------------------------------------------------
+------------------------------------------------------------------ #ifdef
 #define DEBUG
 
 #ifdef DEBUG
@@ -263,20 +269,33 @@ a+ = read & write, neu erzeugt wenn nicht vorhanden, Inhalt ans Datei ende angeh
 	printf("Wert von iCount: %d", iCount);
 #endif
 
-------------------------------------------------------------------
+------------------------------------------------------------------ #elif
 #ifdef BORLAND
 	#include <conio.h>
 	#define CLEAR() clrscr()
+
 #elif defined MICROSOFT
 	#include <graph.h>
 	#define CLEAR() _clearscreen(0)
+
 #elif defined UNIX
 	#include <curses.h>
 	#define CLEAR() clear()
 #endif
 
------------------------------------------------------------------------------------------ Konstante
-*****************************************************************************************
+------------------------------------------------------------------ #ifndef
+#ifndef DATEI_C
+
+	// Konstante wird nur einmal definiert
+   	#define DATEI_C
+
+	// funktion nur einmal definiert
+   	void datei_c(); 
+
+#endif
+
+--------------------------------------------------------------------- Konstante
+*********************************************************************
 Eine integer-Konstante: 34563, 4, 909, 56
 Oktale integer-Konstanten: 007, 01, 0043, 00
 Eine hexadezimale integer-Konstante: 0x12, 0x2ae4, 0Xff, 0X3e2
@@ -300,7 +319,7 @@ Exponentialschreibweise
 Zeichenkonstanten (int)
 Einzelnes Zeichen "x"
 
-***********************************************************************************Escape-Sequenzen
+********************************************************************* Escape-Sequenzen
 printf()
 Folgende Escape-Sequenzen sind definiert:
 Nicht bei scanf verwenden.
@@ -397,7 +416,7 @@ printf("Text %d.", v);
 %s = Text
 %d = Dezimalzahl (char in %d = ASCII-code)
 %p = Adresse als Hex pointer
-%c =Character
+%c = Character
 %f = Zahl mit Komma
 
 scanf:
@@ -424,8 +443,8 @@ unsigned	Bewirkt, daß die Variable nur positive Werte aufnehmen kann.
 const unsigned char uchFalsch;
 uchFalsch = 'Y';
 
------------------------------------------------------------------------------------------Variablen
-*****************************************************************************************
+--------------------------------------------------------------------- Variablen
+*********************************************************************
 Definition von Variablen
 
 Datentyp Variable_1,Variable_2,..., Variable_x;
@@ -453,8 +472,8 @@ Variblen:
 _123
 abc123
 
------------------------------------------------------------------------------------------
-*****************************************************************************************Ausgaben
+----------------------------------------------------------------------- Ausgaben
+***********************************************************************
 int a,b;
 
 printf("Goodbye, cruel world!\n");
