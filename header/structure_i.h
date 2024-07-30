@@ -1,7 +1,6 @@
 #ifndef STRUCTURE_I
-#define STRUCTURE_I
+    #define STRUCTURE_I
 
-// struct
-void structure_i();
-
+    // struct
+    void structure_i();
 #endif

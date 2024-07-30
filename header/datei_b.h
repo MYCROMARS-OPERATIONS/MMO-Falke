@@ -1,7 +1,6 @@
 #ifndef DATEI_B
-#define DATEI_B
+    #define DATEI_B
 
-// Datei B
-void datei_b(); 
-
+    // Datei B
+    void datei_b(); 
 #endif

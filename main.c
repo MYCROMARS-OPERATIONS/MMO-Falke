@@ -5,7 +5,9 @@
 /*                        11.07.2024                      */
 /* ****************************************************** */
 #include <stdio.h>
-#include <stdlib.h>
+//#include <stdlib.h>
+//#include <math.h>
+//#include <time.h>
 //#include <string.h>
 
 // header file
@@ -37,15 +39,16 @@ int main()
 
     printf("********** MAIN MENU ***********\n");
     printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT     | (4) OUTPUT  | (5) POINTER\n");
-    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (10) DATA | (0) EXIT\n");
+    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (10) DATA\n");
+    printf("Press: (11) TIME       | (12) MATH | (0) EXIT\n");
     
     printf("Input: ");
 
     if (scanf("%d", &menu)) {
        
-        // Falsche Zahl (nicht 1-10)
-        if (menu < 0 || menu > 10){
-                printf("\nInput is not 1-10\n\n");
+        // Falsche Zahl (nicht 1-12)
+        if (menu < 0 || menu > 12){
+                printf("\nInput is not 1-12\n\n");
                 // Go here <<<---
                 goto mainMenu;
             }
@@ -116,14 +119,27 @@ int main()
             // Funktion
             mainMenu_10(&menuB);
             break;
+        
+        case 11:
+            // *------------- Time -------------*
+            // Funktion
+            mainMenu_11(&menuB);
+            break;
+        
+        case 12:
+            // *------------- Math -------------*
+            // Funktion
+            mainMenu_12(&menuB);
+            break;
+        
 
         default:
-            printf("Input is not a number 1-10\n\n");
+            printf("Input is not a number 1-11\n\n");
             break;
         }
     }
     else{
-        printf("\nInput is not a number 1-10\n\n");
+        printf("\nInput is not a number 1-11\n\n");
         scanString0();
         
         // Go here <<<---

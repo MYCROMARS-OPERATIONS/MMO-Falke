@@ -1,7 +1,6 @@
 #ifndef CALCULATION_
-#define CALCULATION_
+    #define CALCULATION_
 
-// Calculation
-void calculation();
-
+    // Calculation
+    void calculation();
 #endif

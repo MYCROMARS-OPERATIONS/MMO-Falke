@@ -57,8 +57,12 @@
 #include "header/datei_f.h" 
 #include "header/datei_g.h" 
 
+#include "header/time_a.h" 
 
-// ****************** Include files: .c ******************
+#include "header/math_a.h" 
+
+
+// ****************** Include files: main Menu ******************
 #include "source/mainMenu_0.c"
 #include "source/mainMenu_1.c"
 #include "source/mainMenu_2.c"
@@ -70,7 +74,10 @@
 #include "source/mainMenu_8.c"
 #include "source/mainMenu_9.c"
 #include "source/mainMenu_10.c"
+#include "source/mainMenu_11.c"
+#include "source/mainMenu_12.c"
 
+// ****************** Include files: .c ******************
 #include "source/calculation.c"
 
 #include "source/delay_a.c"
@@ -123,5 +130,8 @@
 #include "source/datei_e.c"
 #include "source/datei_f.c"
 #include "source/datei_g.c"
+
+#include "source/time_a.c"
+#include "source/math_a.c"
 
 #endif

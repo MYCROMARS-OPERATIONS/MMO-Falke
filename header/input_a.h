@@ -1,7 +1,6 @@
 #ifndef INPUT_
-#define INPUT_
+    #define INPUT_
 
-// Input
-void input_a();
-
+    // Input
+    void input_a();
 #endif

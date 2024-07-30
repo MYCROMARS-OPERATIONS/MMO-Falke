@@ -1,7 +1,6 @@
 #ifndef ARRAY_D
-#define ARRAY_D
+    #define ARRAY_D
 
-// Array D
-void arrayD();
-
+    // Array D
+    void arrayD();
 #endif

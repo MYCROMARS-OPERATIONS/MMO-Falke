@@ -1,7 +1,6 @@
 #ifndef DELAY_
-#define DELAY_
+    #define DELAY_
 
-// Delay
-void delay_a(double tx);
-
+    // Delay
+    void delay_a(double tx);
 #endif

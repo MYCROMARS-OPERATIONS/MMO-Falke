@@ -1,7 +1,6 @@
 #ifndef STRUCTURE_A
-#define STRUCTURE_A
+    #define STRUCTURE_A
 
-// Input
-void structure_a();
-
+    // Input
+    void structure_a();
 #endif

@@ -1,7 +1,6 @@
 #ifndef POINTER_
-#define POINTER_
+    #define POINTER_
 
-// Pointer A
-void pointerA();
-
+    // Pointer A
+    void pointerA();
 #endif

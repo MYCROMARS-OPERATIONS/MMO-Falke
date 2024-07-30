@@ -928,7 +928,7 @@ int main(){
 int main(){
 
     int a,b;
-    printf("Type a positive value; ")
+    printf("Type a positive value");
     scanf("%d", &b);
 
     for ( a=0; a<b; a++ )
@@ -2433,7 +2433,67 @@ pf[0] = pf+0
 pf[1] = pf+1
 pf[n] = pf+n
 
+--------------------------------------------------------------- Library time.h
+#include <stdio.h>
+
+Windows:
+#include <windows.h>
+#include <synchapi.h>
+Sleep(1000);
+
+Linux:
+#include <unistd.h>
+sleep(1);
+
+#include <time.h>
+
+int main(void)
+{
+	time_t now = time(NULL);
+
+	// number of sec since Jan. 1, 1970 midnight
+	printf("%ld\n", now);
+
+	// Programm sleeps 2 seconds
+	sleep(2);
+	time_t two_secs = time(NULL);
+	printf("%ld\n", two_secs);
+
+	
+	double diff = difftime(two_secs, now);
+	printf("diff: %f\n", diff);
+
+	return 0;
+}
 
 
----------------------------------------------------------------------------------------- END
-*********************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+math.h
+
+
+
+--------------------------------------------------------------- END
+****************************************************************
