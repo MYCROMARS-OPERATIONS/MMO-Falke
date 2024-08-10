@@ -58,6 +58,7 @@
 #include "header/datei_g.h" 
 
 #include "header/time_a.h" 
+#include "header/time_b.h" 
 
 #include "header/math_a.h" 
 
@@ -132,6 +133,8 @@
 #include "source/datei_g.c"
 
 #include "source/time_a.c"
+#include "source/time_b.c"
+
 #include "source/math_a.c"
 
 #endif
