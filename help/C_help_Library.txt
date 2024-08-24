@@ -5,10 +5,8 @@
 //#############################################
 
 
-############################################################### Time.h
-
+Time.h
 --------------------------------------------------------------- Variable type:
-
 time_t
 - long int
 
@@ -37,16 +35,11 @@ struct tm {
 };
 
 
-
-
-
-
 --------------------------------------------------------------- Macros:
-
 NULL
 CLOCKS_PER_SEC
---------------------------------------------------------------- Function:
 
+--------------------------------------------------------------- Function:
 time(NULL)
 difftime(a, b)
 
@@ -82,7 +75,6 @@ time_t time(time_t *timer)
 
 size_t wcsftime( wchar_t* str, size_t count, const wchar_t* format, const struct tm* time )
 - Converts a tm object to custom wide string textual representation.
-
 
 --------------------------------------------------------------- Example, current time
 #include <stdio.h>
