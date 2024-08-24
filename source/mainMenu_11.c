@@ -5,7 +5,7 @@
 void mainMenu_11(int *m)
 {
     printf("\n*** TIME ***\n");
-    printf("Press: (1) TIME-A | (2) TIME-B | (0) EXIT\n");
+    printf("Press: (1) TIME-A | (2) TIME-B | (2) TIME-C | (0) EXIT\n");
 
     printf("Your Input: ");
 
@@ -30,6 +30,11 @@ void mainMenu_11(int *m)
         time_b();
         break;
     
+    case 3:
+        // Time C
+        time_c();
+        break;
+
     default:
         *m = 0;
         printf("### END TIME ###\n\n");

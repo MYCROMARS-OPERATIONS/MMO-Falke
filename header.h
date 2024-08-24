@@ -59,6 +59,7 @@
 
 #include "header/time_a.h" 
 #include "header/time_b.h" 
+#include "header/time_c.h" 
 
 #include "header/math_a.h" 
 
@@ -134,6 +135,7 @@
 
 #include "source/time_a.c"
 #include "source/time_b.c"
+#include "source/time_c.c"
 
 #include "source/math_a.c"
 

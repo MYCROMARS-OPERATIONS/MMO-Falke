@@ -3,13 +3,13 @@
 #include <synchapi.h>
 #include "../header/time_a.h"
 
-// Calculation
+// Time A
 void time_a(void)
 {
 	// typedef long int
-	// number of sec since Jan. 1, 1970 midnight
     time_t now = time(NULL);
 
+	// number of sec since Jan. 1, 1970 midnight
 	printf("%s\n", "Seconds since Jan. 1, 1970 midnight:");
 	printf("%ld\n\n", now);
 
@@ -24,6 +24,6 @@ void time_a(void)
 	printf("%s\n", "Show differenz:");
 
 	// Differenz
-    double diff = difftime(two_secs, now);
+    double diff = difftime(now, two_secs);
 	printf("%f\n\n", diff);
 }
