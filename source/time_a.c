@@ -3,7 +3,7 @@
 #include <synchapi.h>
 #include "../header/time_a.h"
 
-// Time A
+// time(), sleep(), difftime()
 void time_a(void)
 {
 	// typedef long int

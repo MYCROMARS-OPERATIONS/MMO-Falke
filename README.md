@@ -67,5 +67,13 @@ Example C Code
     F: Open/create file write 2 numbers (w), Read file 2 numbers (r)
     G: Open/create file write 2 numbers (w), Read file 2 numbers (r)
 
+11. Time
+    A: time(), sleep(), difftime()
+    B: typedef time_t, ctime()
+    C: typedef clock_t, CLOCK_PER_SEC
+
+12. Math
+    A: Sinus, Kugel Umfang, Volumen
+    
 0. Exit
 

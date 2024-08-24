@@ -5,7 +5,7 @@
 #include "../header/time_c.h"
 #include <synchapi.h>
 
-// Time C
+// typedef clock_t, CLOCK_PER_SEC
 void time_c(void)
 {
 	printf("Programm Time\n");

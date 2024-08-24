@@ -5,7 +5,7 @@
 #include <string.h>
 //#include <stdlib.h>
 
-// Time B
+// typedef time_t, ctime()
 void time_b(void)
 {
 	// typedef long int ************************************

@@ -2,11 +2,9 @@
 #include <math.h>
 #include "../header/math_a.h"
 
-// Calculation
+// Sinus, Kugel Umfang, Volumen
 void math_a(void)
 {
-    // sinus
-    
     double c;
     double sinus;
     double radius;
@@ -22,6 +20,7 @@ void math_a(void)
     // Umfang einer Kugel
     printf("Sphere circumference\n");
     printf("Input radius: ");
+
     scanf("%lf", &radius);
     printf("circumference is: %.2f\n\n", 2 * radius * 3.14);
     
