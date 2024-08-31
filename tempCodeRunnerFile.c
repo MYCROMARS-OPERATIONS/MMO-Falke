@@ -1,2 +1,1 @@
-// Go here <<<---
-    mainMenu:
+}

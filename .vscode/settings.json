@@ -10,6 +10,8 @@
         "input_b.h": "c",
         "input.h": "c",
         "structure_d.h": "c",
-        "calculation.h": "c"
+        "calculation.h": "c",
+        "input_a.h": "c",
+        "delay_a.h": "c"
     }
 }
