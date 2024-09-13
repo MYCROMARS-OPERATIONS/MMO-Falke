@@ -7,8 +7,8 @@ void delay_a(double tx)
     int menuB = 0;
     double i = 1;
     double step = 100;  // Reading step
-    int st = 1;       // Counter
-    int multi = 10000; // Multiplicator 1 Mil.
+    int st = 1;         // Counter
+    int multi = 10000;  // Multiplicator 1 Mil.
 
     // Print Timer size
     printf("Delay size: %f\n", tx);

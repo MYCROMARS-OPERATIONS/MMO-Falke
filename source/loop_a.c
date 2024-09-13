@@ -5,9 +5,9 @@
 // While Loop
 void loopA(void)
 {
-    printf("While loop 1...10:\n\n");
-
     int h = 1;
+
+    printf("While loop 1...10:\n\n");
 
     while(h <= SIZE)
     {

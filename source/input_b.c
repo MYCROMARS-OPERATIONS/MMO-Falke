@@ -31,6 +31,4 @@ void input_b(void)
         // Go here <<<---
         goto start;
     }
-
-    //return (0);
 }
