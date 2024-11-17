@@ -1,7 +1,4 @@
-//#include <stdio.h>
-//#include "../header/output_a.h"
-
-// Output
+// Output a
 void output_a(void) {
         printf("Output over output.c:\n");
         printf("With printf(): Hello World\n");

@@ -1,7 +1,4 @@
-//#include <stdio.h>
-//#include "../header/malloc_a.h"
-
-// Maloc
+// Maloc a
 // Storage for 100 int-Type's
 void malloc_a(void)
 {

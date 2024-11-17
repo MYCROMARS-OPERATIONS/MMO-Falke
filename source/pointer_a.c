@@ -1,6 +1,3 @@
-//#include <stdio.h>
-//#include "../header/pointer_a.h"
-
 // POINTER A, of Int
 void pointerA() {
     printf("POINTER-A\n");

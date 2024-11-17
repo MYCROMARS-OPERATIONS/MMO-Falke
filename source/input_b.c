@@ -1,7 +1,4 @@
-//#include <stdio.h>
-//#include <string.h>
-//#include "../header/input_b.h"
-
+// Input b
 char b[50];
 
 void scanString(void){

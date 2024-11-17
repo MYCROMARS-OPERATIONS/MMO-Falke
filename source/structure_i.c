@@ -1,6 +1,4 @@
-//#include <stdio.h>
-//#include "../header/structure_i.h"
-
+// Struktur i
 // typedef 
 typedef struct house2 {
     int a;

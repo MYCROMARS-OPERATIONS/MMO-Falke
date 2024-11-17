@@ -1,6 +1,3 @@
-//#include <stdio.h>
-//#include "../header/structure_a.h"
-
 // Structure A
 // Structure define int
 void structure_a(void)

@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// DELAY MENU
+// DELAY MENU 2
 void mainMenu_2(int *m)
 {
     int timer = 0;

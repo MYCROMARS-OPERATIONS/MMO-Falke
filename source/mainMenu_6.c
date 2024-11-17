@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// ARRAY MENU
+// ARRAY MENU 6
 void mainMenu_6(int *m)
 {
     printf("\n*** ARRAY MENU ***\n");

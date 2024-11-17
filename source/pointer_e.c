@@ -1,6 +1,3 @@
-//#include <stdio.h>
-//#include "../header/pointer_e.h"
-
 // POINTER E, to Function
 void pointerE(int *val)
 {

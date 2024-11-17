@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// OUTPUT MENU
+// OUTPUT MENU 4
 void mainMenu_4(int *m)
 {
     printf("\n*** OUTPUT ***\n");

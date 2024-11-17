@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// POINTER MENU
+// POINTER MENU 5
 void mainMenu_5(int *m)
 {
     printf("\n*** POINTER MENU ***\n");

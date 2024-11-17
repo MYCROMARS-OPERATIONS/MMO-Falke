@@ -1,10 +1,4 @@
-//#include <stdio.h>
-//#include <time.h>
-//#include "../header/time_b.h"
-
-#include <string.h>
-//#include <stdlib.h>
-
+// Time B
 // typedef time_t, ctime()
 void time_b(void)
 {

@@ -1,8 +1,4 @@
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
-//#include "../header/datei_c.h"
-
+// Datei c
 // Datei lesen Nummer (r)
 void datei_c(void)
 {

@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// TIME MENU
+// TIME MENU 12
 void mainMenu_12(int *m)
 {
     printf("\n*** MATH ***\n");
@@ -9,4 +6,4 @@ void mainMenu_12(int *m)
 
     // Funktion
     math_a();
-}
+} 

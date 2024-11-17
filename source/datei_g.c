@@ -1,7 +1,4 @@
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include "../header/datei_g.h"
-
+// Datei g
 void datei_g(void)
 {
     // Datei öffnen/erstellen schreiben 2 Nummern (w)

@@ -1,6 +1,3 @@
-//#include <stdio.h>
-//#include "../header/loop_d.h"
-
 // LOOP D
 // For Loop in for Loop
 void loopD(void)

@@ -1,7 +1,4 @@
-//#include <stdio.h>
-//#include "../header/delay_a.h"
-
-// Delay
+// Delay a
 void delay_a(double tx)
 {
     int menuB = 0;

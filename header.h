@@ -1,6 +1,7 @@
 #ifndef HEADER
     #define HEADER
 
+    // ****************** Include library files: .h 
     #include <stdio.h>
     #include <stdlib.h>
     #include <math.h>
@@ -8,7 +9,7 @@
     #include <string.h>
     #include <synchapi.h>
 
-    // ****************** Include files: .h ******************
+    // ****************** Include files: .h 
     #include "header/mainMenu.h"
 
     #include "header/calculation.h"
@@ -70,8 +71,7 @@
 
     #include "header/math_a.h" 
 
-
-    // ****************** Include files: main Menu .c ******************
+    // ****************** Include Menu files .c 
     #include "source/mainMenu_0.c"
     #include "source/mainMenu_1.c"
     #include "source/mainMenu_2.c"
@@ -86,7 +86,7 @@
     #include "source/mainMenu_11.c"
     #include "source/mainMenu_12.c"
 
-    // ****************** Include files: .c ******************
+    // ****************** Include files: .c 
     #include "source/calculation.c"
 
     #include "source/delay_a.c"

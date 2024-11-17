@@ -1,9 +1,4 @@
-//#include <stdio.h>
-//#include <time.h>
-//#include <synchapi.h>
-//#include "../header/time_a.h"
-
-// time(), sleep(), difftime()
+// Time a, sleep(), difftime()
 void time_a(void)
 {
 	// typedef long int

@@ -1,6 +1,3 @@
-//#include <stdio.h>
-//#include "../header/array_d.h"
-
 // ARRAY D
 // int Array switch number
 void arrayD(void)

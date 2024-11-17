@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// STRUKTUR MENU
+// STRUKTUR MENU 8
 void mainMenu_8(int *m)
 {
     printf("\n*** STRUCTURE MENU ***\n");

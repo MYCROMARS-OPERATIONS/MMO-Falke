@@ -1,9 +1,5 @@
-//#include <stdio.h>
-//#include "../header/array_f.h"
-
 // ARRAY F
 // char Array 
-// Function
 void incshow(char a)
  {
     a++;

@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// LOOP MENU
+// LOOP MENU 7
 void mainMenu_7(int *m)
 {
     printf("\n*** LOOP MENU ***\n");

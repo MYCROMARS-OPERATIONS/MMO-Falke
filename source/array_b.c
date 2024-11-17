@@ -1,6 +1,3 @@
-//#include <stdio.h>
-//#include "../header/array_b.h"
-
 // ARRAY B
 void arrayB(void)
 {

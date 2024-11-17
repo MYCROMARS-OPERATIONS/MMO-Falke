@@ -1,7 +1,4 @@
-//#include <stdio.h>
-//#include <math.h>
-//#include "../header/math_a.h"
-
+// Math a
 // Sinus, Kugel Umfang, Volumen
 void math_a(void)
 {

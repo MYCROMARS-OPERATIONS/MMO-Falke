@@ -1,7 +1,4 @@
-//#include <stdio.h>
-///#include <stdlib.h>
-//#include "../header/datei_a.h"
-
+// Datei a
 // Datei öffnen/erstellen schreiben Nummer (a)
 void datei_a(void)
 {

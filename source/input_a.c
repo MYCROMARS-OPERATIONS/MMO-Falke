@@ -1,7 +1,4 @@
-//#include <stdio.h>
-//#include "../header/input_a.h"
-
-// Input
+// Input a
 void input_a(void)
 {
     char b, id;

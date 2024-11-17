@@ -1,6 +1,3 @@
-//#include <stdio.h> 
-//#include "../header/loop_f.h" 
-
 // LOOP F
 // For Loop & While Loop
 void loopF(void)

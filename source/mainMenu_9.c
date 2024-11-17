@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// MALLOC MENU
+// MALLOC MENU 9
 void mainMenu_9(int *m)
 {
     printf("\n*** MALLOC MENU ***\n");

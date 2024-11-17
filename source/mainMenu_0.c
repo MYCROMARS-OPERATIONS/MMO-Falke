@@ -1,7 +1,3 @@
-//#include <stdio.h>  
-//#include <stdlib.h>
-//#include "../header/mainMenu.h" 
-
 // EXIT MENU
 void mainMenu_0(int *m)
 {

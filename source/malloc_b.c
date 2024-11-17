@@ -1,9 +1,5 @@
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include "../header/malloc_b.h"
-
+// Malloc b
 // Storage reservation
-
 int *iArray(unsigned int n) {
     int *iptr = malloc(n*(sizeof(int)));
 

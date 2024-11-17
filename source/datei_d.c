@@ -1,9 +1,4 @@
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
-//#include "../header/datei_d.h"
-
-
+// Datei d
 void datei_d(void)
 {
     // Datei öffnen/erstellen schreiben Wort (a)

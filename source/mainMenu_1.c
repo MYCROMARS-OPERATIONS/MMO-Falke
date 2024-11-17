@@ -1,7 +1,4 @@
-//#include <stdio.h>  
-//#include "../header/mainMenu.h" 
-
-// CALCULTION MENU
+// CALCULTION MENU 1
 void mainMenu_1(int *m)
 {
     printf("\n*** CALCULATION ***\n");

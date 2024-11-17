@@ -1,7 +1,3 @@
-//#include <stdio.h>
-//#include <string.h>
-//#include "../header/structure_b.h" 
-
 // Structure B
 // Structure define short int
 void structure_b(void)

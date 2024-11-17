@@ -1,6 +1,3 @@
-//#include <stdio.h>
-//#include "../header/structure_f.h"
-
 // Structure F
 // copy Structure
 void structure_f(void)
