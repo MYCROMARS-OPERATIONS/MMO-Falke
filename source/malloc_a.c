@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/malloc_a.h"
+//#include <stdio.h>
+//#include "../header/malloc_a.h"
 
 // Maloc
 // Storage for 100 int-Type's

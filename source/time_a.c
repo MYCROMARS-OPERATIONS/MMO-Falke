@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <time.h>
-#include <synchapi.h>
-#include "../header/time_a.h"
+//#include <stdio.h>
+//#include <time.h>
+//#include <synchapi.h>
+//#include "../header/time_a.h"
 
 // time(), sleep(), difftime()
 void time_a(void)

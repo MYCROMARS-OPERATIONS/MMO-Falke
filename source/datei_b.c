@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-//#include <string.h>
-#include "../header/datei_b.h"
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include "../header/datei_b.h"
 
 // Datei schreiben/überschreiben Nummer (w)
 void datei_b(void)

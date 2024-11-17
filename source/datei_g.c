@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-//#include <string.h>
-#include "../header/datei_g.h"
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include "../header/datei_g.h"
 
 void datei_g(void)
 {

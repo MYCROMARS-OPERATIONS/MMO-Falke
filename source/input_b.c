@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <string.h>
-#include "../header/input_b.h"
+//#include <stdio.h>
+//#include <string.h>
+//#include "../header/input_b.h"
 
 char b[50];
 

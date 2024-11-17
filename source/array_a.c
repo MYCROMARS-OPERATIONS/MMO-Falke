@@ -1,5 +1,5 @@
-#include <stdio.h>  
-#include "../header/array_a.h" 
+//#include <stdio.h>  
+//#include "../header/array_a.h" 
 
 // ARRAY A
 void arrayA(void)

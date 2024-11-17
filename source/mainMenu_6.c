@@ -1,5 +1,5 @@
-#include <stdio.h>  
-#include "../header/mainMenu.h" 
+//#include <stdio.h>  
+//#include "../header/mainMenu.h" 
 
 // ARRAY MENU
 void mainMenu_6(int *m)

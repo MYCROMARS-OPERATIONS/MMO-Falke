@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <time.h>
-#include "../header/loop_c.h"
+//#include <stdio.h>
+//#include <time.h>
+//#include "../header/loop_c.h"
 
 // LOOP C
 // For Loop time.h

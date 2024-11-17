@@ -1,19 +1,17 @@
-#include <stdio.h>
-#include "../header/loop_b.h"
+//#include <stdio.h>
+//#include "../header/loop_b.h"
 
 // LOOP B
 // For Loop
 void loopB(void)
 {
-    printf("For loop 1...10:\n\n");
-
-    const int size = 10;
+    int x = 0;
+    const int SIZE_A = 10;
     int score[SIZE_B] = {19, 42, 34, 1, 13, 18, 52, 12, 19, 45};
 
-    int x;
-    x = 0;
+    printf("For loop 1...10:\n\n");
 
-    for(x=0; x<size; x++){
+    for(x=0; x<SIZE_A; x++){
         printf("Score value: %d\n", score[x]);
     }
 

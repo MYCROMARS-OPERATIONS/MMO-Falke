@@ -1,5 +1,5 @@
-#include <stdio.h>  
-#include "../header/mainMenu.h" 
+//#include <stdio.h>  
+//#include "../header/mainMenu.h" 
 
 // DELAY MENU
 void mainMenu_2(int *m)

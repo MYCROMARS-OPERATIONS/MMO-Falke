@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/structure_e.h"
+//#include <stdio.h>
+//#include "../header/structure_e.h"
 
 // Structure E
 // with Array

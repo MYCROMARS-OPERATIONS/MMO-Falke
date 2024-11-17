@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <string.h>
-#include "../header/structure_j.h"
+//#include <stdio.h>
+//#include <string.h>
+//#include "../header/structure_j.h"
 
 // Structure with Pointer
 typedef struct _Rechteck_

@@ -1,5 +1,5 @@
-#include <stdio.h>  
-#include "../header/mainMenu.h" 
+//#include <stdio.h>  
+//#include "../header/mainMenu.h" 
 
 // OUTPUT MENU
 void mainMenu_4(int *m)

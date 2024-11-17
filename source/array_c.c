@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/array_c.h"
+//#include <stdio.h>
+//#include "../header/array_c.h"
 
 // ARRAY C
 // float Array [] scanf()

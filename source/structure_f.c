@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/structure_f.h"
+//#include <stdio.h>
+//#include "../header/structure_f.h"
 
 // Structure F
 // copy Structure

@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/structure_a.h"
+//#include <stdio.h>
+//#include "../header/structure_a.h"
 
 // Structure A
 // Structure define int

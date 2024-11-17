@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/output_a.h"
+//#include <stdio.h>
+//#include "../header/output_a.h"
 
 // Output
 void output_a(void) {

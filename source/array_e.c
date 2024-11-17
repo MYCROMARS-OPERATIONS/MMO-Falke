@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/array_e.h"
+//#include <stdio.h>
+//#include "../header/array_e.h"
 
 // ARRAY E
 // int Array dublicate numbers

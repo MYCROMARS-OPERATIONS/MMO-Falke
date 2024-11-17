@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/structure_i.h"
+//#include <stdio.h>
+//#include "../header/structure_i.h"
 
 // typedef 
 typedef struct house2 {

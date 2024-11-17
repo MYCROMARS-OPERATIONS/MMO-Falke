@@ -1,5 +1,5 @@
-#include <stdio.h>  
-#include "../header/mainMenu.h" 
+//#include <stdio.h>  
+//#include "../header/mainMenu.h" 
 
 // TIME MENU
 void mainMenu_12(int *m)

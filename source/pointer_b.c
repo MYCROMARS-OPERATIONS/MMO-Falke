@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/pointer_b.h"
+//#include <stdio.h>
+//#include "../header/pointer_b.h"
 
 // POINTER B, of Array
 void pointerB(void)

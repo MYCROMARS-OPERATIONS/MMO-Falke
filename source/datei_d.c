@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "../header/datei_d.h"
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
+//#include "../header/datei_d.h"
 
 
 void datei_d(void)

@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "../header/malloc_b.h"
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include "../header/malloc_b.h"
 
 // Storage reservation
 

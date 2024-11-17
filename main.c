@@ -4,7 +4,7 @@
 /*                      ALEXANDER RUDI                    */
 /*                        11.07.2024                      */
 /* ****************************************************** */
-#include <stdio.h>
+//#include <stdio.h>
 //#include <stdlib.h>
 //#include <math.h>
 //#include <time.h>

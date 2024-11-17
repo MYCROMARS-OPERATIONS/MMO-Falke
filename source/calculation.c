@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include <math.h>
-#include <time.h>
-#include <synchapi.h>
-#include "../header/calculation.h"
+//#include <stdio.h>
+//#include <math.h>
+//#include <time.h>
+//#include <synchapi.h>
+//#include "../header/calculation.h"
 
 // Calculation
 void calculation(void)

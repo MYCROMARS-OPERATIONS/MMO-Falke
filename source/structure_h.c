@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/structure_h.h"
+//#include <stdio.h>
+//#include "../header/structure_h.h"
 
 // Structure H
 // with 0 initialize

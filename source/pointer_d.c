@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "../header/pointer_d.h"
+//#include <stdio.h>
+//#include "../header/pointer_d.h"
 
 // POINTER D, to Function
 void pointerD(int *val)
