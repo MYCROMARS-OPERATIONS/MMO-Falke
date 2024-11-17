@@ -18,9 +18,11 @@ int main()
 {
     printf("\n");
     printf("**********************************************\n");
-    printf("########     MYCROMARS OPERATIONS     ########\n");
     printf("########            FALKE             ########\n");
+    printf("########     MYCROMARS OPERATIONS     ########\n");
+    printf("######## (C) All rights reserved 2024 ########\n");
     printf("######## www.mycromars-operations.com ########\n");
+    printf("########           V. 1.0.0           ########\n");
     printf("**********************************************\n\n");
 
     int menu = 0;
@@ -32,9 +34,9 @@ int main()
     mainMenu:
 
     printf("********** MAIN MENU ***********\n");
-    printf("Press: (1) CALCULATION | (2) DELAY | (3) INPUT     | (4) OUTPUT  | (5) POINTER\n");
-    printf("Press: (6) ARRAY       | (7) LOOP  | (8) STRUCTURE | (9) MALLOC | (10) DATA\n");
-    printf("Press: (11) TIME       | (12) MATH | (0) EXIT\n");
+    printf("Press: (0) EXIT  | (1) CALCULATION | (2) DELAY     | (3) INPUT  | (4) OUTPUT | (5) POINTER\n");
+    printf("Press: (6) ARRAY | (7) LOOP        | (8) STRUCTURE | (9) MALLOC | (10) DATA  | (11) TIME \n");
+    printf("Press: (12) MATH\n");    
     
     printf("Input: ");
 
