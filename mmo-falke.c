@@ -1,6 +1,5 @@
 /* ****************************************************** */
 /*                  MYCROMARS OPERATIONS                  */
-/*                      FALKE v. 0.0.9                    */
 /*                      ALEXANDER RUDI                    */
 /*                        17.11.2024                      */
 /* ****************************************************** */
@@ -18,8 +17,7 @@ int main()
 {
     printf("\n");
     printf("**********************************************\n");
-    printf("########            FALKE             ########\n");
-    printf("########     MYCROMARS OPERATIONS     ########\n");
+    printf("########  MYCROMARS OPERATIONS FALKE  ########\n");
     printf("######## (C) All rights reserved 2024 ########\n");
     printf("######## www.mycromars-operations.com ########\n");
     printf("########           V. 1.0.0           ########\n");
