@@ -5,6 +5,7 @@
 /* ****************************************************** */
 
 // header file
+//#include <windows.h>
 #include "header.h"
 
 // Input String löschen
