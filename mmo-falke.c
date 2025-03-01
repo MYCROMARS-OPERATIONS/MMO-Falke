@@ -18,7 +18,7 @@ int main()
 {
     printf("\n");
     printf("**********************************************\n");
-    printf("########  MYCROMARS OPERATIONS FALKE  ########\n");
+    printf("########       MYCROMARS FALKE        ########\n");
     printf("######## (C) All rights reserved 2024 ########\n");
     printf("######## www.mycromars-operations.com ########\n");
     printf("########           V. 1.0.0           ########\n");
