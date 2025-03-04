@@ -1,5 +1,5 @@
 # MMO-Falke
-Example C Code
+C Basic Programming Example 
 
 0. Exit
 
@@ -56,11 +56,11 @@ Example C Code
     J: Structure with Pointer
     K: Structure with Pointer Pointer
 
-9. Malloc
+9. Storage reservation
     A: Storage for 100 int-Type's
     B: Storage reservation
 
-10. Datei
+10. Data
     A: Open/create file write number (a)
     B: Write/overwrite file number (w)
     C: Read file number (r)
