@@ -19,9 +19,10 @@ int main()
     printf("\n");
     printf("**********************************************\n");
     printf("########       MYCROMARS FALKE        ########\n");
-    printf("######## (C) All rights reserved 2024 ########\n");
+    printf("########    (C) All rights reserved   ########\n");
+    printf("########          2024-2025           ########\n");
     printf("######## www.mycromars-operations.com ########\n");
-    printf("########           V. 1.0.0           ########\n");
+    printf("########           V. 1.0.1           ########\n");
     printf("**********************************************\n\n");
 
     int menu = 0;
