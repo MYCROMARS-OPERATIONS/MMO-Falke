@@ -105,7 +105,7 @@ int main()
             break;
 
         case 9:
-            // *------------- Malloc -------------*
+            // *------------- Storage reservation (Malloc)-------------*
             // Funktion
             mainMenu_9(&menuB);
             break;
