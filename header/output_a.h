@@ -1,6 +1,6 @@
 #ifndef OUTPUT_
     #define OUTPUT_
 
-    // Input
+    // OUTPUT
     void output_a();
 #endif

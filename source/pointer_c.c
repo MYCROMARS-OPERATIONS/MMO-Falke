@@ -7,7 +7,7 @@ void pointerC(void)
     printf("For loop x < 5:\n\n");
 
     int a[5] = {11, 22, 33, 44, 55};
-    int x,*p;
+    int x, *p;
     
     // Address of Array to Pointer
     p = a;
