@@ -22,7 +22,7 @@ int main()
     printf("########    (C) All rights reserved   ########\n");
     printf("########          2024-2025           ########\n");
     printf("######## www.mycromars-operations.com ########\n");
-    printf("########           V. 1.0.1           ########\n");
+    printf("########           V. 1.0.2           ########\n");
     printf("**********************************************\n\n");
 
     int menu = 0;
@@ -35,7 +35,7 @@ int main()
 
     printf("********** MAIN MENU ***********\n");
     printf("Press: (0) EXIT  | (1) CALCULATION | (2) DELAY     | (3) INPUT  | (4) OUTPUT | (5) POINTER\n");
-    printf("Press: (6) ARRAY | (7) LOOP        | (8) STRUCTURE | (9) MALLOC | (10) DATA  | (11) TIME \n");
+    printf("Press: (6) ARRAY | (7) LOOP        | (8) STRUCTURE | (9) MALLOC | (10) DATA  | (11) TIME\n");
     printf("Press: (12) MATH\n");    
     
     printf("Input: ");
