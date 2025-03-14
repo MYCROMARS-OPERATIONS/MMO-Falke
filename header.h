@@ -11,7 +11,6 @@
 
     // ****************** Include files: .h 
     #include "header/mainMenu.h"
-    #include "header/menu_website.h"
 
     #include "header/calculation.h"
 
@@ -65,7 +64,6 @@
     #include "header/datei_e.h" 
     #include "header/datei_f.h" 
     #include "header/datei_g.h" 
-    #include "header/datei_print.h" 
 
     #include "header/time_a.h" 
     #include "header/time_b.h" 
@@ -88,7 +86,6 @@
     #include "source/mainMenu_11.c"
     #include "source/mainMenu_12.c"
    
-    #include "source/menu_website.c"
 
     // ****************** Include files: .c 
     #include "source/calculation.c"
@@ -143,7 +140,6 @@
     #include "source/datei_e.c"
     #include "source/datei_f.c"
     #include "source/datei_g.c"
-    #include "source/datei_print.c"
 
     #include "source/time_a.c"
     #include "source/time_b.c"
