@@ -70,7 +70,7 @@ void mainMenu_10(int *m)
     case 8:
         // Data PRINT
         // Datei erfolgreich geoeffnet zum lesen von int Array.
-        datei_print();
+        datei_website();
         break;
     
     default:
