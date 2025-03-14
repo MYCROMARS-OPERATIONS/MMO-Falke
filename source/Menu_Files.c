@@ -21,7 +21,7 @@ void Menu_Files(char *name)
     
     case 1: 
         // HTML
-        file();
+        //file();
         break;
 
     case 2:

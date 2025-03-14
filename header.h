@@ -12,9 +12,7 @@
 
     // ****************** Include files: .h 
     #include "header/Menu2.h"
-    #include "header/new.h"
-    #include "header/file.h"
-
+ 
     // ****************** Include Menu files .c 
     #include "source/Menu2_0.c"
     #include "source/Menu2_1.c"
@@ -23,7 +21,7 @@
    
 
     // ****************** Include files: .c 
-    #include "source/new.c"
-    #include "source/file.c"
+   
+    //#include "source/file.c"
 
 #endif
