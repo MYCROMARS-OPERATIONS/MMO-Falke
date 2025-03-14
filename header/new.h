@@ -1,6 +1,6 @@
 #ifndef NEW
     #define NEW
 
-    // Datei PRINT
+    // NEW
     void new(void); 
 #endif

@@ -2,8 +2,7 @@
 
 // Include file
 #include <dir.h>
-//#define MODUS 
-#include "../header/Menu2.h"
+#define MODUS 
 
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -16,70 +15,104 @@
 // }
 
 // NEW PROJECT
-void new(void)
+void new_old(void)
 {
     // Main folder create ****************************
-    char projectName[20];
+    char projectname[200];
  
-    printf("Project Name: ");
-    scanf("%199s",projectName);
+    printf("Folder Name: ");
+    scanf("%199s",projectname);
+    mkdir(projectname);
+    printf("New folder created: %s \n",projectname);
 
-    mkdir(projectName);
-    printf("New folder created: %s \n",projectName);
+    // Go to Main folder *****************************
+    chdir(projectname);
 
-    // Go to Main folder 
-    printf("Go to Folder: %s\n",projectName);
-    chdir(projectName);
-
-    // HTML Page Name input 
+    // HTML Page Name input **************************
     /*
     printf("HTML Site Name: ");
     char filename[20] = "";
     scanf("%s", &filename);
     */
-    char siteName[] = "index";
 
-    //char *name[] = siteName;
-
-    // Language input ************************
+    // Language input ********************************
     printf("\nCreate Header\n");
     printf("Choose Language (de,en): ");
     char language[10] = "";
     scanf("%s", &language);
 
-    // Datei erstellen ***********************
+    // int language = 1;
+    
+    // // Go here <<<---
+    // LanguageMenu:
+
+    // printf("********** Sprache ***********\n");
+    // printf("Press: (1) Deutsch  | (2) English\n");
+
+    // if (scanf("%d", &language)) {
+       
+    //     switch (language)
+    //     {
+    //     case 1:
+            
+    //         break;
+
+    //     case 2:
+        
+    //         break;
+
+    //     default:
+    //         printf("Input is not a number 1-2\n\n");
+    //         scanString1();
+    //         // reset variable
+    //         language = 0;
+    //         // Go here <<<---
+    //         goto LanguageMenu;
+    //     }
+    // }
+    // else{
+    //     printf("\nInput is not 1-2\n\n");
+    //     scanString1();
+
+    //     // reset variable
+    //     language = 0;
+
+    //     // Go here <<<---
+    //     goto LanguageMenu;
+    // }
+
+    // Datei öffnen/erstellen schreiben 2 Worte (w)
+    // Grundgerüst
     char doctype[] = "<!DOCTYPE html>";
 
-    // html open
-    char html_open_a[] = "<html lang=\"";
     // Language
+    char html_open_a[] = "<html lang=\"";
     char lang[10] = "";
     strcat (lang,language);
     char html_open_b[] = "\" id=\"top\">";
 
-    // head open
     char index_head_open_a[] = "<head id=\"";
     char index_head_id[20] = "";
-    strcat (index_head_id,siteName);
+    strcat (index_head_id,projectName);
     char index_head_open_b[] = "_head\">";
 
     char meta[] = "<meta charset=\"UTF-8\">";
 
     char index_script_head_a[] = "<script src=\"script/";
     char index_script_head_name[20] = "";
-    strcat (index_script_head_name,siteName);
+    strcat (index_script_head_name,projectName);
     char index_script_head_b[] = "_head.js\"></script>";
 
     char index_head_close[] = "</head>";
 
     char index_body_open_a[] = "<body id=\"";
     char index_body_id[20] = "";
-    strcat (index_body_id,siteName);
+    strcat (index_body_id,projectName);
     char index_body_open_b[] = "_body\">";
 
     char index_script_body_a[] = "<script src=\"script/";
     char index_script_body_name[20] = "";
-    strcat (index_script_body_name,siteName);
+    strcat (index_script_body_name,filename);
     char index_script_body_b[] = "_body.js\"></script>";
     
     char index_body_close[] = "</body>";
@@ -87,16 +120,16 @@ void new(void)
  
     // Output to HTML
     FILE *FileX;
-    FileX = fopen(siteName, "w");
+    FileX = fopen(filename, "w");
 
     if(FileX == NULL) 
     {
-        puts("Can not open");
+        puts("Fehler beim Öffnen von index.html");
         exit (EXIT_FAILURE);
     }
     else
     {
-        puts("File open");
+        puts("Datei erfolgreich geoeffnet/erstellt zum schreiben/ueberschreiben.");
         fprintf(FileX, "%s\n", doctype);
 
         // Language
@@ -137,7 +170,7 @@ void new(void)
         //fprintf(SampleFile, "%s\n%s", vorname_a, name_a);
 
         fclose(FileX);
-        
+        puts("Datei geschlossen.\n");
     }  
 
 
@@ -162,8 +195,7 @@ void new(void)
 
     mkdir(fonts);
     printf("New Subfolder created: %s \n",fonts);
-    
-    puts("File close.\n");
+
     // Go to Subfolder
     //chdir(subpfadname);
 
@@ -177,7 +209,5 @@ void new(void)
 
     // Go to Subfolder
     //chdir(subpfadname);
-
-    Menu_Files(&language[20]);
 
 }

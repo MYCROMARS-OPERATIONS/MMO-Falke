@@ -48,12 +48,12 @@ int main()
         {
         case 0:
             // *------------- Exit -------------*
-            Menu2_0(&menu2);
+            Menu2_0();
 
         case 1:
             // *------------- Calculation -------------*
             // 
-            Menu2_1(&menu2);
+            Menu2_1(&menu);
             break;
 
         case 2:
@@ -65,7 +65,7 @@ int main()
         case 3:
             // *------------- Input -------------*
             // 
-            Menu2_3(&menu2);
+            //Menu2_3(&menu2);
             break;
         
 
