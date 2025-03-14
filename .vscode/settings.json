@@ -1,7 +1,5 @@
 {
-    "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
     "files.associations": {
-        "header.h": "c",
-        "stdio.h": "c"
+        "menu_website.c": "cpp"
     }
 }

@@ -15,7 +15,7 @@ void scanString1(void){
 }
 
 // Datei PRINT
-void datei_print(void)
+void new(void)
 {
     // Main folder create
     char pfadname[200];

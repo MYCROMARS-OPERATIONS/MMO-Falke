@@ -1,8 +1,7 @@
-/* ****************************************************** */
-/*                  MYCROMARS OPERATIONS                  */
-/*                      ALEXANDER RUDI                    */
-/*                        17.11.2024                      */
-/* ****************************************************** */
+/****************/
+/*   MYCROMARS  */
+/*ALEXANDER RUDI*/
+/****************/
 
 // header file
 //#include <windows.h>
@@ -17,13 +16,12 @@ void scanString0(void){
 int main()
 {
     printf("\n");
-    printf("**********************************************\n");
-    printf("########       MYCROMARS FALKE        ########\n");
-    printf("########    (C) All rights reserved   ########\n");
-    printf("########          2024-2025           ########\n");
-    printf("######## www.mycromars-operations.com ########\n");
-    printf("########           V. 1.0.2           ########\n");
-    printf("**********************************************\n\n");
+    printf("************************************\n");
+    printf("####  MYCROMARS WEBSITE CREATOR ####\n");
+    printf("#### C All rights reserved 2025 ####\n");
+    printf("####        ALEXANDER RUDI      ####\n");
+    printf("####         Version: 1.0       ####\n");
+    printf("************************************\n\n");
 
     int menu = 0;
     int menuA = 0;

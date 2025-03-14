@@ -1,9 +1,9 @@
-// CALCULTION MENU 1
+// NEW
 void mainMenu_1(int *m)
 {
-    printf("\n*** CALCULATION ***\n");
-    printf("a + b\n");
+    printf("\n*** NEW ***\n");
+    //printf("a + b\n");
 
     // Funktion
-    calculation();
+    new();
 }
