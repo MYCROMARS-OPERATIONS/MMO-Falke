@@ -10,6 +10,6 @@ void Menu2_2(int *m)
     scanf("%d", &timer);
 
     // Funktion
-    delay_a(timer);
+    //delay_a(timer);
     timer = 0;
 }

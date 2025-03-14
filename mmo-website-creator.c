@@ -31,7 +31,7 @@ int main()
     menu:
 
     printf("********** MAIN MENU ***********\n");
-    printf("Press: (0) EXIT  | (1) CALCULATION | (2) DELAY     | (3) INPUT\n");   
+    printf("Press: 0 EXIT  | 1 NEW\n");   
     
     printf("Input: ");
 

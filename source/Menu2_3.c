@@ -15,13 +15,13 @@ void Menu2_3(int *m)
     case 1: 
         // Funktion
         // Input A, Int, Character, while: char
-        input_a();
+        //input_a();
         break;
 
     case 2:
         // Funktion
         // Input B, Number, check if it is correct 
-        input_b();
+        //input_b();
         break;
 
     default:

@@ -2,5 +2,5 @@
     #define NEW
 
     // Datei PRINT
-    void new(); 
+    void new(void); 
 #endif

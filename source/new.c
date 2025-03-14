@@ -2,19 +2,21 @@
 //#####          2025         #####
 //*********************************
 
+// Include file
 #include <dir.h>
 #define MODUS 
+
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
 
 // Input String löschen
-char b[50];
-void scanString1(void){
-    scanf("%s", &b);
-}
+// char b[50];
+// void scanString1(void){
+//     scanf("%s", &b);
+// }
 
-// Datei PRINT
+// NEW PROJECT
 void new(void)
 {
     // Main folder create
@@ -197,8 +199,7 @@ void new(void)
     // Go to Subfolder
     //chdir(subpfadname);
 
-
-     // Subfolder create
+    // Subfolder create
     // char subpfadname[200];
  
     // printf("Subolder Name: ");
@@ -208,7 +209,5 @@ void new(void)
 
     // Go to Subfolder
     //chdir(subpfadname);
-
-
 
 }
