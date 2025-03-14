@@ -1,5 +1,5 @@
 // INPUT MENU 3
-void mainMenu_3(int *m)
+void Menu2_3(int *m)
 {
     printf("\n*** INPUT MENU ***\n");
     printf("Press: (1) INPUT-A | (2) INPUT-B\n");

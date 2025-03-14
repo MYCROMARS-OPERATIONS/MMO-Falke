@@ -24,17 +24,14 @@ int main()
     printf("************************************\n\n");
 
     int menu = 0;
-    int menuA = 0;
-    int menuB = 0;
-    
-    /* ********************** MAIN MENU ********************* */
+    int menu2 = 0;
+     
+    /* ********************** MENU ********************* */
     // Go here <<<---
-    mainMenu:
+    menu:
 
     printf("********** MAIN MENU ***********\n");
-    printf("Press: (0) EXIT  | (1) CALCULATION | (2) DELAY     | (3) INPUT  | (4) OUTPUT | (5) POINTER\n");
-    printf("Press: (6) ARRAY | (7) LOOP        | (8) STRUCTURE | (9) MALLOC | (10) DATA  | (11) TIME\n");
-    printf("Press: (12) MATH\n");    
+    printf("Press: (0) EXIT  | (1) CALCULATION | (2) DELAY     | (3) INPUT\n");   
     
     printf("Input: ");
 
@@ -44,107 +41,51 @@ int main()
         if (menu < 0 || menu > 12){
                 printf("\nInput is not 1-12\n\n");
                 // Go here <<<---
-                goto mainMenu;
+                goto menu;
             }
 
         switch (menu)
         {
         case 0:
             // *------------- Exit -------------*
-            // Funktion
-            mainMenu_0(&menuB);
+            Menu2_0(&menu2);
 
         case 1:
             // *------------- Calculation -------------*
-            // Funktion
-            mainMenu_1(&menuB);
+            // 
+            Menu2_1(&menu2);
             break;
 
         case 2:
             // *------------- Delay -------------*
-            // Funktion
-            mainMenu_2(&menuB);
+            // 
+            Menu2_2(&menu2);
             break;
 
         case 3:
             // *------------- Input -------------*
-            // Funktion
-            mainMenu_3(&menuB);
-            break;
-
-        case 4:
-        // *------------- Output -------------*
-            // Funktion
-            mainMenu_4(&menuB);
-            break;
-
-        case 5:
-            // *------------- Pointer -------------*
-            // Funktion
-            mainMenu_5(&menuB);
-            break;
-
-        case 6:
-            // *------------- Array -------------*
-            // Funktion
-            mainMenu_6(&menuB);
-            break;
-
-        case 7:
-            // *------------- Loop -------------*
-            // Funktion
-            mainMenu_7(&menuB);
-            break;
-
-        case 8:
-            // *------------- Structure -------------*
-            // Funktion
-            mainMenu_8(&menuB);
-            break;
-
-        case 9:
-            // *------------- Storage reservation (Malloc)-------------*
-            // Funktion
-            mainMenu_9(&menuB);
-            break;
-
-        case 10:
-            // *------------- Data -------------*
-            // Funktion
-            mainMenu_10(&menuB);
-            break;
-        
-        case 11:
-            // *------------- Time -------------*
-            // Funktion
-            mainMenu_11(&menuB);
-            break;
-        
-        case 12:
-            // *------------- Math -------------*
-            // Funktion
-            mainMenu_12(&menuB);
+            // 
+            Menu2_3(&menu2);
             break;
         
 
         default:
-            printf("Input is not a number 1-11\n\n");
+            printf("Input is not a number 1-3\n\n");
             break;
         }
     }
     else{
-        printf("\nInput is not a number 1-11\n\n");
+        printf("\nInput is not a number 1-3\n\n");
         scanString0();
         
         // Go here <<<---
-        goto mainMenu;
+        goto menu;
     }
  
     // reset variable
     menu = 0;
-    menuA = 0;
-    menuB = 0;
+    menu2 = 0;
 
     // goto mainMenu;
-    goto mainMenu;
+    goto menu;
 }

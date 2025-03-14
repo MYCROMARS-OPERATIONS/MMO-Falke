@@ -10,25 +10,14 @@
     #include <synchapi.h>
 
     // ****************** Include Menu files .c 
-    #include "source/mainMenu_0.c"
-    #include "source/mainMenu_1.c"
-    #include "source/mainMenu_2.c"
-    #include "source/mainMenu_3.c"
-    #include "source/mainMenu_4.c"
-    #include "source/mainMenu_5.c"
-    #include "source/mainMenu_6.c"
-    #include "source/mainMenu_7.c"
-    #include "source/mainMenu_8.c"
-    #include "source/mainMenu_9.c"
-    #include "source/mainMenu_10.c"
-    #include "source/mainMenu_11.c"
-    #include "source/mainMenu_12.c"
+    #include "source/Menu2_0.c"
+    #include "source/Menu2_1.c"
+    #include "source/Menu2_2.c"
+    #include "source/Menu2_3.c"
    
-    #include "source/menu_website.c"
-
 
     // ****************** Include files: .h 
-    #include "header/mainMenu.h"
+    #include "header/Menu2.h"
     #include "header/new.h"
     
 

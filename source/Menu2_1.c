@@ -1,5 +1,5 @@
 // NEW
-void mainMenu_1(int *m)
+void Menu2_1(int *m)
 {
     printf("\n*** NEW ***\n");
     //printf("a + b\n");
