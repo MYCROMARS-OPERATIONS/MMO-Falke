@@ -1,5 +1,5 @@
 // DELAY MENU 2
-void Menu2_2(int *m)
+void Menu2_2()
 {
     // Main folder create ****************************
     // char projectName[20];
@@ -24,8 +24,10 @@ void Menu2_2(int *m)
     char siteFile[] = "";
     strcat (siteFile,siteName);
 
+    char siteNameExtension[] = "";
+
     char fileExtension[] = ".html";
-    strcat (siteFile,fileExtension);
+    strcat (siteNameExtension,fileExtension);
   
     //char *name[] = siteName;
 
@@ -75,7 +77,7 @@ void Menu2_2(int *m)
  
     // Output to HTML
     FILE *FileX;
-    FileX = fopen(siteFile, "w");
+    FileX = fopen(siteNameExtension, "w");
 
     if(FileX == NULL) 
     {
@@ -124,6 +126,7 @@ void Menu2_2(int *m)
         fprintf(FileX, "%s", html_close);
         //fprintf(SampleFile, "%s\n%s", vorname_a, name_a);
 
+        puts("File created successfully!");
         fclose(FileX);
     }  
 

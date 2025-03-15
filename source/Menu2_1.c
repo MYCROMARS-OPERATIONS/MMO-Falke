@@ -1,20 +1,41 @@
 // NEW
-void Menu2_1(int *m)
+void Menu2_1(char **projectName, int **visit)
 {
     printf("\n*** NEW PROJECT***\n");
 
+
+    // PROJECT NAME *******************
+    // printf("PointertName a: ");
+    // printf("%s\n\n", *projectName);
+
+    // *projectName = "char_Pointer_2";
+
+    // printf("PointertName a2: ");
+    // printf("%s\n\n", *projectName);
+    
+
+    // VISIT **************************
+    // printf("VISIT: ");
+    // printf("%d\n\n", **visit);
+
+    **visit = 1;
+
+    printf("VISIT: ");
+    printf("%d\n\n", **visit);
+
+
     // Main folder create ****************************
-    char projectName[20];
+    //char projectName[20] = "";
  
     printf("Project Name: ");
-    scanf("%199s",projectName);
+    scanf("%20s", *projectName);
 
-    mkdir(projectName);
-    printf("New folder created: %s \n",projectName);
+    mkdir(*projectName);
+    printf("New folder created: %s \n", *projectName);
 
     // Go to Main folder 
-    printf("Go to Folder: %s\n",projectName);
-    chdir(projectName);
+    printf("Go to Folder: %s\n", *projectName);
+    chdir(*projectName);
 
     // HTML Page Name input 
     /*
@@ -31,7 +52,7 @@ void Menu2_1(int *m)
     printf("\nCreate Header\n");
     printf("Choose Language (de,en): ");
     char language[10] = "";
-    scanf("%s", &language);
+    scanf("%199s\n", language);
 
     // Datei erstellen ***********************
     char doctype[] = "<!DOCTYPE html>";
