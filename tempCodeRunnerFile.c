@@ -1,1 +1,2 @@
-printf("%s\n", getcwd(s, 100));
+char language[] = "de";
+    char *languageP = &language[0];
