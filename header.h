@@ -6,6 +6,7 @@
     #include <stdlib.h>
     #include <string.h>
     #include <dir.h>
+    #include <unistd.h>
     //#include <math.h>
     //#include <time.h>
     //#include <synchapi.h>

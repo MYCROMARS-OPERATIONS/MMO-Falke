@@ -21,7 +21,7 @@ void Menu2_2()
     // Site Name
     char siteName[20] = "";
     scanf("%s", &siteName);
-    printf("\nSeitennamen: %s", siteName);
+    printf("\nSeitennamen: %s\n", siteName);
 
     char fileExtension[] = ".html";
 
@@ -31,7 +31,7 @@ void Menu2_2()
     //char *name[] = siteName;
 
     // Language input ************************
-    printf("\nCreate Header\n");
+    printf("\nHeader\n");
     printf("Choose Language (de,en): ");
     char language[10] = "";
     scanf("%s", &language);
@@ -87,7 +87,7 @@ void Menu2_2()
     }
     else
     {
-        puts("File open");
+        //puts("File open");
         fprintf(FileX, "%s\n", doctype);
 
         // Language
@@ -127,9 +127,9 @@ void Menu2_2()
         fprintf(FileX, "%s", html_close);
         //fprintf(SampleFile, "%s\n%s", vorname_a, name_a);
 
-        puts("File created successfully!");
+        puts("\nFile created successfully!");
         fclose(FileX);
     }  
 
-    puts("File close.\n");
+    puts("\n");
 }

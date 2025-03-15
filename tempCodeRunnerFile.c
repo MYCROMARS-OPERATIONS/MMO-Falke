@@ -1,1 +1,1 @@
-char *projectNameP = &projectName[0];
+printf("%s\n", getcwd(s, 100));

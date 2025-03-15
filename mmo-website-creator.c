@@ -6,7 +6,7 @@
 // header file
 //#include <windows.h>
 #include "header.h"
-
+#include <unistd.h>
 // Input String löschen
 char b[50];
 void scanString0(void){
@@ -20,7 +20,7 @@ int main()
     printf("####  MYCROMARS WEBSITE CREATOR ####\n");
     printf("#### C All rights reserved 2025 ####\n");
     printf("####        ALEXANDER RUDI      ####\n");
-    printf("####         Version: 1.0       ####\n");
+    printf("####         Version: 1.1       ####\n");
     printf("************************************\n\n");
 
     int menu1 = 0;
@@ -63,7 +63,7 @@ int main()
         /* ********************** MENU 1 ********************* */
         
         
-        printf("********** MAIN MENU ***********\n");
+        printf("********** MAIN MENU *********\n");
         printf("Press: 0 EXIT  | 1 NEW-PROJECT\n");   
         
         printf("Input: ");
@@ -120,20 +120,20 @@ int main()
         // Go here <<<---
         menu2:
         // PROJECT NAME
-        printf("PROJECT NAME: ");
-        printf("%s\n", projectName);
+        // printf("PROJECT NAME: ");
+        // printf("%s\n", projectName);
 
         // printf("NEW PROJECT NAME: ");
         // printf("%s\n\n", projectNameP);
 
         // VISIT
-        printf("VISIT: ");
-        printf("%d\n\n", visit);
+        // printf("VISIT: ");
+        // printf("%d\n\n", visit);
         // printf("VISIT POINTER: ");
         // printf("%d\n", *visitP);
 
         printf("*** MENU CREATE FILES ***\n");
-        printf("Press: 0 EXIT | 1 HTML-FILE\n");   
+        printf("Press: 0 BACK | 1 HTML-FILE\n");   
         
         printf("Input: ");
 
@@ -151,6 +151,15 @@ int main()
             case 0:
                 // End
                 printf("\n");
+                char s[100];
+
+                // Ornder verlassen
+                printf("Exit Folder Creation\n");
+                // printf("%s\n", getcwd(s, 100));
+                chdir("..");
+                printf("Now You are here: ");
+                printf("%s\n\n", getcwd(s, 100));
+
                 visit = 0;
                 // Go here <<<---
                 goto menu1;

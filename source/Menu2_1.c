@@ -1,7 +1,7 @@
 // NEW
 void Menu2_1(char **projectName, int **visit)
 {
-    printf("\n*** START NEW PROJECT ***\n");
+    printf("\n*** NEW PROJECT ***\n");
 
 
     // PROJECT NAME *******************
@@ -15,13 +15,10 @@ void Menu2_1(char **projectName, int **visit)
     
 
     // VISIT **************************
-    // printf("VISIT: ");
-    // printf("%d\n\n", **visit);
-
     **visit = 1;
 
-    printf("VISIT: ");
-    printf("%d\n\n", **visit);
+    // printf("VISIT: ");
+    // printf("%d\n\n", **visit);
 
 
     // Main folder create ****************************
@@ -31,11 +28,18 @@ void Menu2_1(char **projectName, int **visit)
     scanf("%20s", *projectName);
 
     mkdir(*projectName);
-    printf("New folder created: %s \n", *projectName);
+    //printf("New folder created: %s \n", *projectName);
 
-    // Go to Main folder 
-    printf("Go to Folder: %s\n", *projectName);
+    // Go to folder 
+    //printf("Go to Folder: %s\n", *projectName);
+    printf("\nNow You are here:\n");
     chdir(*projectName);
+
+    char s[100];
+    printf("%s\n", getcwd(s, 100));
+ 
+
+    //chdir("..");
 
     // HTML Page Name input 
     /*
@@ -49,7 +53,7 @@ void Menu2_1(char **projectName, int **visit)
     //char *name[] = siteName;
 
     // Language input ************************
-    printf("\nCreate Header\n");
+    printf("\nHeader\n");
     printf("Choose Language (de,en): ");
     char language[20] = "";
     scanf("%s", language);
@@ -103,7 +107,7 @@ void Menu2_1(char **projectName, int **visit)
     }
     else
     {
-        puts("\nFile open");
+        //puts("\nFile open");
         fprintf(FileX, "%s\n", doctype);
 
         // Language
@@ -144,7 +148,8 @@ void Menu2_1(char **projectName, int **visit)
         //fprintf(SampleFile, "%s\n%s", vorname_a, name_a);
 
         fclose(FileX);
-        
+        //puts("File close.\n");
+        printf("\n");
     }  
 
 
@@ -156,21 +161,23 @@ void Menu2_1(char **projectName, int **visit)
     char fonts[] = "fonts";
  
     mkdir(css);
-    printf("New Subfolder created: %s \n",css);
+    printf("New folder created: %s \n",css);
 
     mkdir(script);
-    printf("New Subfolder created: %s \n",script);
+    printf("New folder created: %s \n",script);
 
     mkdir(images);
-    printf("New Subfolder created: %s \n",images);
+    printf("New folder created: %s \n",images);
 
     mkdir(videos);
-    printf("New Subfolder created: %s \n",videos);
+    printf("New folder created: %s \n",videos);
 
     mkdir(fonts);
-    printf("New Subfolder created: %s \n",fonts);
+    printf("New folder created: %s \n",fonts);
     
-    puts("File close.\n");
+    printf("\n");
+    
+    
     // Go to Subfolder
     //chdir(subpfadname);
 
