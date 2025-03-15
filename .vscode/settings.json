@@ -2,6 +2,8 @@
     "files.associations": {
         "menu_website.c": "cpp",
         "cstdlib": "c",
-        "menu2.h": "c"
+        "menu2.h": "c",
+        "dir.h": "c",
+        "unistd.h": "c"
     }
 }

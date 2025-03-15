@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+//#include <dir.h>
+//#include <unistd.h>
+
 // DELAY MENU 2
 void Menu2_2()
 {
@@ -14,25 +19,21 @@ void Menu2_2()
     // printf("Go to Folder: %s\n",projectName);
     // chdir(projectName);
 
-
-    // HTML Page Name input 
-    printf("\nHTML Site Name: ");
-
+    // Site Name input **********************
+    printf("\nSite Name without Extesion: ");
     // Site Name
     char siteName[20] = "";
     scanf("%s", &siteName);
-    //printf("Namen: %s\n", siteName);
 
-    char fileExtension[] = ".html";
+    // File Name input **********************
+    printf("\nFile Name with extesion (.html): ");
 
-    //printf("\nSeitennamenEx: %s", siteNameExtension);
-    //strcat (siteNameExtension2,siteNameExtension);
-
-    //char *name[] = siteName;
-
+    // File Name
+    char fileName[20] = "";
+    scanf("%s", &fileName);
+    
     // Language input ************************
-    printf("\nHeader\n");
-    printf("Choose Language (de,en): ");
+    printf("\nChoose Language (de,en): ");
     char language[10] = "";
     scanf("%s", &language);
 
@@ -42,33 +43,33 @@ void Menu2_2()
     // html open
     char html_open_a[] = "<html lang=\"";
     // Language
-    char lang[10] = "";
-    strcat (lang,language);
+    // char lang[10] = "";
+    // strcat (lang,language);
     char html_open_b[] = "\" id=\"top\">";
 
     // head open
     char index_head_open_a[] = "<head id=\"";
-    char index_head_id[20] = "";
-    strcat (index_head_id,siteName);
+    // char index_head_id[20] = "";
+    // strcat (index_head_id,siteName);
     char index_head_open_b[] = "_head\">";
 
     char meta[] = "<meta charset=\"UTF-8\">";
 
     char index_script_head_a[] = "<script src=\"script/";
-    char index_script_head_name[20] = "";
-    strcat (index_script_head_name,siteName);
+    // char index_script_head_name[20] = "";
+    // strcat (index_script_head_name,fileName);
     char index_script_head_b[] = "_head.js\"></script>";
 
     char index_head_close[] = "</head>";
 
     char index_body_open_a[] = "<body id=\"";
-    char index_body_id[20] = "";
-    strcat (index_body_id,siteName);
+    // char index_body_id[20] = "";
+    // strcat (index_body_id,fileName);
     char index_body_open_b[] = "_body\">";
 
     char index_script_body_a[] = "<script src=\"script/";
-    char index_script_body_name[20] = "";
-    strcat (index_script_body_name,siteName);
+    // char index_script_body_name[20] = "";
+    // strcat (index_script_body_name,fileName);
     char index_script_body_b[] = "_body.js\"></script>";
     
     char index_body_close[] = "</body>";
@@ -76,9 +77,9 @@ void Menu2_2()
  
 
     // Output to HTML **********************
-    strcat (siteName,fileExtension);
+    //strcat (siteName,fileExtension);
     FILE *FileX;
-    FileX = fopen(siteName, "w");
+    FileX = fopen(fileName, "w");
 
     if(FileX == NULL) 
     {
@@ -92,7 +93,7 @@ void Menu2_2()
 
         // Language
         fprintf(FileX, "%s", html_open_a);
-        fprintf(FileX, "%s", lang);
+        fprintf(FileX, "%s", language);
 
         // if (language==1){
         //     fprintf(FileX, "%s", lang1);
@@ -104,23 +105,23 @@ void Menu2_2()
         fprintf(FileX, "%s\n", html_open_b);
 
         fprintf(FileX, "%s", index_head_open_a);
-        fprintf(FileX, "%s", index_head_id);
+        fprintf(FileX, "%s", siteName);
         fprintf(FileX, "%s\n", index_head_open_b);
 
         fprintf(FileX, "%s\n", meta);
 
         fprintf(FileX, "%s", index_script_head_a);
-        fprintf(FileX, "%s", index_script_head_name);
+        fprintf(FileX, "%s", siteName);
         fprintf(FileX, "%s\n", index_script_head_b);
 
         fprintf(FileX, "%s\n", index_head_close);
 
         fprintf(FileX, "%s", index_body_open_a);
-        fprintf(FileX, "%s", index_body_id);
+        fprintf(FileX, "%s", siteName);
         fprintf(FileX, "%s\n", index_body_open_b);
 
         fprintf(FileX, "%s", index_script_body_a);
-        fprintf(FileX, "%s", index_script_body_name);
+        fprintf(FileX, "%s", siteName);
         fprintf(FileX, "%s\n", index_script_body_b);
 
         fprintf(FileX, "%s\n", index_body_close);
