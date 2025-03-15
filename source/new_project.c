@@ -37,28 +37,4 @@ void new_project(char **projectName, int **visit, char **language)
 
     // PRINT CODE ##############################
     printCode(&siteNameP, &siteFileP, &language);
-    
-    // Create Standard Subfolders
-    //char css[] = "css";
-    // char script[] = "script";
-    // char images[] = "images";
-    // char videos[] = "videos";
-    // char fonts[] = "fonts";
- 
-    //mkdir(css);
-    //printf("New folder created: %s \n",css);
-
-    // mkdir(script);
-    // printf("New folder created: %s \n",script);
-
-    // mkdir(images);
-    // printf("New folder created: %s \n",images);
-
-    // mkdir(videos);
-    // printf("New folder created: %s \n",videos);
-
-    // mkdir(fonts);
-    // printf("New folder created: %s \n",fonts);
-    
-    //printf("\n");
 }

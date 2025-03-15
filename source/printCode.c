@@ -40,9 +40,13 @@ void printCode(char **siteName, char **siteFile, char ***language)
     char body_close[] = "</body>";
     char html_close[] = "</html>";
  
+    // char *site = *siteName;
+    // char siteFile1[] = ".html";
+    // strcat(site, siteFile1);
+
     // Output to HTML
     FILE *FileX;
-    FileX = fopen(*siteFile, "w");
+    FileX = fopen(siteFile, "w");
 
     if(FileX == NULL) 
     {

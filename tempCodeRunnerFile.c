@@ -1,2 +1,1 @@
-char language[] = "de";
-    char *languageP = &language[0];
+char *projectNameP = &projectName[0];

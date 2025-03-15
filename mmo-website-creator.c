@@ -105,7 +105,7 @@ int main()
 
         printf("\n");
         printf("*** MENU CREATE FILES ***\n");
-        printf("Press: 0 BACK | 1 CREATE FILE | 2 CREATE FOLDER\n");   
+        printf("Press: 0 BACK | 1 CREATE HTML FILE | 2 CREATE FOLDER\n");   
         
         printf("Input: ");
 
