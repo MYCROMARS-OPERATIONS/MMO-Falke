@@ -14,20 +14,26 @@ void Menu2_2()
     // printf("Go to Folder: %s\n",projectName);
     // chdir(projectName);
 
+
     // HTML Page Name input 
-    
     printf("HTML Site Name: ");
 
+    // Site Name
     char siteName[20] = "";
     scanf("%s", &siteName);
 
-    char siteFile[] = "";
-    strcat (siteFile,siteName);
+    // char siteNamePlaceholder[] = "";
+    // strcat (siteNamePlaceholder,siteName);
 
-    char siteNameExtension[] = "";
+    // // Site Name + Extension:
+    // char siteNameExtension[] = "";
+    // strcat (siteNameExtension,siteName);
 
     char fileExtension[] = ".html";
-    strcat (siteNameExtension,fileExtension);
+
+   
+
+
   
     //char *name[] = siteName;
 
@@ -76,8 +82,9 @@ void Menu2_2()
     char html_close[] = "</html>";
  
     // Output to HTML
+    strcat (siteName,fileExtension);
     FILE *FileX;
-    FileX = fopen(siteNameExtension, "w");
+    FileX = fopen(siteName, "w");
 
     if(FileX == NULL) 
     {

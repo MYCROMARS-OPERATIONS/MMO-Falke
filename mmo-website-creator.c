@@ -132,7 +132,7 @@ int main()
         // printf("VISIT POINTER: ");
         // printf("%d\n", *visitP);
 
-        printf("********** MENU FILES CREATE ***********\n");
+        printf("*** MENU CREATE FILES ***\n");
         printf("Press: 0 EXIT | 1 HTML-FILE\n");   
         
         printf("Input: ");

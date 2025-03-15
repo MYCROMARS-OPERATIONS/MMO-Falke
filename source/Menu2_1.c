@@ -1,7 +1,7 @@
 // NEW
 void Menu2_1(char **projectName, int **visit)
 {
-    printf("\n*** NEW PROJECT***\n");
+    printf("\n*** START NEW PROJECT ***\n");
 
 
     // PROJECT NAME *******************
@@ -51,8 +51,8 @@ void Menu2_1(char **projectName, int **visit)
     // Language input ************************
     printf("\nCreate Header\n");
     printf("Choose Language (de,en): ");
-    char language[10] = "";
-    scanf("%199s\n", language);
+    char language[20] = "";
+    scanf("%s", language);
 
     // Datei erstellen ***********************
     char doctype[] = "<!DOCTYPE html>";
@@ -103,7 +103,7 @@ void Menu2_1(char **projectName, int **visit)
     }
     else
     {
-        puts("File open");
+        puts("\nFile open");
         fprintf(FileX, "%s\n", doctype);
 
         // Language
