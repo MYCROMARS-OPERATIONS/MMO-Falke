@@ -6,8 +6,8 @@ void printCode(char **siteName, char **siteFile, char ***language)
 {
     //printf("%s, %s, %s\n", *siteName, *siteFile, **language);
     
-    printf("\n*** PRINT CODE ***\n");
-    // HEAD ***************************
+    printf("\n$$$$$ PRINT CODE $$$$$");
+    // HEAD 
     char doctype[] = "<!DOCTYPE html>";
 
     // HTML

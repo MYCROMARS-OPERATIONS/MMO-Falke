@@ -1,5 +1,5 @@
 // EXIT MENU
-void Menu2_0()
+void exit_programm()
 {
     //printf("Menu=%d\n", menu);
     printf("\n%%%%%%%%%%%%%% Program END! %%%%%%%%%%%%%%\n");

@@ -54,7 +54,7 @@ int main()
         if (scanf("%d", &menu1)) {
         
             // Falsche Zahl (nicht 1-12)
-            if (menu1 < 0 || menu1 > 12){
+            if (menu1 < 0 || menu1 > 1){
                     printf("\nInput is not 1-12\n\n");
                     // Go here <<<---
                     goto menu1;
@@ -64,11 +64,11 @@ int main()
             {
             case 0:
                 // Exit
-                Menu2_0();
+                exit_programm();
 
             case 1:
                 // NEW PROJECT - Basic Folder
-                Menu2_1(&projectNameP, &visitP, &languageP);
+                new_project(&projectNameP, &visitP, &languageP);
                 break;
 
             case 2:
@@ -105,14 +105,14 @@ int main()
 
         printf("\n");
         printf("*** MENU CREATE FILES ***\n");
-        printf("Press: 0 BACK | 1 CREATE FILE\n");   
+        printf("Press: 0 BACK | 1 CREATE FILE | 2 CREATE FOLDER\n");   
         
         printf("Input: ");
 
         if (scanf("%d", &menu2)) {
         
             // Falsche Zahl (nicht 1-12)
-            if (menu2 < 0 || menu2 > 12){
+            if (menu2 < 0 || menu2 > 2){
                     printf("\nInput is not 0-1\n\n");
                     // Go here <<<---
                     goto menu2;
@@ -138,11 +138,13 @@ int main()
                 //Menu2_0();
 
             case 1:
-                // File create
-                Menu2_2(&languageP);
+                // create Files
+                create_file(&languageP);
                 break;
 
             case 2:
+                // Create Folders
+                create_folder();
                 break;
 
             case 3:

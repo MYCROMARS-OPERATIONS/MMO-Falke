@@ -12,14 +12,14 @@
     //#include <synchapi.h>
 
     // ****************** Include files: .h 
-    #include "header/Menu2.h"
+    #include "header/menu.h"
     #include "header/printCode.h"
  
     // ****************** Include Menu files .c 
-    #include "source/Menu2_0.c"
-    #include "source/Menu2_1.c"
-    #include "source/Menu2_2.c"
-    #include "source/Menu_Files.c"
+    #include "source/exit_programm.c"
+    #include "source/new_project.c"
+    #include "source/create_file.c"
+    #include "source/create_folder.c"
     
     // ****************** Include files: .c 
     #include "source/printCode.c"
