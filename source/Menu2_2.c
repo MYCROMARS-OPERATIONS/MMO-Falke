@@ -21,20 +21,13 @@ void Menu2_2()
     // Site Name
     char siteName[20] = "";
     scanf("%s", &siteName);
-
-    // char siteNamePlaceholder[] = "";
-    // strcat (siteNamePlaceholder,siteName);
-
-    // // Site Name + Extension:
-    // char siteNameExtension[] = "";
-    // strcat (siteNameExtension,siteName);
+    printf("\nSeitennamen: %s", siteName);
 
     char fileExtension[] = ".html";
 
-   
+    //printf("\nSeitennamenEx: %s", siteNameExtension);
+    //strcat (siteNameExtension2,siteNameExtension);
 
-
-  
     //char *name[] = siteName;
 
     // Language input ************************
@@ -81,7 +74,8 @@ void Menu2_2()
     char index_body_close[] = "</body>";
     char html_close[] = "</html>";
  
-    // Output to HTML
+
+    // Output to HTML **********************
     strcat (siteName,fileExtension);
     FILE *FileX;
     FileX = fopen(siteName, "w");
