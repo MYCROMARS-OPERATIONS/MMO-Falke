@@ -4,7 +4,7 @@
 //#include <unistd.h>
 
 // DELAY MENU 2
-void Menu2_2()
+void Menu2_2(char **language)
 {
     // Main folder create ****************************
     // char projectName[20];
@@ -33,9 +33,9 @@ void Menu2_2()
     scanf("%s", &fileName);
     
     // Language input ************************
-    printf("\nChoose Language (de,en): ");
-    char language[10] = "";
-    scanf("%s", &language);
+    //printf("\nChoose Language (de,en): ");
+    //char language[10] = "";
+    //scanf("%s", *language);
 
     // Datei erstellen ***********************
     char doctype[] = "<!DOCTYPE html>";
@@ -93,7 +93,7 @@ void Menu2_2()
 
         // Language
         fprintf(FileX, "%s", html_open_a);
-        fprintf(FileX, "%s", language);
+        fprintf(FileX, "%s", *language);
 
         // if (language==1){
         //     fprintf(FileX, "%s", lang1);
@@ -132,5 +132,5 @@ void Menu2_2()
         fclose(FileX);
     }  
 
-    puts("\n");
+    //puts("\n");
 }

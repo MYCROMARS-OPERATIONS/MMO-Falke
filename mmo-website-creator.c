@@ -4,9 +4,10 @@
 /****************/
 
 // header file
-//#include <windows.h>
 #include "header.h"
-#include <unistd.h>
+//#include <windows.h>
+//#include <unistd.h>
+
 // Input String löschen
 char b[50];
 void scanString0(void){
@@ -29,32 +30,14 @@ int main()
     // PROJECT NAME *********************
     char projectName[] = "ProjectName";
     char *projectNameP = &projectName[0];
-
-    // printf("ProjectName: ");
-    // printf("%s\n", projectName);
-
-    // printf("PointerName: ");
-    // printf("%s\n\n", projectNameP);
     
-    // projectNameP = "char_Pointer";
-
-    // printf("ProjectName: ");
-    // printf("%s\n", projectName);
-
-    // printf("PointerName: ");
-    // printf("%s\n\n", projectNameP);
-
+    // Language *********************
+    char language[] = "de";
+    char *languageP = &language[0];
 
     // VISIT *********************
     int visit = 0;
     int *visitP = &visit;
-
-    // printf("VISIT: ");
-    // printf("%d\n", visit);
-    
-    // printf("VISIT Pointer: ");
-    // printf("%d\n\n", *visitP);
-
 
     // Go here <<<---
     menu1: 
@@ -85,7 +68,7 @@ int main()
 
             case 1:
                 // NEW PROJECT - Basic Folder
-                Menu2_1(&projectNameP, &visitP);
+                Menu2_1(&projectNameP, &visitP, &languageP);
                 break;
 
             case 2:
@@ -119,18 +102,6 @@ int main()
         /* ********************** MENU 2 ********************* */
         // Go here <<<---
         menu2:
-        // PROJECT NAME
-        // printf("PROJECT NAME: ");
-        // printf("%s\n", projectName);
-
-        // printf("NEW PROJECT NAME: ");
-        // printf("%s\n\n", projectNameP);
-
-        // VISIT
-        // printf("VISIT: ");
-        // printf("%d\n\n", visit);
-        // printf("VISIT POINTER: ");
-        // printf("%d\n", *visitP);
 
         printf("\n");
         printf("*** MENU CREATE FILES ***\n");
@@ -155,7 +126,7 @@ int main()
                 char s[100];
 
                 // Ornder verlassen
-                printf("Exit Folder Creation\n");
+                printf("EXIT CREATE FILES\n");
                 // printf("%s\n", getcwd(s, 100));
                 chdir("..");
                 printf("Now You are here: ");
@@ -167,23 +138,15 @@ int main()
                 //Menu2_0();
 
             case 1:
-                // HTML
-                // 
-                Menu2_2();
+                // File create
+                Menu2_2(&languageP);
                 break;
 
             case 2:
-                //
-                // 
-                //Menu2_2();
                 break;
 
             case 3:
-                // 
-                // 
-                //Menu2_3();
                 break;
-            
 
             default:
                 printf("Input is not a number 0-1\n\n");
