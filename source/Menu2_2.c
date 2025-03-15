@@ -16,12 +16,12 @@ void Menu2_2()
 
 
     // HTML Page Name input 
-    printf("HTML Site Name: ");
+    printf("\nHTML Site Name: ");
 
     // Site Name
     char siteName[20] = "";
     scanf("%s", &siteName);
-    printf("\nSeitennamen: %s\n", siteName);
+    //printf("Namen: %s\n", siteName);
 
     char fileExtension[] = ".html";
 
