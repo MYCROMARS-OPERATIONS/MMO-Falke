@@ -1,9 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 // DATA MENU 10
 void mainMenu_10(int *m)
 {
     printf("\n*** DATA MENU ***\n");
     printf("Press: (1) DATA-A | (2) DATA-B | (3) DATA-C | (4) DATA-D | (5) DATA-E\n");
-    printf("Press: (6) DATA-F | (7) DATA-G | (0) EXIT\n");
+    printf("Press: (6) DATA-F | (7) DATA-G | (8) DATA-H | (0) EXIT\n");
 
     printf("Your Input: ");
 
@@ -66,6 +69,13 @@ void mainMenu_10(int *m)
         // Datei erfolgreich geoeffnet zum lesen von int Array.
         datei_g();
         break;
+
+    case 8:
+        // Function
+        // Data H
+        // Make Folder
+        datei_h();
+    break;
     
     default:
         *m = 0;

@@ -4,9 +4,11 @@
     // ****************** Include library files: .h 
     #include <stdio.h>
     #include <stdlib.h>
+    #include <string.h>
+    #include <dir.h>
+    #include <unistd.h>
     #include <math.h>
     #include <time.h>
-    #include <string.h>
     #include <synchapi.h>
 
     // ****************** Include files: .h 
@@ -65,6 +67,7 @@
     #include "header/datei_e.h" 
     #include "header/datei_f.h" 
     #include "header/datei_g.h" 
+    #include "header/datei_h.h" 
 
     #include "header/time_a.h" 
     #include "header/time_b.h" 
@@ -142,6 +145,7 @@
     #include "source/datei_e.c"
     #include "source/datei_f.c"
     #include "source/datei_g.c"
+    #include "source/datei_h.c"
 
     #include "source/time_a.c"
     #include "source/time_b.c"
