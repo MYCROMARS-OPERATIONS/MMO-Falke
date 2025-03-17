@@ -1,9 +1,9 @@
 // POINTER MENU 5
-void mainMenu_5(int *m)
+void mainMenu_5(int *m, char **nameP)
 {
     printf("\n*** POINTER MENU ***\n");
     printf("Press: (1) POINTER-A | (2) POINTER-B | (3) POINTER-C | (4) POINTER-D | (5) POINTER-E\n");
-    printf("Press: (6) POINTER-F | (0) EXIT\n");
+    printf("Press: (6) POINTER-F | (7) POINTER-G | (0) EXIT\n");
     printf("Your Input: ");
 
     // Input
@@ -89,6 +89,32 @@ void mainMenu_5(int *m)
         pointerF(p);
         printf("Int val2: %d\n\n", val2);
         break;
+
+    case 7:
+        // Pointer G
+        // Char String
+        //*nameP = "Barlin to";
+        printf("Pointer Pointer **: %s\n", *nameP);
+
+        char siteName[] = "index";
+        printf("Site Name: %s\n", siteName);
+
+        *nameP = siteName;
+        printf("Site Name Pointer: %s\n", *nameP);
+        
+        char Extension[] = ".html";
+
+        // Copy string to tring
+        strcat(siteName, Extension);
+        printf("Site Name + Extension0: %s\n", siteName);
+        printf("Site Name Pointer: %s\n\n", *nameP);
+
+        //changeName[0] = **namePP;
+        //printf("Change to: %s\n", changeName);
+
+        // Function
+        pointerG(&nameP);
+    break;
     
     default:
         *m = 0;

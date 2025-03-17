@@ -1,8 +1,8 @@
-/* ****************************************************** */
-/*                  MYCROMARS OPERATIONS                  */
-/*                      ALEXANDER RUDI                    */
-/*                        17.11.2024                      */
-/* ****************************************************** */
+/********************************************************/
+/*                  MYCROMARS OPERATIONS                 */
+/*                     ALEXANDER RUDI                    */
+/*                       17.03.2025                      */
+/********************************************************/
 
 // header file
 //#include <windows.h>
@@ -19,10 +19,8 @@ int main()
     printf("\n");
     printf("**********************************************\n");
     printf("########       MYCROMARS FALKE        ########\n");
-    printf("########    (C) All rights reserved   ########\n");
-    printf("########          2024-2025           ########\n");
-    printf("######## www.mycromars-operations.com ########\n");
-    printf("########           V. 1.0.2           ########\n");
+    printf("########  C All rights reserved 2025  ########\n");
+    printf("########           V. 1.0.3           ########\n");
     printf("**********************************************\n\n");
 
     int menu = 0;
@@ -83,7 +81,10 @@ int main()
         case 5:
             // *------------- Pointer -------------*
             // Funktion
-            mainMenu_5(&menuB);
+            char name[] = "Berlin";
+            char *nameP = &name[0];
+
+            mainMenu_5(&menuB, &nameP);
             break;
 
         case 6:
