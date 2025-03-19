@@ -32,10 +32,17 @@ void datei_h(void)
     char dest[100];
     strcpy(dest, scr);
 
+    printf("\nCopy String:\n");
     printf("scr: %s\n", scr);
     printf("dest: %s\n", dest);
 
+    // Merge String
+    char Extension[] = ".html";
+    strcat(dest, Extension);
 
+    printf("\nMerge String:\n");
+    printf("Extension: %s\n", Extension);
+    printf("dest: %s\n", dest);
 
 // File create/open and write **************
     FILE *FileX;
