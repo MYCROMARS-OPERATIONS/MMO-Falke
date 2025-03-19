@@ -1,26 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+ //strcat(x, y);
 
 // CREATE FILES
 void create_file(char **language)
 {
     // Site Name input **********************
     printf("\nFilename without Extesion: ");
-    // Site Name
-    char siteName[20] = "";
+    char siteName[] = "name";
     scanf("%s", &siteName);
 
-    // File Name input **********************
-    printf("Filename with Extesion   : ");
-    // File Name
-    char siteFile[20] = "";
-    scanf("%s", &siteFile);
+    // Copy String
+    char dest[100];
+    strcpy(dest, siteName);
+    
+    // Merge String (Extenstion gose defect)
+    char Extension[] = ".html";
+    strcat(dest, Extension);
 
     // POINTER
     char *siteNameP = &siteName[0];
-    char *siteFileP = &siteFile[0];
-
+    char *siteFileP = &dest[0];
+    
     // PRINT CODE ##############################
     printCode(&siteNameP, &siteFileP, &language);
-
 }

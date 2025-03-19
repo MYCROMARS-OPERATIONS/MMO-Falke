@@ -25,6 +25,12 @@ void new_project(char **projectName, int **visit, char **language)
     char siteName[] = "index";
     char siteFile[] = "index.html";
 
+    // char dest[100];
+    // strcpy(dest, siteName);
+        
+    // char id[4] = "id_";
+    // strcat(id, dest);
+
     // POINTER
     char *siteNameP = &siteName[0];
     char *siteFileP = &siteFile[0];

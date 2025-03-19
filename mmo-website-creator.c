@@ -1,12 +1,12 @@
-/****************/
-/*   MYCROMARS  */
-/*ALEXANDER RUDI*/
-/****************/
+/************************/
+/* MYCROMARS OPERATIONS */
+/*    ALEXANDER RUDI    */
+/*      17.03.2025      */
+/************************/
 
 // header file
 #include "header.h"
 //#include <windows.h>
-//#include <unistd.h>
 
 // Input String löschen
 char b[50];
@@ -20,8 +20,7 @@ int main()
     printf("************************************\n");
     printf("####  MYCROMARS WEBSITE CREATOR ####\n");
     printf("#### C All rights reserved 2025 ####\n");
-    printf("####        ALEXANDER RUDI      ####\n");
-    printf("####         Version: 1.1       ####\n");
+    printf("####            V. 1.1          ####\n");
     printf("************************************\n\n");
 
     int menu1 = 0;

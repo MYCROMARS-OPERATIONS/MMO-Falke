@@ -15,7 +15,7 @@ void printCode(char **siteName, char **siteFile, char ***language)
     char html_open_b[] = "\" id=\"top\">";
 
     // HEAD
-    char head_open_a[] = "<head id=\"";
+    char head_open_a[] = "<head id=\"id_";
     char head_open_b[] = "_head\">";
 
     char meta[] = "<meta charset=\"UTF-8\">";
@@ -27,7 +27,7 @@ void printCode(char **siteName, char **siteFile, char ***language)
     char head_close[] = "</head>";
 
     // BODY
-    char body_open_a[] = "<body id=\"";
+    char body_open_a[] = "<body id=\"id_";
     char body_open_b[] = "_body\">";
 
     // SCRIP
@@ -40,13 +40,10 @@ void printCode(char **siteName, char **siteFile, char ***language)
     char body_close[] = "</body>";
     char html_close[] = "</html>";
  
-    // char *site = *siteName;
-    // char siteFile1[] = ".html";
-    // strcat(site, siteFile1);
 
-    // Output to HTML
+    // Output to HTML *****************
     FILE *FileX;
-    FileX = fopen(siteFile, "w");
+    FileX = fopen(*siteFile, "w");
 
     if(FileX == NULL) 
     {
