@@ -1,7 +1,7 @@
 // Datei h
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 void datei_h(void)
 {
@@ -27,7 +27,7 @@ void datei_h(void)
     char siteFile[] = "index.html";
     char doctype[] = "<!DOCTYPE html>";
     
-    // Copy a String *********
+    // Copy a String ********
     char scr[] = "copy this";
     char dest[100];
     strcpy(dest, scr);
@@ -36,7 +36,7 @@ void datei_h(void)
     printf("scr: %s\n", scr);
     printf("dest: %s\n", dest);
 
-    // Merge String
+    // Merge String ***********
     char Extension[] = ".html";
     strcat(dest, Extension);
 
